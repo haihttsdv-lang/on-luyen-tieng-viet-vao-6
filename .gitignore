@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-singlefile/
+coverage/
+*.tsbuildinfo
+.env
+.env.local
+*.local
+.DS_Store
+Thumbs.db
+playwright-report/
+test-results/

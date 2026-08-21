@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+}
+
+html {
+  /* FR-A16: 100vh is unreliable on Chrome Android when the address bar
+   * shows/hides; 100dvh tracks the actual visible viewport. */
+  height: 100dvh;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+/* UX-14: trang phụ huynh và bài viết học sinh cần in được — ẩn điều hướng,
+ * nền trắng. Layout.tsx đánh dấu header/nav bằng class "no-print". */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  main {
+    padding-bottom: 0 !important;
+  }
+}
