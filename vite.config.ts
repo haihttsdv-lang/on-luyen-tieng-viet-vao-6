@@ -9,17 +9,27 @@ import path from "node:path";
 // FR-A01/A02: PWA manifest + service worker so the app installs and works
 // offline on Android. NFR-11: `singlefile` mode packs everything into one
 // HTML file runnable via file://, which is incompatible with a real service
-// worker, so PWA is skipped in that mode.
+// worker, so PWA is skipped in that mode. `gh-pages` mode deploys to a
+// project subpath (github.io/<repo>/) rather than a domain root — it needs
+// HashRouter (see App.tsx) and a relative base like singlefile does, but
+// otherwise builds like a normal hosted PWA (multi-file, service worker on).
 export default defineConfig(({ mode }) => {
   const isSingleFile = mode === "singlefile";
+  const isGhPages = mode === "gh-pages";
+  const needsRelativeBase = isSingleFile || isGhPages;
+
+  const outDirByMode: Record<string, string> = {
+    singlefile: "dist-singlefile",
+    "gh-pages": "dist-gh-pages",
+  };
 
   return {
-    // NFR-11: the singlefile build has no server, so it needs relative
-    // asset URLs to work from file://. The hosted build needs the opposite
-    // — an absolute root path — otherwise assets 404 on any deep route
-    // (e.g. /luyen-tap/viet/:id) because relative "./assets/..." resolves
-    // against the current URL path, not the site root.
-    base: isSingleFile ? "./" : "/",
+    // NFR-11 (singlefile) has no server at all, so relative asset URLs are
+    // the only option under file://. gh-pages has a server, but not at the
+    // domain root, so an absolute "/assets/..." would 404 — relative works
+    // for both because index.html and its assets always sit next to each
+    // other, regardless of what subpath they're served from.
+    base: needsRelativeBase ? "./" : "/",
     plugins: [
       react(),
       tailwindcss(),
@@ -39,8 +49,10 @@ export default defineConfig(({ mode }) => {
                 orientation: "portrait",
                 theme_color: "#0f766e",
                 background_color: "#ffffff",
-                start_url: "/",
-                scope: "/",
+                // Relative so it resolves correctly whether the manifest is
+                // served from the domain root or a gh-pages subpath.
+                start_url: needsRelativeBase ? "." : "/",
+                scope: needsRelativeBase ? "." : "/",
                 icons: [
                   { src: "icons/icon-192.png", sizes: "192x192", type: "image/png" },
                   { src: "icons/icon-512.png", sizes: "512x512", type: "image/png" },
@@ -72,9 +84,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      // Separate output dirs so `build` (hosted, PWA) and `build:singlefile`
-      // (NFR-11, one HTML file) never clobber each other.
-      outDir: isSingleFile ? "dist-singlefile" : "dist",
+      // Separate output dirs per mode so builds never clobber each other.
+      outDir: outDirByMode[mode] ?? "dist",
     },
     test: {
       environment: "jsdom",

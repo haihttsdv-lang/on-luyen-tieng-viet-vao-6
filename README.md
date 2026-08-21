@@ -8,6 +8,9 @@ thật (PWA).
 Đặc tả đầy đủ: [`URD-ung-dung-on-luyen-tieng-viet-vao-6.md`](./URD-ung-dung-on-luyen-tieng-viet-vao-6.md).
 Ghi chú tham chiếu từ ứng dụng Tiếng Anh cùng hệ sinh thái: [`docs/reference-app-notes.md`](./docs/reference-app-notes.md).
 
+**Bản chạy thử trực tiếp:** https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
+(tự động build lại mỗi khi có commit mới lên nhánh `master` — xem mục Triển khai).
+
 ## Bắt đầu
 
 ```bash
@@ -21,7 +24,8 @@ Mở `http://localhost:5173`.
 
 ```bash
 npm run dev              # chạy dev server
-npm run build             # build bản hosted (BrowserRouter)
+npm run build             # build bản hosted, deploy ở domain gốc (BrowserRouter)
+npm run build:gh-pages    # build cho GitHub Pages, deploy ở subpath (HashRouter)
 npm run build:singlefile  # build 1 file HTML chạy qua file:// (HashRouter, NFR-11)
 npm run preview           # xem thử bản build
 npm run test               # chạy unit test (Vitest)
@@ -80,6 +84,32 @@ chỉ ẩn/khoá phần Đồng bộ và hiện hướng dẫn thay vì lỗi (S
    ```
 
 8. Chạy lại `npm run dev` — mục Đồng bộ trong trang Hồ sơ sẽ hoạt động.
+
+## Triển khai (GitHub Pages)
+
+`.github/workflows/deploy.yml` tự động build và triển khai lên GitHub Pages
+mỗi khi có commit mới lên `master` (typecheck + lint + unit test phải xanh
+trước khi deploy). Kích hoạt lần đầu (chỉ cần làm một lần):
+
+1. Vào **Settings → Pages** của repo trên GitHub.
+2. Ở mục **Build and deployment → Source**, chọn **GitHub Actions** (không
+   chọn "Deploy from a branch").
+3. Đợi workflow chạy xong (tab **Actions**) — lần đầu mất khoảng 1-2 phút.
+4. Ứng dụng sẽ có ở `https://<username>.github.io/<tên-repo>/`.
+
+**Vì sao có `build:gh-pages` riêng, không dùng `build` thường:** GitHub
+Pages phục vụ project ở một subpath (`/tên-repo/`), không phải domain gốc,
+và không có cơ chế rewrite deep-link về `index.html` khi tải lại trang —
+giống hệt vấn đề khiến bản `build:singlefile` phải dùng `HashRouter` (xem
+`src/app/App.tsx`). `build:gh-pages` dùng base path tương đối (giống
+singlefile) + `HashRouter`, nhưng vẫn giữ Service Worker/PWA (khác
+singlefile, vốn tắt PWA vì chạy qua `file://`). Đã kiểm chứng cục bộ bằng
+`scripts/serve-subpath.mjs` (giả lập subpath) + `scripts/smoke-test-gh-pages.mjs`
+trước khi đưa vào workflow.
+
+Muốn deploy sang nơi khác (Vercel/Netlify/Firebase Hosting ở domain gốc) thì
+dùng `npm run build` (bản `BrowserRouter`, base path tuyệt đối) thay vì
+`build:gh-pages`.
 
 ## Cấu trúc dự án
 
