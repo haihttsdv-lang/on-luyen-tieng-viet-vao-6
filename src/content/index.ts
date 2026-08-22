@@ -5,6 +5,10 @@ import { KN03_EXERCISES } from "@/content/exercises/kn-03";
 import { KN04_EXERCISES } from "@/content/exercises/kn-04";
 import { KN05_EXERCISES } from "@/content/exercises/kn-05";
 import { NT01_EXERCISES } from "@/content/exercises/nt-01";
+import { NT03_EXERCISES } from "@/content/exercises/nt-03";
+import { NT04_EXERCISES } from "@/content/exercises/nt-04";
+import { TC03_EXERCISES } from "@/content/exercises/tc-03";
+import { TC04_EXERCISES } from "@/content/exercises/tc-04";
 import { CA01_EXERCISES } from "@/content/exercises/ca-01";
 import { CA02_EXERCISES } from "@/content/exercises/ca-02";
 import { CA03_EXERCISES } from "@/content/exercises/ca-03";
@@ -29,6 +33,10 @@ export const ALL_EXERCISES: Exercise[] = [
   ...KN04_EXERCISES,
   ...KN05_EXERCISES,
   ...NT01_EXERCISES,
+  ...NT03_EXERCISES,
+  ...NT04_EXERCISES,
+  ...TC03_EXERCISES,
+  ...TC04_EXERCISES,
   ...CA01_EXERCISES,
   ...CA02_EXERCISES,
   ...CA03_EXERCISES,

@@ -165,17 +165,24 @@ Xem Mục 18 của URD. Tóm tắt:
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
-19/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
+23/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
 ví dụ, lỗi thường gặp) + bài tập:
 
 - **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
-- **CA — Câu: 7/7 (xong)** — CA-01→07, đúng thứ tự ưu tiên Mục 5.11.
+- **CA — Câu: 7/8** — CA-01→07 (đúng thứ tự ưu tiên Mục 5.11, đủ theo chỉ
+  dẫn "CA-01→07" của bảng mục tiêu). Còn thiếu CA-08 (chữa lỗi câu — mục
+  `[BỔ SUNG]`, không nằm trong danh sách ưu tiên gốc).
 - **CT — Cảm thụ văn học: 4/7** — CT-01, CT-02, CT-05, CT-07. Còn thiếu
   CT-03 (điệp từ/điệp ngữ), CT-04 (đảo ngữ/từ láy), CT-06 (cảm thụ nhân vật).
-- **NT, CD, VA:** mỗi nhóm mới có 1/6, 1/5, 1/9 chuyên đề (từ các giai đoạn
-  trước).
-- **TC, TL, DH: 0 chuyên đề.** TC là ưu tiên tiếp theo cho bài tập chấm tự
-  động (Mục 5.11: "CA-01→07, TC-03/04, NT-03/04").
+- **NT — Nghĩa của từ và vốn từ: 3/6** — NT-01 (đồng nghĩa), NT-03 (đồng
+  âm), NT-04 (nghĩa gốc/nghĩa chuyển). Còn thiếu NT-02, NT-05, NT-06.
+- **TC — Tiếng, từ và cấu tạo từ: 2/4** — TC-03 (từ ghép), TC-04 (từ láy),
+  cả hai đều có `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi
+  giữa các bộ SGK (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không
+  tranh cãi, không lấy từ tranh cãi làm đáp án đúng (FR-D04, có test guard
+  tự động). Còn thiếu TC-01, TC-02.
+- **CD, VA:** mỗi nhóm mới có 1/5, 1/9 chuyên đề (từ các giai đoạn trước).
+- **TL, DH: 0 chuyên đề.**
 
 Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
 thi thử hoàn chỉnh theo đúng 4 cấu hình (hiện dùng sinh đề tự động từ kho

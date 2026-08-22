@@ -21,11 +21,11 @@ Bản chạy thật: https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
 (tự deploy khi push lên `master`, xem README mục Triển khai).
 
 **Trạng thái ngắn gọn:** cơ chế (Giai đoạn 0–8) đã xong và test kỹ. **Giai
-đoạn 9 (mở rộng nội dung) đang làm dở** — 19/56 chuyên đề đã có bài học đầy
-đủ (KN 5/5, CA 7/7, CT 4/7; NT/CD/VA còn 1 mỗi nhóm; TC/TL/DH chưa có gì).
-QĐ bổ sung đã chốt: không cần giáo viên rà soát, bộ sách chuẩn cho nội dung
-tranh cãi = Kết nối tri thức với cuộc sống. Xem README mục "Tiến độ nội
-dung" để biết chính xác còn thiếu gì.
+đoạn 9 (mở rộng nội dung) đang làm dở** — 23/56 chuyên đề đã có bài học đầy
+đủ (KN 5/5, CA 7/8, CT 4/7, NT 3/6, TC 2/4; CD/VA còn 1 mỗi nhóm; TL/DH chưa
+có gì). QĐ bổ sung đã chốt: không cần giáo viên rà soát, bộ sách chuẩn cho
+nội dung tranh cãi = Kết nối tri thức với cuộc sống. Xem README mục "Tiến độ
+nội dung" để biết chính xác còn thiếu gì.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -103,19 +103,21 @@ dung" để biết chính xác còn thiếu gì.
 
 ## Việc tiếp theo hợp lý nhất
 
-Tiếp tục **Giai đoạn 9** theo đúng thứ tự ưu tiên Mục 5.11. Đã xong: KN
-5/5, CA 7/7, CT 4/7 (CT-01/02/05/07). Việc tiếp theo:
+Tiếp tục **Giai đoạn 9** theo đúng thứ tự ưu tiên Mục 5.11. Đã xong: KN 5/5,
+CA 7/8 (đủ CA-01→07, còn thiếu CA-08 bổ sung), CT 4/7 (CT-01/02/05/07),
+NT 3/6 (NT-01/03/04), TC 2/4 (TC-03/04, cả hai đã dùng `disputedNote`).
+Việc tiếp theo:
 
-1. **TC-03, TC-04** (từ ghép/từ láy) — ưu tiên kế tiếp cho bài tập chấm tự
-   động (Mục 5.11: "CA-01→07, TC-03/04, NT-03/04"). Nhóm này có tranh cãi
-   giữa các bộ sách (Mục 10.6) — dùng bộ **Kết nối tri thức với cuộc sống**
-   làm chuẩn (đã chốt), nhớ cập nhật `src/content/disputed-words.ts` (FR-D04)
-   với các từ tranh cãi đã dùng.
-2. **NT-03, NT-04** (từ đồng âm, từ nhiều nghĩa) — cùng đợt ưu tiên với TC.
-3. **CT-03, CT-04, CT-06** — hoàn thiện nốt nhóm CT.
-4. Sau đó: TL, DH (chưa có chuyên đề nào), rồi mở rộng số lượng bài tập/chuyên
-   đề đã có lên ≥12 bài (hiện mỗi chuyên đề mới có 3-5 bài mẫu), rồi văn bản
-   đọc hiểu, đề tập làm văn, đề thi thử hoàn chỉnh.
+1. **CT-03, CT-04, CT-06** — hoàn thiện nốt nhóm CT (điệp từ/điệp ngữ, đảo
+   ngữ, cảm thụ nhân vật).
+2. **TC-01, TC-02** (tiếng/cấu tạo tiếng, từ đơn/từ phức) và **NT-02, NT-05,
+   NT-06** — hoàn thiện nốt hai nhóm này.
+3. Sau đó: TL, DH (chưa có chuyên đề nào — DH cần cả văn bản đọc hiểu, xem
+   mục 4), rồi mở rộng số lượng bài tập/chuyên đề đã có lên ≥12 bài (hiện
+   mỗi chuyên đề mới có 3-5 bài mẫu).
+4. Văn bản đọc hiểu (0/25), đề tập làm văn, đề thi thử hoàn chỉnh theo 4
+   cấu hình — làm sau khi các nhóm chuyên đề lý thuyết/bài tập cơ bản đã
+   đủ.
 
 Thói quen đã áp dụng khi xây nội dung mới, giữ nguyên: mỗi chuyên đề có
 lesson (concept/signals/examples/commonMistakes, KN thêm `steps`) +

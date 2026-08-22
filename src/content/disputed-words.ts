@@ -1,6 +1,16 @@
-// FR-D04: words with cross-textbook classification disputes (Mục 10.6),
-// e.g. từ ghép vs từ láy for "chôm chôm", "ba ba", "cào cào". None of the
-// current sample content (NT-01, CA-03, CD-01) touches this — this list
-// exists so the content-schema test can start enforcing FR-D04 as soon as
-// TC content (từ ghép/từ láy) is added in a later stage.
-export const DISPUTED_WORDS: readonly string[] = [];
+// FR-D04: words with cross-textbook classification disputes (Mục 10.6).
+// Giai đoạn 9 — TC-03/TC-04 (từ ghép/từ láy) is the first content to touch
+// this: words like "chôm chôm", "cào cào" get called từ láy by traditional
+// primary-school convention (dựa vào hình thức âm thanh lặp lại) but not by
+// stricter linguistic accounts (không xác định được tiếng gốc có nghĩa, nên
+// gọi là từ đơn đa âm tiết) — see disputedNote on TC-03/TC-04 in
+// src/content/topics/index.ts. Kept out of every mcq's correct answer
+// (FR-D03), enforced by tests/unit/content-schema.test.ts.
+export const DISPUTED_WORDS: readonly string[] = [
+  "chôm chôm",
+  "cào cào",
+  "ba ba",
+  "đu đủ",
+  "thằn lằn",
+  "chuồn chuồn",
+];

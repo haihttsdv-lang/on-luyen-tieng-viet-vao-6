@@ -430,5 +430,107 @@ export const TOPICS: Topic[] = [
       ],
     },
   },
+
+  // Giai đoạn 9 — TC-03/04 ưu tiên kế tiếp sau CA (Mục 5.11: "CA-01→07,
+  // TC-03/04, NT-03/04"). FR-D01: nguồn chuẩn cho nội dung tranh cãi là bộ
+  // Kết nối tri thức với cuộc sống. Các ví dụ dạy chính và câu hỏi trắc
+  // nghiệm dùng từ KHÔNG tranh cãi (FR-D03); từ tranh cãi chỉ nêu trong
+  // disputedNote (FR-D02), không dùng làm đáp án đúng (FR-D04, xem
+  // disputed-words.ts + content-schema.test.ts).
+  {
+    id: "TC-03",
+    group: "TC",
+    title: "Từ ghép: ghép tổng hợp và ghép phân loại",
+    disputedNote:
+      "Một số từ hai tiếng nghe như có âm lặp lại (ví dụ \"chôm chôm\", \"cào cào\", \"ba ba\") hiện có hai cách xếp loại khác nhau giữa các tài liệu: sách giáo khoa tiểu học truyền thống thường xếp vào từ láy (dựa vào hình thức âm thanh), trong khi một số giáo trình ngôn ngữ học lại không xem đây là từ láy vì không xác định được tiếng nào có nghĩa gốc riêng (gọi là từ đơn đa âm tiết). Bài học này không lấy các từ đó làm ví dụ chính hay đáp án trắc nghiệm.",
+    lesson: {
+      concept:
+        "Từ ghép là từ được tạo thành bằng cách ghép hai tiếng có nghĩa lại với nhau, có quan hệ với nhau về NGHĨA (khác với từ láy có quan hệ về ÂM). Có hai loại: ghép tổng hợp (nghĩa khái quát, các tiếng bình đẳng về nghĩa) và ghép phân loại (nghĩa cụ thể, hẹp hơn — tiếng sau làm rõ, phân loại cho tiếng trước).",
+      signals: [
+        "Ghép tổng hợp: các tiếng gần nghĩa hoặc cùng loại, đổi trật tự nghĩa không đổi nhiều (VD: quần áo, bàn ghế, ăn uống)",
+        "Ghép phân loại: tiếng đứng sau thu hẹp, làm rõ nghĩa của tiếng đứng trước (VD: hoa hồng, xe đạp)",
+        "Mỗi tiếng trong từ ghép (thường) đều có nghĩa riêng, xác định được",
+      ],
+      examples: [
+        "\"Quần áo\" — ghép tổng hợp: \"quần\" và \"áo\" đều là trang phục, ghép lại chỉ chung \"trang phục\".",
+        "\"Xe đạp\" — ghép phân loại: \"xe\" là loại chung, \"đạp\" phân loại cụ thể loại xe đó (khác xe máy, xe hơi).",
+        "\"Hoa hồng\" — ghép phân loại: chỉ riêng loại hoa hồng, không phải hoa nói chung.",
+      ],
+      commonMistakes: [
+        "Nhầm ghép phân loại với ghép tổng hợp khi không xác định được tiếng nào đang bổ sung, thu hẹp nghĩa cho tiếng kia",
+        "Nhầm từ ghép với từ láy khi hai tiếng có âm gần giống nhau — cần kiểm tra xem MỖI tiếng có nghĩa riêng không (từ ghép) hay chỉ một/không tiếng nào có nghĩa riêng (thường là từ láy)",
+      ],
+    },
+  },
+  {
+    id: "TC-04",
+    group: "TC",
+    title: "Từ láy: láy âm, láy vần, láy toàn bộ",
+    disputedNote:
+      "Một số từ hai tiếng nghe như có âm lặp lại (ví dụ \"chôm chôm\", \"cào cào\", \"ba ba\") hiện có hai cách xếp loại khác nhau giữa các tài liệu — xem chi tiết ở chuyên đề TC-03. Bài học này không lấy các từ đó làm ví dụ chính hay đáp án trắc nghiệm.",
+    lesson: {
+      concept:
+        "Từ láy là từ được tạo ra bằng cách lặp lại (toàn bộ hoặc một phần) âm thanh của một tiếng, tạo giá trị gợi tả, gợi cảm — khác với từ ghép, các tiếng trong từ láy thường không có nghĩa riêng biệt khi đứng một mình (trừ tiếng gốc, nếu có).",
+      signals: [
+        "Láy âm: phụ âm đầu của các tiếng giống nhau, phần vần khác nhau (VD: long lanh, mênh mông)",
+        "Láy vần: phần vần giống nhau, phụ âm đầu khác nhau (VD: lác đác, bâng khuâng)",
+        "Láy toàn bộ: lặp lại gần như toàn bộ tiếng gốc, có thể biến đổi thanh điệu nhẹ (VD: xanh xanh, nho nhỏ)",
+      ],
+      examples: [
+        "\"Long lanh\" — láy âm: phụ âm đầu \"l\" lặp lại ở cả hai tiếng.",
+        "\"Lác đác\" — láy vần: phần vần \"ac\" lặp lại ở cả hai tiếng.",
+        "\"Xanh xanh\" — láy toàn bộ: lặp lại nguyên vẹn tiếng \"xanh\".",
+      ],
+      commonMistakes: [
+        "Nhầm từ láy với từ ghép khi cả hai tiếng đều có nghĩa riêng rõ ràng (trường hợp đó thường là từ ghép, không phải láy)",
+        "Nhầm láy âm với láy vần khi không phân tích kỹ phụ âm đầu và phần vần của từng tiếng",
+      ],
+    },
+  },
+  {
+    id: "NT-03",
+    group: "NT",
+    title: "Từ đồng âm",
+    lesson: {
+      concept:
+        "Từ đồng âm là những từ giống nhau hoàn toàn về âm thanh (cách đọc, cách viết) nhưng khác nhau hoàn toàn về nghĩa, không có liên hệ gì với nhau.",
+      signals: [
+        "Hai từ đọc/viết giống hệt nhau nhưng nghĩa hoàn toàn không liên quan",
+        "Phải dựa vào ngữ cảnh của câu mới xác định được từ đang mang nghĩa nào",
+      ],
+      examples: [
+        "\"Con ngựa đá con ngựa đá.\" — \"đá\" thứ nhất là động từ (hành động đá), \"đá\" thứ hai là danh từ (chất liệu đá) — hai từ \"đá\" đồng âm, nghĩa không liên quan.",
+        "\"Bàn\" trong \"cái bàn học\" (đồ vật) và \"bàn\" trong \"bàn bạc công việc\" (trao đổi ý kiến) là hai từ đồng âm.",
+      ],
+      commonMistakes: [
+        "Nhầm từ đồng âm với từ nhiều nghĩa (NT-04) — từ nhiều nghĩa các nghĩa có liên hệ với nhau, còn từ đồng âm thì hoàn toàn không liên quan",
+      ],
+    },
+  },
+  {
+    id: "NT-04",
+    group: "NT",
+    title: "Từ nhiều nghĩa: nghĩa gốc và nghĩa chuyển",
+    lesson: {
+      concept:
+        "Từ nhiều nghĩa là từ có một nghĩa gốc (nghĩa ban đầu, cơ bản) và một hoặc nhiều nghĩa chuyển (được suy ra, phát triển từ nghĩa gốc, vẫn có liên hệ với nghĩa gốc).",
+      steps: [
+        "Xác định nghĩa gốc của từ (nghĩa quen thuộc, cơ bản nhất, thường dùng cho nghĩa đen).",
+        "Đọc câu có từ đó trong ngữ cảnh, xem nghĩa trong câu có phải nghĩa gốc không.",
+        "Nếu khác nghĩa gốc nhưng vẫn có điểm liên hệ (hình dáng, chức năng, vị trí...) thì đó là nghĩa chuyển.",
+      ],
+      signals: [
+        "Nghĩa chuyển vẫn có mối liên hệ nào đó với nghĩa gốc (khác hẳn từ đồng âm — xem NT-03)",
+      ],
+      examples: [
+        "\"Mắt\" nghĩa gốc là bộ phận cơ thể để nhìn (\"đôi mắt to tròn\"); nghĩa chuyển: \"mắt na\", \"mắt lưới\" (chỉ những điểm nhỏ có hình dạng giống con mắt).",
+        "\"Chân\" nghĩa gốc là bộ phận cơ thể để đi (\"đôi chân khoẻ mạnh\"); nghĩa chuyển: \"chân bàn\", \"chân núi\" (chỉ phần dưới cùng, nơi tiếp xúc với mặt đất).",
+      ],
+      commonMistakes: [
+        "Nhầm từ nhiều nghĩa với từ đồng âm — cần kiểm tra xem các nghĩa có liên hệ với nhau không",
+        "Không xác định đúng đâu là nghĩa gốc, đâu là nghĩa chuyển trong một cặp nghĩa",
+      ],
+    },
+  },
 ];
 
