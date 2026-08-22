@@ -30,12 +30,15 @@ chuyên đề CT cũng đã ĐẠT ĐỦ** (7/7 chuyên đề, 35 bài), **và �
 chuyên đề VA cũng đã ĐẠT ĐỦ** (9/9 chuyên đề, 36 đề). **Văn bản đọc hiểu
 dài cũng đã ĐẠT ĐỦ (25/25, mỗi văn bản 5–7 câu hỏi)** — 19 truyện ngắn +
 6 văn bản thông tin/khoa học thường thức, tự biên soạn (Mục 10.1 hướng
-B), đã xác minh qua trình duyệt thật. Việc còn lại của Giai đoạn 9 chỉ
-còn: đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu chéo) của quy trình
-kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo viên rà
-soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri thức với cuộc
-sống. Xem README mục "Tiến độ nội dung" để biết chính xác từng mục còn
-thiếu bao nhiêu.
+B), đã xác minh qua trình duyệt thật. **Đề thi thử hoàn chỉnh soạn sẵn
+cũng đã ĐẠT ĐỦ (8/8, 2 đề/cấu hình)** — kiểu `PresetExam` mới, mỗi đề là
+kết quả đóng băng từ chính engine `generateTest` (RNG seed cố định lúc
+soạn), chọn được ở `ConfigPicker` song song với đề ngẫu nhiên có sẵn.
+Việc còn lại của Giai đoạn 9 chỉ còn: lớp 2 (đối chiếu chéo) của quy
+trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo
+viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri thức
+với cuộc sống. Xem README mục "Tiến độ nội dung" để biết chính xác từng
+mục còn thiếu bao nhiêu.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -113,28 +116,32 @@ thiếu bao nhiêu.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Năm mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
+**Sáu mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
 ≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), ≥5 bài cảm thụ/
 chuyên đề CT (35 bài, 7/7 chuyên đề), ≥4 đề văn/chuyên đề VA (36 đề, 9/9
-chuyên đề), và 25/25 văn bản đọc hiểu dài (5–7 câu hỏi/văn bản, rải đều
-DH-01→06). Không còn việc mở rộng số bài/chuyên đề/văn bản nào theo Mục
-5.11 nữa — chỉ còn hai việc thiết kế mới, chưa từng làm trong dự án này:
+chuyên đề), 25/25 văn bản đọc hiểu dài (5–7 câu hỏi/văn bản, rải đều
+DH-01→06), và 8/8 đề thi thử soạn sẵn (2 đề/cấu hình, kiểu `PresetExam`
+ở `src/content/preset-exams/index.ts`, chọn được song song với đề ngẫu
+nhiên ở `ConfigPicker`). Không còn mục tiêu số lượng nào của Mục 5.11
+chưa đạt — chỉ còn một việc thiết kế duy nhất, chưa từng làm trong dự án
+này:
 
-1. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — hiện ứng
-   dụng chỉ sinh đề tự động từ kho bài tập (xem `core/test-generator`),
-   chưa có "đề cố định" nào được soạn sẵn và lưu làm dữ liệu tĩnh. Cần xác
-   định trước: đề soạn sẵn nghĩa là gì trong kiến trúc này (một danh sách
-   `exerciseId` cố định ứng với 1 `testConfig`? hay một cấu trúc dữ liệu
-   mới trong `src/content/`?) — tra URD Mục 5.11/22 về 4 cấu hình cụ thể
-   trước khi bắt tay viết, vì đây là quyết định kiến trúc, không phải chỉ
-   thêm nội dung.
-2. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
+1. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
    chưa có quy trình cụ thể, cần xác định cách thực hiện (khác lớp 1 tự
-   động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ).
+   động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ). Đây
+   là việc thiết kế quy trình, nên hỏi người dùng muốn triển khai theo
+   hướng nào trước khi bắt tay, thay vì tự chọn.
 
-Vì cả hai đều là việc thiết kế (chọn kiến trúc/quy trình) chứ không phải
-"viết thêm theo khuôn mẫu có sẵn" như các mốc trước, nên hỏi người dùng
-muốn ưu tiên việc nào trước, thay vì tự chọn.
+Cách tạo `PresetExam` mới (nếu cần thêm đề soạn sẵn sau này, ví dụ đổi
+cấu hình hoặc thêm đề thứ 3/cấu hình): viết một test tạm trong
+`tests/unit/` import `generateTest` + `ALL_EXERCISES`/`ALL_TOPICS` +
+`TEST_CONFIGS` thật từ `@/content`, chạy với một RNG seed cố định
+(mulberry32 hoặc tương đương) qua `console.log`, chạy bằng `npx vitest
+run <file>`, chép kết quả `exerciseIds`/`essayExerciseId` thành object
+tĩnh vào `src/content/preset-exams/index.ts`, rồi XÓA file test tạm —
+không để lại trong repo. Cách này tận dụng đúng thuật toán lấy mẫu có
+trọng số đã kiểm thử kỹ (tự động đúng tỷ trọng chuyên đề/mức độ/loại câu
+của cấu hình), tránh phải tự tay chọn hàng trăm câu hỏi.
 
 Thói quen mỗi batch khi mở rộng số lượng bài tập: đọc file exercise hiện
 có để không lặp nội dung/tránh mâu thuẫn văn phong, viết thêm trực tiếp

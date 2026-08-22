@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { contentStore } from "@/data-access";
 import { buildCustomTestConfig } from "@/core/test-generator";
 import { GROUP_LABELS, GROUP_ORDER } from "@/content/groupLabels";
-import type { TestConfig, TopicGroup } from "@/data-access/types";
+import type { PresetExam, TestConfig, TopicGroup } from "@/data-access/types";
 
 // FR-T01: chọn 1 trong 4 cấu hình khai báo bằng dữ liệu; FR-T09: hoặc tự
 // tạo đề tùy chỉnh.
@@ -17,6 +17,14 @@ export default function ConfigPicker() {
 
   function start(config: TestConfig) {
     navigate("/thi-thu/lam-bai", { state: { config } });
+  }
+
+  // Mục 5.11: đề soạn sẵn — danh sách câu hỏi cố định, khác đề ngẫu nhiên ở
+  // trên. Gắn nhãn đề vào label để trang kết quả/lịch sử phân biệt được.
+  function startPreset(config: TestConfig, preset: PresetExam) {
+    navigate("/thi-thu/lam-bai", {
+      state: { config: { ...config, label: `${config.label} — ${preset.label}` }, presetExam: preset },
+    });
   }
 
   function toggleGroup(group: TopicGroup) {
@@ -42,24 +50,42 @@ export default function ConfigPicker() {
     <section>
       <h1 className="text-xl font-semibold text-slate-900">Thi thử</h1>
 
-      <ul className="mt-4 flex flex-col gap-2" role="list">
-        {configs.map((config) => (
-          <li key={config.id}>
-            <button
-              type="button"
-              onClick={() => start(config)}
-              className="flex min-h-12 w-full items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-left"
-            >
-              <span>
-                <span className="block text-sm font-semibold text-slate-800">{config.label}</span>
-                <span className="block text-xs text-slate-500">
-                  {config.durationMinutes} phút · {config.totalQuestions} câu
-                  {config.includeEssay ? " + 1 bài viết" : ""}
+      <ul className="mt-4 flex flex-col gap-3" role="list">
+        {configs.map((config) => {
+          const presets = contentStore.getPresetExams(config.id);
+          return (
+            <li key={config.id} className="rounded-lg border border-slate-200 bg-white p-3">
+              <button
+                type="button"
+                onClick={() => start(config)}
+                className="flex min-h-12 w-full items-center justify-between rounded-lg px-1 py-1 text-left"
+              >
+                <span>
+                  <span className="block text-sm font-semibold text-slate-800">{config.label}</span>
+                  <span className="block text-xs text-slate-500">
+                    {config.durationMinutes} phút · {config.totalQuestions} câu
+                    {config.includeEssay ? " + 1 bài viết" : ""} · đề ngẫu nhiên
+                  </span>
                 </span>
-              </span>
-            </button>
-          </li>
-        ))}
+              </button>
+              {presets.length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-2 border-t border-slate-100 pt-2">
+                  <span className="w-full text-xs text-slate-500">Hoặc chọn đề soạn sẵn (làm lại vẫn đúng đề):</span>
+                  {presets.map((preset) => (
+                    <button
+                      key={preset.id}
+                      type="button"
+                      onClick={() => startPreset(config, preset)}
+                      className="min-h-12 rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-700"
+                    >
+                      {preset.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
 
       <div className="mt-8 rounded-xl border border-slate-200 bg-slate-50 p-4">

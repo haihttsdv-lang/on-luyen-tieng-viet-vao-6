@@ -218,8 +218,26 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   nên bỏ qua DH-02/DH-03). Đã xác minh qua trình duyệt thật: hộp "Bài
   đọc" hiển thị đúng tiêu đề, nội dung cho từng văn bản trong luồng luyện
   tập.
-- Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình: 0/8 (hiện dùng sinh
-  đề tự động từ kho bài tập nhỏ, chưa phải "đề soạn sẵn").
+- **Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình đã ĐẠT ĐỦ (8/8, 2
+  đề/cấu hình, đúng mục tiêu Mục 5.11)** — kiểu dữ liệu mới `PresetExam`
+  (`src/data-access/types.ts`: `id`, `configId`, `label`, `exerciseIds[]`,
+  `essayExerciseId?`), lưu tĩnh ở `src/content/preset-exams/index.ts`,
+  qua `contentStore.getPresetExams(configId)`/`getPresetExam(id)`. Khác
+  đề ngẫu nhiên hiện có (FR-T02, `core/test-generator` sinh lại mỗi lần
+  vào thi): danh sách câu hỏi ở đây **cố định**, làm lại luôn ra đúng đề
+  đó. Cách tạo: chạy chính engine `generateTest` đã có (đảm bảo tự động
+  đúng tỷ trọng chuyên đề/mức độ/loại câu của từng cấu hình) với RNG có
+  seed cố định một lần lúc soạn nội dung, rồi đóng băng kết quả thành dữ
+  liệu tĩnh — không chọn tay từng câu, không lệch tỷ trọng cấu hình. Trang
+  `ConfigPicker` (Thi thử) hiện cả 2 lựa chọn: "đề ngẫu nhiên" (giữ
+  nguyên FR-T02) và "đề soạn sẵn" cho mỗi cấu hình; `ExamSession` nhận
+  thêm `presetExam` qua location state, bỏ qua `generateTest` khi có. Đã
+  xác minh qua trình duyệt thật: cả 8 nút đề soạn sẵn hiển thị đúng, chọn
+  đề Archimedes số 1 luôn ra đúng câu hỏi đầu tiên cố định qua nhiều lần
+  vào lại, cấu hình `LTV_MCQ25` (không có bài viết) không hiện phần luận
+  văn. Test guardrail mới trong `content-schema.test.ts`: mỗi cấu hình có
+  ≥ 2 đề, `exerciseIds`/`essayExerciseId` hợp lệ, không trùng câu, số câu
+  khớp `totalQuestions`, có/không bài viết khớp `includeEssay`.
 - Lớp 2 (đối chiếu chéo) và lớp 3 (giáo viên rà soát — đã quyết định bỏ
   qua) của quy trình kiểm chứng 3 lớp (Mục 18.3) chưa thực hiện; mới có
   lớp 1 (kiểm tra cấu trúc tự động qua `content-schema.test.ts`).

@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { contentStore } from "@/data-access";
-import type { Exercise, TestConfig, TopicGroup } from "@/data-access/types";
+import type { Exercise, PresetExam, TestConfig, TopicGroup } from "@/data-access/types";
 import { generateTest } from "@/core/test-generator";
 import ExamAnswerInput from "@/modules/mock-test/ExamAnswerInput";
 import ReadingPassage from "@/modules/shared/ReadingPassage";
 
 interface LocationState {
   config: TestConfig;
+  /** Mục 5.11: nếu có, dùng đúng danh sách câu hỏi cố định này thay vì sinh ngẫu nhiên. */
+  presetExam?: PresetExam;
 }
 
 const topicGroupOf = (topicId: string): TopicGroup | undefined => contentStore.getTopic(topicId)?.group;
@@ -15,10 +17,13 @@ const topicGroupOf = (topicId: string): TopicGroup | undefined => contentStore.g
 export default function ExamSession() {
   const navigate = useNavigate();
   const location = useLocation();
-  const config = (location.state as LocationState | null)?.config;
+  const state = location.state as LocationState | null;
+  const config = state?.config;
+  const presetExam = state?.presetExam;
 
   const generated = useMemo(() => {
     if (!config) return null;
+    if (presetExam) return { exerciseIds: presetExam.exerciseIds, essayExerciseId: presetExam.essayExerciseId };
     return generateTest(contentStore.getExercises(), config, { topicGroupOf });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

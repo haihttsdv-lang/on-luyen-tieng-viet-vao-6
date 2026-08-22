@@ -158,6 +158,18 @@ export interface TestConfig {
   essayScoreMax: number;
 }
 
+// Mục 5.11 — "đề thi thử hoàn chỉnh soạn sẵn": khác đề sinh ngẫu nhiên
+// (FR-T02/generateTest) ở chỗ danh sách câu hỏi CỐ ĐỊNH, học sinh làm lại
+// vẫn ra đúng đề đó. Mỗi đề tham chiếu đúng 1 TestConfig (cùng thời gian,
+// thang điểm) nhưng exerciseIds đã chọn sẵn, không sinh lại mỗi lần vào.
+export interface PresetExam {
+  id: string;
+  configId: string;
+  label: string;
+  exerciseIds: string[];
+  essayExerciseId?: string;
+}
+
 // FR-T07/T08.
 export interface TestResult {
   id: string;
@@ -233,6 +245,8 @@ export interface ContentStore {
   getTestConfigs(): TestConfig[];
   getTestConfig(id: string): TestConfig | undefined;
   getPassage(id: string): Passage | undefined;
+  getPresetExams(configId: string): PresetExam[];
+  getPresetExam(id: string): PresetExam | undefined;
 }
 
 // FR-L01: per-topic progress through the lesson→quiz cycle.

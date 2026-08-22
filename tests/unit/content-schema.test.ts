@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { ALL_EXERCISES, ALL_PASSAGES, ALL_TOPICS, DISPUTED_WORDS } from "@/content";
+import { ALL_PRESET_EXAMS } from "@/content/preset-exams";
+import { TEST_CONFIGS } from "@/content/test-configs";
 
 // Regression guardrails for content correctness (Mục 18.3 kiểm tra tự động),
 // run continuously rather than only in Giai đoạn 9.
@@ -123,6 +125,53 @@ describe("content schema", () => {
 
   it("passage ids are unique", () => {
     const ids = ALL_PASSAGES.map((p) => p.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it("preset exams: ≥ 2 đề/cấu hình, đúng 8 đề tổng (Mục 5.11)", () => {
+    expect(ALL_PRESET_EXAMS.length).toBeGreaterThanOrEqual(8);
+    const configIds = new Set(TEST_CONFIGS.map((c) => c.id));
+    for (const config of TEST_CONFIGS) {
+      const count = ALL_PRESET_EXAMS.filter((p) => p.configId === config.id).length;
+      expect(count, `${config.id} has ${count} preset exams, expected ≥ 2`).toBeGreaterThanOrEqual(2);
+    }
+    for (const preset of ALL_PRESET_EXAMS) {
+      expect(configIds.has(preset.configId), `${preset.id} references unknown config ${preset.configId}`).toBe(
+        true,
+      );
+    }
+  });
+
+  it("preset exams: exerciseIds and essayExerciseId reference existing exercises, no duplicates", () => {
+    const exerciseIds = new Set(ALL_EXERCISES.map((e) => e.id));
+    for (const preset of ALL_PRESET_EXAMS) {
+      expect(preset.exerciseIds.length, preset.id).toBeGreaterThan(0);
+      expect(new Set(preset.exerciseIds).size, `${preset.id} has duplicate exerciseIds`).toBe(
+        preset.exerciseIds.length,
+      );
+      for (const id of preset.exerciseIds) {
+        expect(exerciseIds.has(id), `${preset.id} references unknown exercise ${id}`).toBe(true);
+      }
+      if (preset.essayExerciseId) {
+        expect(exerciseIds.has(preset.essayExerciseId), `${preset.id} references unknown essay ${preset.essayExerciseId}`).toBe(true);
+      }
+    }
+  });
+
+  it("preset exams: exerciseIds count matches the config's totalQuestions, essay presence matches includeEssay", () => {
+    const configsById = new Map(TEST_CONFIGS.map((c) => [c.id, c]));
+    for (const preset of ALL_PRESET_EXAMS) {
+      const config = configsById.get(preset.configId);
+      if (!config) continue;
+      expect(preset.exerciseIds.length, preset.id).toBe(config.totalQuestions);
+      expect(Boolean(preset.essayExerciseId), `${preset.id} essay presence should match config.includeEssay`).toBe(
+        config.includeEssay,
+      );
+    }
+  });
+
+  it("preset exam ids are unique", () => {
+    const ids = ALL_PRESET_EXAMS.map((p) => p.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
 });
