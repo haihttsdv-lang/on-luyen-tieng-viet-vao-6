@@ -3,7 +3,7 @@
 // bank grows in Giai đoạn 9; ContentStore's interface already isolates
 // callers from that change.
 
-import { ALL_EXERCISES, ALL_TOPICS } from "@/content";
+import { ALL_EXERCISES, ALL_PASSAGES, ALL_TOPICS } from "@/content";
 import { TEST_CONFIGS } from "@/content/test-configs";
 import type { ContentStore, QuestionLevel } from "@/data-access/types";
 
@@ -11,6 +11,7 @@ export function createLocalContentStore(): ContentStore {
   const topicsById = new Map(ALL_TOPICS.map((t) => [t.id, t]));
   const exercisesById = new Map(ALL_EXERCISES.map((e) => [e.id, e]));
   const testConfigsById = new Map(TEST_CONFIGS.map((c) => [c.id, c]));
+  const passagesById = new Map(ALL_PASSAGES.map((p) => [p.id, p]));
 
   return {
     getTopics() {
@@ -37,6 +38,9 @@ export function createLocalContentStore(): ContentStore {
     },
     getTestConfig(id) {
       return testConfigsById.get(id);
+    },
+    getPassage(id) {
+      return passagesById.get(id);
     },
   };
 }

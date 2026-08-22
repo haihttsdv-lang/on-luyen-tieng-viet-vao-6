@@ -55,9 +55,11 @@ import { DH03_EXERCISES } from "@/content/exercises/dh-03";
 import { DH04_EXERCISES } from "@/content/exercises/dh-04";
 import { DH05_EXERCISES } from "@/content/exercises/dh-05";
 import { DH06_EXERCISES } from "@/content/exercises/dh-06";
+import { DH_PASSAGE_01_EXERCISES } from "@/content/exercises/dh-passage-01";
 import type { Exercise, Topic } from "@/data-access/types";
 
 export const ALL_TOPICS: Topic[] = TOPICS;
+export { ALL_PASSAGES } from "@/content/passages";
 
 export const ALL_EXERCISES: Exercise[] = [
   ...KN01_EXERCISES,
@@ -116,6 +118,7 @@ export const ALL_EXERCISES: Exercise[] = [
   ...DH04_EXERCISES,
   ...DH05_EXERCISES,
   ...DH06_EXERCISES,
+  ...DH_PASSAGE_01_EXERCISES,
 ];
 
 export { DISPUTED_WORDS } from "@/content/disputed-words";

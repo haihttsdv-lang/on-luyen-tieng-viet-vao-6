@@ -117,13 +117,16 @@ chuyên đề CT (35 bài, 7/7 chuyên đề), và ≥4 đề văn/chuyên đề
 9/9 chuyên đề). Việc còn lại — chỉ còn nội dung dạng "kho ngữ liệu lớn",
 không còn việc mở rộng số bài/chuyên đề nào nữa:
 
-1. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
-   chuyên đề KỸ NĂNG đọc hiểu DH-01→06 đã có. Cần thiết kế thêm cách lưu
-   một đoạn văn dài dùng chung cho nhiều câu hỏi (hiện các bài tập DH đang
-   nhúng đoạn văn ngắn trực tiếp vào từng `prompt`, đủ cho việc dạy kỹ
-   năng nhưng chưa phải kho văn bản dài theo đúng mục tiêu này — cân nhắc
-   dùng field `passageId` đã có sẵn trong `ExerciseBase` (`src/data-access/
-   types.ts`) nhưng chưa được dùng ở đâu). Đây là việc còn lại lớn nhất.
+1. **Văn bản đọc hiểu dài (1/25, mỗi văn bản 5–7 câu hỏi)** — hạ tầng đã
+   xong (xem "Tiến độ nội dung" ở README), chỉ còn viết thêm 24 văn bản
+   theo đúng khuôn mẫu đã có: mỗi văn bản là 1 truyện ngắn tự biên soạn
+   (~150–200 từ, Mục 10.1 hướng B) trong `src/content/passages/index.ts`,
+   kèm file `src/content/exercises/dh-passage-XX.ts` với 5–7 câu hỏi, MỖI
+   câu gắn `passageId` đúng và `topicIds` đúng kỹ năng DH-0X đang kiểm tra
+   (không dồn hết vào 1 topicId — nên rải đều qua các kỹ năng DH-01→06 để
+   một văn bản kiểm tra được nhiều kỹ năng khác nhau, như dh-passage-01 đã
+   làm). Đăng ký cả hai vào `src/content/index.ts`. Test schema tự động
+   xác nhận: `passageId` hợp lệ, mỗi văn bản có đúng 5–7 câu dùng nó. Đây là việc còn lại lớn nhất.
 2. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
    khi đã có đủ ngữ liệu (văn bản đọc hiểu, đề văn) để ghép thành đề.
 3. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —

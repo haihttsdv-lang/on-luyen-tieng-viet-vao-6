@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ALL_EXERCISES, ALL_TOPICS, DISPUTED_WORDS } from "@/content";
+import { ALL_EXERCISES, ALL_PASSAGES, ALL_TOPICS, DISPUTED_WORDS } from "@/content";
 
 // Regression guardrails for content correctness (Mục 18.3 kiểm tra tự động),
 // run continuously rather than only in Giai đoạn 9.
@@ -93,6 +93,36 @@ describe("content schema", () => {
 
   it("exercise ids are unique", () => {
     const ids = ALL_EXERCISES.map((e) => e.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it("every exercise.passageId references an existing passage (Mục 5.11)", () => {
+    const passageIds = new Set(ALL_PASSAGES.map((p) => p.id));
+    for (const exercise of ALL_EXERCISES) {
+      if (exercise.passageId) {
+        expect(passageIds.has(exercise.passageId), `${exercise.id} references unknown passage ${exercise.passageId}`).toBe(true);
+      }
+    }
+  });
+
+  it("passages: have a non-empty title/text and are each used by 5-7 exercises", () => {
+    const usageCount = new Map<string, number>();
+    for (const exercise of ALL_EXERCISES) {
+      if (exercise.passageId) {
+        usageCount.set(exercise.passageId, (usageCount.get(exercise.passageId) ?? 0) + 1);
+      }
+    }
+    for (const passage of ALL_PASSAGES) {
+      expect(passage.title.trim().length, passage.id).toBeGreaterThan(0);
+      expect(passage.text.trim().length, passage.id).toBeGreaterThan(0);
+      const count = usageCount.get(passage.id) ?? 0;
+      expect(count, `${passage.id} is used by ${count} exercises, expected 5-7`).toBeGreaterThanOrEqual(5);
+      expect(count, `${passage.id} is used by ${count} exercises, expected 5-7`).toBeLessThanOrEqual(7);
+    }
+  });
+
+  it("passage ids are unique", () => {
+    const ids = ALL_PASSAGES.map((p) => p.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
 });

@@ -31,6 +31,15 @@ export interface Topic {
   disputedNote?: string;
 }
 
+// FR-DH01→DH25 (Mục 5.11): a shared reading passage — multiple exercises
+// reference it by id via ExerciseBase.passageId instead of repeating the
+// text in every prompt.
+export interface Passage {
+  id: string;
+  title: string;
+  text: string;
+}
+
 // FR-P04: every mcq answer explains why each option is right/wrong.
 export interface McqContent extends McqSpec {
   options: string[];
@@ -223,6 +232,7 @@ export interface ContentStore {
   getExercisesByTopics(topicIds: string[], level?: QuestionLevel): Exercise[];
   getTestConfigs(): TestConfig[];
   getTestConfig(id: string): TestConfig | undefined;
+  getPassage(id: string): Passage | undefined;
 }
 
 // FR-L01: per-topic progress through the lesson→quiz cycle.

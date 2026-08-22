@@ -9,6 +9,7 @@ import McqQuestion from "@/modules/practice/questions/McqQuestion";
 import MatchQuestion from "@/modules/practice/questions/MatchQuestion";
 import OrderQuestion from "@/modules/practice/questions/OrderQuestion";
 import FillQuestion from "@/modules/practice/questions/FillQuestion";
+import ReadingPassage from "@/modules/shared/ReadingPassage";
 
 const QUIZ_ELIGIBLE_TYPES: QuestionType[] = ["mcq", "match", "order", "fill"];
 const MAX_QUIZ_QUESTIONS = 5; // FR-L04: quiz cuối bài 3–5 câu
@@ -148,6 +149,7 @@ export default function QuizPage() {
       </p>
 
       <div className="mt-2 rounded-xl border border-slate-200 bg-white p-4">
+        {exercise.passageId && <ReadingPassage passageId={exercise.passageId} />}
         {exercise.questionType === "mcq" && (
           <McqQuestion key={exercise.id} exercise={exercise} onGraded={handleGraded} />
         )}

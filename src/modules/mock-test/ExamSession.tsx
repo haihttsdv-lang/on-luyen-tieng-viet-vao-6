@@ -4,6 +4,7 @@ import { contentStore } from "@/data-access";
 import type { Exercise, TestConfig, TopicGroup } from "@/data-access/types";
 import { generateTest } from "@/core/test-generator";
 import ExamAnswerInput from "@/modules/mock-test/ExamAnswerInput";
+import ReadingPassage from "@/modules/shared/ReadingPassage";
 
 interface LocationState {
   config: TestConfig;
@@ -165,6 +166,7 @@ export default function ExamSession() {
 
       {currentExercise && currentId && (
         <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+          {currentExercise.passageId && <ReadingPassage passageId={currentExercise.passageId} />}
           <div className="flex items-start justify-between gap-3">
             <p className="text-base text-slate-800">{currentExercise.prompt}</p>
             <button

@@ -10,6 +10,7 @@ import MatchQuestion from "@/modules/practice/questions/MatchQuestion";
 import OrderQuestion from "@/modules/practice/questions/OrderQuestion";
 import FillQuestion from "@/modules/practice/questions/FillQuestion";
 import ShortQuestion from "@/modules/practice/questions/ShortQuestion";
+import ReadingPassage from "@/modules/shared/ReadingPassage";
 
 type ResultDot = "correct" | "incorrect" | "pending";
 
@@ -130,6 +131,7 @@ export default function ExerciseSession() {
       </p>
 
       <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+        {exercise.passageId && <ReadingPassage passageId={exercise.passageId} />}
         {exercise.questionType === "mcq" && (
           <McqQuestion key={exercise.id} exercise={exercise} onGraded={handleGraded} />
         )}
