@@ -88,4 +88,30 @@ export const CT02_EXERCISES: Exercise[] = [
         'Câu văn "Chú chim non đứng trên cành, cất tiếng hót chào buổi sáng như đang gửi lời chào tới cả khu vườn" đã khiến em rất thích thú. Tác giả nhân hoá chú chim non bằng hành động "gửi lời chào" — vốn chỉ có ở con người. Nhờ biện pháp nhân hoá này, chú chim không còn là một con vật vô tri mà trở nên gần gũi, đáng yêu như một người bạn nhỏ đang chào hỏi mọi người. Khu vườn buổi sáng vì thế cũng trở nên sinh động, ấm áp hơn. Em cảm thấy như chính mình cũng được chú chim chào đón. Câu văn khiến em nhớ đến những buổi sáng nghe tiếng chim hót trước hiên nhà.',
     },
   },
+  {
+    id: "ct-02-essay-2",
+    topicIds: ["CT-02"],
+    level: "M3",
+    questionType: "essay-short",
+    prompt:
+      'Cho câu văn: "Những hạt mưa tinh nghịch nhảy nhót trên mái nhà, rồi rủ nhau chạy tràn xuống sân." Hãy viết một đoạn văn ngắn (5–7 câu) nêu cảm nhận của em về biện pháp nhân hoá trong câu văn trên.',
+    explanation:
+      "Biện pháp nhân hoá \"hạt mưa tinh nghịch nhảy nhót, rủ nhau chạy\" khiến cơn mưa trở nên sống động, vui tươi như một đám trẻ đang nô đùa.",
+    essay: {
+      outline: [
+        "Mở đoạn: giới thiệu câu văn/hình ảnh em ấn tượng",
+        "Chỉ ra biện pháp nhân hoá được sử dụng trong câu",
+        "Nêu tác dụng của biện pháp nhân hoá đó (gợi hình, gợi cảm như thế nào)",
+        "Nêu cảm xúc hoặc liên hệ của em",
+      ],
+      rubric: [
+        { criterion: "Chỉ ra đúng biện pháp nhân hoá", points: 2 },
+        { criterion: "Nêu đúng tác dụng gợi hình, gợi cảm", points: 3 },
+        { criterion: "Có cảm xúc/liên hệ cá nhân", points: 2 },
+        { criterion: "Diễn đạt trôi chảy, không sai chính tả", points: 3 },
+      ],
+      sampleAnswer:
+        'Câu văn "Những hạt mưa tinh nghịch nhảy nhót trên mái nhà, rồi rủ nhau chạy tràn xuống sân" đã khiến em cảm thấy rất thú vị. Tác giả nhân hoá những hạt mưa bằng các từ "tinh nghịch", "nhảy nhót", "rủ nhau chạy" — đều là những đặc điểm, hành động vốn chỉ có ở trẻ con. Nhờ biện pháp nhân hoá này, cơn mưa vốn chỉ là hiện tượng tự nhiên trở nên sống động, đáng yêu như một đám trẻ đang nô đùa. Em như nhìn thấy từng hạt mưa nhảy nhót vui vẻ trên mái nhà rồi cùng nhau ùa xuống sân. Hình ảnh này khiến những cơn mưa vốn có thể buồn tẻ trở nên vui tươi, gần gũi hơn. Câu văn làm em nhớ đến những lần đứng bên cửa sổ ngắm mưa rơi.',
+    },
+  },
 ];

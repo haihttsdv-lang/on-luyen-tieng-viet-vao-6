@@ -89,4 +89,30 @@ export const CT03_EXERCISES: Exercise[] = [
         'Câu văn "Mưa rơi trên mái nhà, mưa rơi trên con đường, mưa rơi trên cả cánh đồng xa" đã để lại trong em ấn tượng sâu sắc. Tác giả sử dụng biện pháp điệp từ "mưa rơi", lặp lại 3 lần liên tiếp trong câu. Nhờ đó, người đọc cảm nhận được cơn mưa không chỉ rơi ở một chỗ mà bao trùm khắp mọi nơi — từ mái nhà, con đường cho đến cánh đồng xa. Nhịp điệu câu văn vì thế cũng trở nên đều đặn, gợi cảm giác mưa rơi liên tục, dai dẳng. Em như hình dung được cả một không gian rộng lớn chìm trong màn mưa. Câu văn khiến em nhớ đến những buổi chiều mưa ở quê ngoại.',
     },
   },
+  {
+    id: "ct-03-essay-2",
+    topicIds: ["CT-03"],
+    level: "M3",
+    questionType: "essay-short",
+    prompt:
+      'Cho câu văn: "Em yêu mái trường, em yêu thầy cô, em yêu cả những giờ ra chơi rộn rã tiếng cười." Hãy viết một đoạn văn ngắn (5–7 câu) nêu cảm nhận của em về biện pháp điệp từ trong câu văn trên.',
+    explanation:
+      "Điệp từ \"em yêu\" nhấn mạnh tình cảm sâu đậm, tha thiết của người viết dành cho ngôi trường, thầy cô và bạn bè.",
+    essay: {
+      outline: [
+        "Mở đoạn: giới thiệu câu văn/hình ảnh em ấn tượng",
+        "Chỉ ra biện pháp điệp từ được sử dụng trong câu (từ nào, lặp mấy lần)",
+        "Nêu tác dụng của biện pháp điệp từ đó (nhấn mạnh điều gì)",
+        "Nêu cảm xúc hoặc liên hệ của em",
+      ],
+      rubric: [
+        { criterion: "Chỉ ra đúng biện pháp điệp từ", points: 2 },
+        { criterion: "Nêu đúng tác dụng nhấn mạnh, gợi cảm", points: 3 },
+        { criterion: "Có cảm xúc/liên hệ cá nhân", points: 2 },
+        { criterion: "Diễn đạt trôi chảy, không sai chính tả", points: 3 },
+      ],
+      sampleAnswer:
+        'Câu văn "Em yêu mái trường, em yêu thầy cô, em yêu cả những giờ ra chơi rộn rã tiếng cười" đã khiến em vô cùng xúc động. Tác giả sử dụng biện pháp điệp từ "em yêu", lặp lại 3 lần liên tiếp trong câu. Nhờ đó, tình cảm yêu mến của người viết dành cho trường lớp được nhấn mạnh rõ nét, không chỉ dừng lại ở một đối tượng mà lan toả đến mọi thứ gắn bó với ngôi trường — từ mái trường, thầy cô cho đến những giờ ra chơi vui vẻ. Nhịp điệu câu văn vì thế cũng trở nên tha thiết, dồn dập như chính cảm xúc của người viết. Em cảm thấy rất đồng cảm vì bản thân cũng có những tình cảm tương tự với ngôi trường của mình. Câu văn khiến em càng thêm trân trọng những năm tháng học trò.',
+    },
+  },
 ];

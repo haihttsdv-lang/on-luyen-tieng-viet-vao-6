@@ -88,4 +88,30 @@ export const CT01_EXERCISES: Exercise[] = [
         'Câu văn "Những giọt sương sớm long lanh như những viên ngọc nhỏ treo trên đầu ngọn cỏ" đã vẽ nên một bức tranh buổi sáng thật đẹp. Tác giả so sánh giọt sương với viên ngọc qua từ "như". Nhờ phép so sánh này, những giọt sương vốn bình thường trở nên lấp lánh, quý giá như những viên ngọc thật sự. Người đọc như được chiêm ngưỡng một khung cảnh tinh khôi, trong trẻo của buổi sớm mai. Em cảm thấy rất thích thú khi hình dung ra cảnh những viên ngọc nhỏ xíu treo trên ngọn cỏ. Câu văn khiến em nhớ đến những buổi sáng đi bộ ra vườn cùng ông ngoại, nhìn ngắm sương sớm còn đọng trên lá.',
     },
   },
+  {
+    id: "ct-01-essay-2",
+    topicIds: ["CT-01"],
+    level: "M3",
+    questionType: "essay-short",
+    prompt:
+      'Cho câu văn: "Hàng dừa nghiêng mình soi bóng xuống dòng sông, tán lá xoè rộng như những chiếc quạt khổng lồ." Hãy viết một đoạn văn ngắn (5–7 câu) nêu cảm nhận của em về biện pháp so sánh trong câu văn trên.',
+    explanation:
+      "Biện pháp so sánh \"tán lá dừa như những chiếc quạt khổng lồ\" giúp hình dung rõ hình dáng xoè rộng, sinh động của tán lá dừa.",
+    essay: {
+      outline: [
+        "Mở đoạn: giới thiệu câu văn/hình ảnh em ấn tượng",
+        "Chỉ ra biện pháp so sánh được sử dụng trong câu",
+        "Nêu tác dụng của biện pháp so sánh đó (gợi hình như thế nào)",
+        "Nêu cảm xúc hoặc liên hệ của em",
+      ],
+      rubric: [
+        { criterion: "Chỉ ra đúng biện pháp so sánh", points: 2 },
+        { criterion: "Nêu đúng tác dụng gợi hình, gợi cảm", points: 3 },
+        { criterion: "Có cảm xúc/liên hệ cá nhân", points: 2 },
+        { criterion: "Diễn đạt trôi chảy, không sai chính tả", points: 3 },
+      ],
+      sampleAnswer:
+        'Câu văn "Hàng dừa nghiêng mình soi bóng xuống dòng sông, tán lá xoè rộng như những chiếc quạt khổng lồ" đã gợi cho em hình ảnh rất sinh động về hàng dừa quê hương. Tác giả so sánh tán lá dừa với những chiếc quạt khổng lồ qua từ "như". Nhờ phép so sánh này, tán lá dừa vốn chỉ là những chiếc lá dài trở nên có hình dáng cụ thể, rõ ràng và có phần ngộ nghĩnh, thú vị hơn trong tưởng tượng của người đọc. Em như nhìn thấy hàng dừa đang khe khẽ đung đưa, phe phẩy như đang quạt mát cho dòng sông. Hình ảnh này khiến em nhớ đến những buổi trưa hè được ngồi dưới bóng dừa mát rượi ở quê. Câu văn thật gợi cảm và giàu hình ảnh.',
+    },
+  },
 ];

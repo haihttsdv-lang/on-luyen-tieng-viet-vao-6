@@ -198,8 +198,8 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   (6/6, 72 bài), CD (5/5, 60 bài), TL (6/6, 72 bài) — tổng 348 bài, đúng
   29 chuyên đề × 12 bài. Mỗi chuyên đề có đủ 4 dạng câu hỏi (mcq/fill/
   order/match) để đa dạng hoá.
-- ≥5 bài cảm thụ có đáp án mẫu/chuyên đề CT (~35 bài) — hiện mỗi chuyên đề
-  CT mới có 3–4 bài.
+- **≥5 bài cảm thụ có đáp án mẫu/chuyên đề CT đã ĐẠT ĐỦ** (7/7 chuyên đề,
+  35 bài đúng mục tiêu Mục 5.11).
 - ≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA (~36 đề) — hiện mỗi
   chuyên đề VA mới có 1 đề.
 - Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 0/25 (khác với 6 chuyên đề kỹ năng

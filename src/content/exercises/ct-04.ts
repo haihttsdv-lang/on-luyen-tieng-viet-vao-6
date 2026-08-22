@@ -72,4 +72,30 @@ export const CT04_EXERCISES: Exercise[] = [
       ],
     },
   },
+  {
+    id: "ct-04-essay-1",
+    topicIds: ["CT-04"],
+    level: "M3",
+    questionType: "essay-short",
+    prompt:
+      'Cho câu văn: "Xa xa, thấp thoáng những mái nhà tranh nép mình bên rặng tre xanh." Hãy viết một đoạn văn ngắn (5–7 câu) nêu cảm nhận của em về biện pháp đảo ngữ trong câu văn trên.',
+    explanation:
+      "Đảo ngữ đưa từ láy \"thấp thoáng\" lên trước chủ ngữ \"những mái nhà tranh\", giúp nhấn mạnh cảm giác mờ ảo, ẩn hiện của khung cảnh nhìn từ xa.",
+    essay: {
+      outline: [
+        "Mở đoạn: giới thiệu câu văn/hình ảnh em ấn tượng",
+        "Chỉ ra biện pháp đảo ngữ được sử dụng trong câu (thành phần nào bị đảo lên trước)",
+        "Nêu tác dụng của biện pháp đảo ngữ đó (nhấn mạnh điều gì, gợi cảm giác gì)",
+        "Nêu cảm xúc hoặc liên hệ của em",
+      ],
+      rubric: [
+        { criterion: "Chỉ ra đúng biện pháp đảo ngữ", points: 2 },
+        { criterion: "Nêu đúng tác dụng nhấn mạnh, gợi hình", points: 3 },
+        { criterion: "Có cảm xúc/liên hệ cá nhân", points: 2 },
+        { criterion: "Diễn đạt trôi chảy, không sai chính tả", points: 3 },
+      ],
+      sampleAnswer:
+        'Câu văn "Xa xa, thấp thoáng những mái nhà tranh nép mình bên rặng tre xanh" đã vẽ nên một khung cảnh làng quê thật yên bình. Tác giả sử dụng biện pháp đảo ngữ, đưa từ láy "thấp thoáng" lên trước chủ ngữ "những mái nhà tranh" thay vì viết theo trật tự thông thường. Nhờ cách đảo ngữ này, cảm giác mờ ảo, ẩn hiện của những mái nhà khi nhìn từ xa được nhấn mạnh rõ nét ngay từ đầu câu, khiến người đọc hình dung được ngay ấn tượng ban đầu về khung cảnh. Nếu viết theo trật tự thông thường, câu văn sẽ không còn giữ được cảm giác mơ hồ, xa xăm ấy. Em cảm thấy khung cảnh này rất gần gũi, giống như những lần về quê ngoại vào buổi chiều tà. Câu văn thật giàu chất thơ và gợi hình.',
+    },
+  },
 ];

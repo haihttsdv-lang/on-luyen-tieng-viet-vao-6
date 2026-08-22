@@ -89,4 +89,23 @@ export const CT05_EXERCISES: Exercise[] = [
         'Câu văn "Gió thu se lạnh, lá vàng lác đác rơi, khẽ khàng đậu xuống mặt hồ trong veo" đã vẽ nên một bức tranh mùa thu thật nhẹ nhàng. Từ láy "lác đác" gợi hình ảnh những chiếc lá rơi thưa thớt, không dồn dập, còn "khẽ khàng" gợi sự nhẹ nhàng, êm ái khi lá chạm mặt nước. Cùng với tính từ "trong veo" miêu tả mặt hồ, cả câu văn tạo nên một không gian yên tĩnh, thơ mộng của mùa thu. Nếu thay "lác đác" bằng "nhiều" hay "khẽ khàng" bằng "rơi xuống" thông thường, câu văn sẽ mất đi vẻ đẹp nhẹ nhàng ấy. Em cảm thấy như đang được đứng bên hồ, tận hưởng không khí mùa thu yên bình. Câu văn khiến em nhớ đến những buổi chiều thu đi dạo cùng gia đình.',
     },
   },
+  {
+    id: "ct-05-mcq-4",
+    topicIds: ["CT-05"],
+    level: "M2",
+    questionType: "mcq",
+    prompt:
+      'Trong câu "Con đường làng uốn lượn mềm mại như dải lụa vắt ngang cánh đồng", từ nào góp phần tạo nên cái đẹp của hình ảnh con đường?',
+    explanation: "\"Mềm mại\" là tính từ gợi cảm, kết hợp với hình ảnh so sánh \"dải lụa\" khiến con đường hiện lên uyển chuyển, đẹp mắt.",
+    mcq: {
+      options: ["con đường", "mềm mại", "cánh đồng", "làng"],
+      answerIndex: 1,
+      distractorNotes: [
+        "\"Con đường\" chỉ là danh từ chỉ đối tượng, không phải từ ngữ tạo nên cái đẹp đặc biệt.",
+        "Đúng — \"mềm mại\" là tính từ gợi cảm, làm nổi bật vẻ đẹp uyển chuyển của con đường.",
+        "\"Cánh đồng\" là danh từ chỉ địa điểm, không gợi cảm đặc biệt.",
+        "\"Làng\" là danh từ chỉ địa điểm, không gợi cảm đặc biệt.",
+      ],
+    },
+  },
 ];

@@ -25,8 +25,9 @@ Bản chạy thật: https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
 cả 3 mục `[BỔ SUNG]` CA-08/CT-03/CT-04/TL-06 — đúng danh sách URD Mục
 5.1–5.9). **Mục tiêu ≥12 bài tập/chuyên đề nhóm TC/TL/NT/CA/CD (Mục 5.11,
 ~350 bài) cũng đã ĐẠT ĐỦ cả 5 nhóm** (348 bài, 29 chuyên đề × 12 bài, mỗi
-chuyên đề có đủ 4 dạng câu hỏi mcq/fill/order/match). Việc còn lại của
-Giai đoạn 9: ≥5 bài cảm thụ/chuyên đề CT (hiện 3–4), ≥4 đề văn/chuyên đề
+chuyên đề có đủ 4 dạng câu hỏi mcq/fill/order/match). **≥5 bài cảm thụ/
+chuyên đề CT cũng đã ĐẠT ĐỦ** (7/7 chuyên đề, 35 bài). Việc còn lại của
+Giai đoạn 9: ≥4 đề văn/chuyên đề
 VA (hiện 1), văn bản đọc hiểu dài 0/25 (khác 6 chuyên đề KỸ NĂNG đọc hiểu
 DH-01→06 đã xong), đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu chéo) của
 quy trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo
@@ -110,25 +111,24 @@ còn thiếu bao nhiêu.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Hai mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson, và
-≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài). Việc còn lại:
+**Ba mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
+≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), và ≥5 bài cảm
+thụ/chuyên đề CT (35 bài, 7/7 chuyên đề). Việc còn lại:
 
-1. **Tăng bài cảm thụ nhóm CT lên ≥5 bài/chuyên đề** (~35 bài) — hiện mỗi
-   chuyên đề CT có 3–4 bài. Khối lượng nhỏ, làm nhanh được.
-2. **Tăng đề tập làm văn nhóm VA lên ≥4 đề/chuyên đề** (~36 đề) — hiện mỗi
+1. **Tăng đề tập làm văn nhóm VA lên ≥4 đề/chuyên đề** (~36 đề) — hiện mỗi
    chuyên đề VA chỉ có 1 đề mẫu (mỗi đề cần đủ outline/openingStyles/
    rubric/sampleAnswer như mẫu đã có — khối lượng nặng hơn vì mỗi đề dài).
    Ưu tiên VA-01→03, VA-09 trước (theo đúng thứ tự Mục 5.11).
-3. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
+2. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
    chuyên đề KỸ NĂNG đọc hiểu DH-01→06 đã có. Cần thiết kế thêm cách lưu
    một đoạn văn dài dùng chung cho nhiều câu hỏi (hiện các bài tập DH đang
    nhúng đoạn văn ngắn trực tiếp vào từng `prompt`, đủ cho việc dạy kỹ
    năng nhưng chưa phải kho văn bản dài theo đúng mục tiêu này — cân nhắc
    dùng field `passageId` đã có sẵn trong `ExerciseBase` (`src/data-access/
    types.ts`) nhưng chưa được dùng ở đâu).
-4. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
+3. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
    khi đã có đủ ngữ liệu (văn bản đọc hiểu, đề văn) để ghép thành đề.
-5. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
+4. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
    chưa có quy trình cụ thể, cần xác định cách thực hiện (khác lớp 1 tự
    động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ).
 

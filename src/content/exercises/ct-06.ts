@@ -95,4 +95,23 @@ export const CT06_EXERCISES: Exercise[] = [
         "Nhân vật bạn học sinh trong câu chuyện đã để lại cho em ấn tượng sâu sắc. Dù chân bị đau, bạn vẫn cố gắng đi bộ một quãng đường thật xa chỉ để mang sách vở đến tặng cho một em nhỏ ở vùng khó khăn. Hành động ấy cho thấy bạn là người giàu lòng nhân ái, biết quan tâm và sẵn sàng vượt qua khó khăn của bản thân để giúp đỡ người khác. Em rất khâm phục ý chí và tấm lòng của bạn. Nếu ai cũng có tinh thần như vậy, cuộc sống xung quanh chúng ta chắc chắn sẽ ấm áp hơn rất nhiều. Câu chuyện khiến em muốn học tập theo tấm gương của bạn học sinh đó.",
     },
   },
+  {
+    id: "ct-06-mcq-4",
+    topicIds: ["CT-06"],
+    level: "M2",
+    questionType: "mcq",
+    prompt:
+      'Một bạn nhỏ trong câu chuyện, dù bị các bạn trêu chọc vì nói lắp, vẫn kiên trì luyện tập mỗi ngày cho đến khi nói rõ ràng. Chi tiết này cho thấy bạn nhỏ có phẩm chất gì?',
+    explanation: "Việc kiên trì luyện tập dù bị trêu chọc thể hiện nghị lực, sự bền bỉ và không dễ nản lòng trước khó khăn.",
+    mcq: {
+      options: ["Kiêu ngạo", "Kiên trì, có nghị lực vượt khó", "Nhút nhát, dễ bỏ cuộc", "Ích kỷ"],
+      answerIndex: 1,
+      distractorNotes: [
+        "Hành động kiên trì luyện tập không liên quan đến kiêu ngạo.",
+        "Đúng — kiên trì luyện tập dù bị trêu chọc thể hiện nghị lực, sự bền bỉ.",
+        "Đây là biểu hiện ngược lại — bạn nhỏ không hề bỏ cuộc dù gặp khó khăn.",
+        "Hành động này không liên quan gì đến sự ích kỷ.",
+      ],
+    },
+  },
 ];
