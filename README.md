@@ -165,8 +165,9 @@ Xem Mục 18 của URD. Tóm tắt:
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
-34/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
-ví dụ, lỗi thường gặp) + bài tập:
+43/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
+ví dụ, lỗi thường gặp) + bài tập. **7/9 nhóm đã hoàn thành 100%**, chỉ còn
+TL và DH:
 
 - **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
 - **CA — Câu: 7/8** — CA-01→07 (đúng thứ tự ưu tiên Mục 5.11, đủ theo chỉ
@@ -178,13 +179,15 @@ ví dụ, lỗi thường gặp) + bài tập:
   `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi giữa các bộ SGK
   (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không tranh cãi, không lấy
   từ tranh cãi làm đáp án đúng (FR-D04, có test guard tự động).
-- **CD — Chính tả và dấu câu: 5/5 (xong)** — CD-01→05. Nhân dịp này cũng bổ
-  sung lesson còn thiếu cho CD-01 (trước đây chỉ có bài tập). Mọi câu `fill`
-  trong nhóm CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng
-  ký tự, kể cả dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
-- **VA — Tập làm văn: 1/9 có lesson** (VA-03, kế thừa từ giai đoạn trước —
-  lesson cho VA-03 và 8 chuyên đề còn lại là ưu tiên tiếp theo).
-- **TL, DH: 0 chuyên đề.**
+- **CD — Chính tả và dấu câu: 5/5 (xong)** — CD-01→05. Mọi câu `fill` trong
+  nhóm CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng ký tự,
+  kể cả dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
+- **VA — Tập làm văn: 9/9 (xong)** — VA-01→09. Mỗi chuyên đề hiện có 1 đề
+  văn mẫu đầy đủ (dàn ý, các cách mở bài, rubric chấm điểm, bài văn mẫu).
+  Mục 5.11 đặt mục tiêu ≥4 đề/chuyên đề (~36 đề) — hiện mới có 1 đề/chuyên
+  đề (9 đề), tăng số lượng đề mỗi chuyên đề là việc mở rộng ở vòng sau.
+- **TL, DH: 0 chuyên đề** — 2 nhóm cuối cùng chưa có gì, là ưu tiên tiếp
+  theo để đạt mốc 56/56 chuyên đề có bài học.
 
 Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
 thi thử hoàn chỉnh theo đúng 4 cấu hình (hiện dùng sinh đề tự động từ kho

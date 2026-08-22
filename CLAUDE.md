@@ -21,13 +21,15 @@ Bản chạy thật: https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
 (tự deploy khi push lên `master`, xem README mục Triển khai).
 
 **Trạng thái ngắn gọn:** cơ chế (Giai đoạn 0–8) đã xong và test kỹ. **Giai
-đoạn 9 (mở rộng nội dung) đang làm dở** — 34/56 chuyên đề đã có bài học đầy
-đủ. 5 nhóm xong hoàn toàn theo đúng danh sách URD: KN 5/5, CT 7/7, NT 6/6,
-TC 4/4, CD 5/5. CA 7/8 (thiếu CA-08, mục `[BỔ SUNG]`, không thuộc ưu tiên
-gốc). VA mới có 1/9 (VA-03, kế thừa từ giai đoạn trước). TL, DH chưa có gì.
-QĐ bổ sung đã chốt: không cần giáo viên rà soát, bộ sách chuẩn cho nội dung
-tranh cãi = Kết nối tri thức với cuộc sống. Xem README mục "Tiến độ nội
-dung" để biết chính xác còn thiếu gì.
+đoạn 9 (mở rộng nội dung) đang làm dở** — 43/56 chuyên đề đã có bài học đầy
+đủ. 7/9 nhóm xong hoàn toàn theo đúng danh sách URD: KN 5/5, CT 7/7, NT
+6/6, TC 4/4, CD 5/5, VA 9/9. CA 7/8 (thiếu CA-08, mục `[BỔ SUNG]`, không
+thuộc ưu tiên gốc). Chỉ còn **TL và DH chưa có chuyên đề nào** — đây là
+việc còn lại để đạt mốc 56/56 chuyên đề có lesson. QĐ bổ sung đã chốt:
+không cần giáo viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết
+nối tri thức với cuộc sống. Xem README mục "Tiến độ nội dung" để biết
+chính xác còn thiếu gì (kể cả phần mở rộng số lượng bài tập/đề văn sau
+khi 56/56 đã có lesson).
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 

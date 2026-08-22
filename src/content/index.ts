@@ -33,7 +33,15 @@ import { CT04_EXERCISES } from "@/content/exercises/ct-04";
 import { CT05_EXERCISES } from "@/content/exercises/ct-05";
 import { CT06_EXERCISES } from "@/content/exercises/ct-06";
 import { CT07_EXERCISES } from "@/content/exercises/ct-07";
+import { VA01_EXERCISES } from "@/content/exercises/va-01";
+import { VA02_EXERCISES } from "@/content/exercises/va-02";
 import { VA03_EXERCISES } from "@/content/exercises/va-03";
+import { VA04_EXERCISES } from "@/content/exercises/va-04";
+import { VA05_EXERCISES } from "@/content/exercises/va-05";
+import { VA06_EXERCISES } from "@/content/exercises/va-06";
+import { VA07_EXERCISES } from "@/content/exercises/va-07";
+import { VA08_EXERCISES } from "@/content/exercises/va-08";
+import { VA09_EXERCISES } from "@/content/exercises/va-09";
 import type { Exercise, Topic } from "@/data-access/types";
 
 export const ALL_TOPICS: Topic[] = TOPICS;
@@ -73,7 +81,15 @@ export const ALL_EXERCISES: Exercise[] = [
   ...CT05_EXERCISES,
   ...CT06_EXERCISES,
   ...CT07_EXERCISES,
+  ...VA01_EXERCISES,
+  ...VA02_EXERCISES,
   ...VA03_EXERCISES,
+  ...VA04_EXERCISES,
+  ...VA05_EXERCISES,
+  ...VA06_EXERCISES,
+  ...VA07_EXERCISES,
+  ...VA08_EXERCISES,
+  ...VA09_EXERCISES,
 ];
 
 export { DISPUTED_WORDS } from "@/content/disputed-words";

@@ -338,7 +338,33 @@ export const TOPICS: Topic[] = [
       ],
     },
   },
-  { id: "VA-03", group: "VA", title: "Văn tả cây cối" },
+  {
+    id: "VA-03",
+    group: "VA",
+    title: "Văn tả cây cối",
+    // Giai đoạn 9 — bổ sung lesson còn thiếu (đã có bài tập từ trước).
+    lesson: {
+      concept:
+        "Văn tả cây cối cần tả theo trình tự hợp lý (bao quát → chi tiết từng bộ phận: gốc, thân, cành, lá, hoa/quả), gắn với công dụng hoặc kỷ niệm của người viết với cây (xem 4 cách mở bài gián tiếp phù hợp ở KN-03).",
+      steps: [
+        "Giới thiệu cây định tả (tên cây, ở đâu, vì sao em chọn tả cây này).",
+        "Tả bao quát (hình dáng, chiều cao, tán cây).",
+        "Tả chi tiết từng bộ phận (gốc, thân, cành, lá, hoa/quả).",
+        "Nêu công dụng của cây hoặc kỷ niệm gắn với cây.",
+        "Nêu tình cảm của em với cây.",
+      ],
+      signals: [
+        "Đề bài dạng \"tả một loại cây mà em yêu thích\", \"tả cây bóng mát ở sân trường\"",
+      ],
+      examples: [
+        "\"Thân cây to đến mức hai bạn học sinh ôm không xuể, vỏ cây sần sùi, màu nâu xám\" — tả chi tiết bộ phận thân cây bằng hình ảnh cụ thể, dễ hình dung.",
+      ],
+      commonMistakes: [
+        "Tả các bộ phận lộn xộn, không theo trình tự từ gốc lên ngọn hoặc từ bao quát đến chi tiết",
+        "Chỉ tả hình dáng mà quên nêu công dụng hoặc kỷ niệm gắn với cây",
+      ],
+    },
+  },
 
   // Giai đoạn 9 — hoàn thiện nốt nhóm KN (Mục 5.11: ưu tiên #1, ít tài liệu
   // sẵn có nhất, giá trị cao nhất). KN-01 đã có từ Giai đoạn 4.
@@ -812,6 +838,212 @@ export const TOPICS: Topic[] = [
       commonMistakes: [
         "Lạm dụng dấu chấm than cho những câu kể bình thường, không mang sắc thái cảm thán",
         "Quên đặt dấu hai chấm trước phần lời dẫn trực tiếp hoặc phần liệt kê",
+      ],
+    },
+  },
+  {
+    id: "VA-01",
+    group: "VA",
+    title: "Văn tả người",
+    lesson: {
+      concept:
+        "Văn tả người cần tả theo trình tự: ngoại hình (bao quát rồi chi tiết: dáng người, khuôn mặt, mái tóc, trang phục...), sau đó tính cách/hoạt động (qua lời nói, cử chỉ, việc làm cụ thể), gắn với tình cảm hoặc kỷ niệm của người viết.",
+      steps: [
+        "Chọn người định tả (thường là người thân quen) và giới thiệu ngắn gọn.",
+        "Tả bao quát (tuổi, dáng người, ấn tượng chung).",
+        "Tả chi tiết ngoại hình (khuôn mặt, mắt, tóc, trang phục...).",
+        "Tả tính cách qua hành động, lời nói cụ thể — không liệt kê tính từ suông.",
+        "Nêu tình cảm, kỷ niệm gắn với người đó.",
+      ],
+      signals: [
+        "Đề bài dạng \"tả một người thân trong gia đình em\", \"tả thầy/cô giáo mà em yêu quý\"",
+      ],
+      examples: [
+        "Thay vì chỉ viết \"bà em rất hiền lành\", nên viết \"mỗi khi em làm sai, bà chỉ nhẹ nhàng nhắc nhở chứ không bao giờ la mắng\" — có hành động cụ thể minh hoạ cho tính cách.",
+      ],
+      commonMistakes: [
+        "Chỉ liệt kê đặc điểm ngoại hình mà không có tính cách hay hoạt động cụ thể đi kèm",
+        "Tả tính cách bằng tính từ chung chung (tốt bụng, hiền lành) mà không có dẫn chứng hành động cụ thể",
+      ],
+    },
+  },
+  {
+    id: "VA-02",
+    group: "VA",
+    title: "Văn tả cảnh",
+    lesson: {
+      concept:
+        "Văn tả cảnh cần tả theo một trình tự hợp lý (từ xa đến gần, từ bao quát đến chi tiết, hoặc theo thời gian), kết hợp miêu tả với cảm xúc, liên tưởng của người viết trước cảnh vật.",
+      steps: [
+        "Xác định cảnh định tả và thời điểm (cảnh gì, ở đâu, vào lúc nào).",
+        "Tả bao quát toàn cảnh.",
+        "Tả chi tiết theo trình tự hợp lý (xa → gần, hoặc theo thời gian sáng → trưa → chiều).",
+        "Lồng cảm xúc, liên tưởng vào lời tả, không chỉ liệt kê sự vật.",
+        "Nêu cảm nghĩ chung về cảnh.",
+      ],
+      signals: [
+        "Đề bài dạng \"tả cảnh đẹp quê hương em\", \"tả cảnh buổi sáng trên cánh đồng\"",
+      ],
+      examples: [
+        "Tả cảnh biển: bắt đầu bằng bao quát (biển rộng, xanh biếc), rồi đến chi tiết (sóng, cát, bãi biển, con người) — theo trình tự từ xa đến gần.",
+      ],
+      commonMistakes: [
+        "Tả lộn xộn, không theo trình tự rõ ràng khiến người đọc khó hình dung không gian",
+        "Chỉ liệt kê sự vật (có gì tả nấy) mà không có cảm xúc, liên tưởng đi kèm",
+      ],
+    },
+  },
+  {
+    id: "VA-04",
+    group: "VA",
+    title: "Văn tả con vật",
+    lesson: {
+      concept:
+        "Văn tả con vật cần tả ngoại hình (đặc điểm nổi bật: bộ lông, hình dáng...) và đặc biệt chú trọng hoạt động, thói quen của con vật — đây là phần thường làm bài văn sinh động, gắn với kỷ niệm giữa người viết và con vật.",
+      steps: [
+        "Giới thiệu con vật định tả (loài gì, có từ khi nào, tên gọi nếu có).",
+        "Tả bao quát hình dáng.",
+        "Tả chi tiết các bộ phận nổi bật.",
+        "Tả hoạt động, thói quen đặc trưng của con vật (đi lại, ăn uống, phản ứng khi gặp người...).",
+        "Nêu tình cảm, kỷ niệm với con vật.",
+      ],
+      signals: [
+        "Đề bài dạng \"tả con vật nuôi mà em yêu thích\"",
+      ],
+      examples: [
+        "\"Mỗi khi em vừa mở cửa, chú cún lại chạy ra vẫy đuôi mừng rỡ rồi quấn lấy chân em\" — tả hoạt động, thói quen cụ thể khiến bài văn sinh động hơn chỉ tả ngoại hình.",
+      ],
+      commonMistakes: [
+        "Chỉ tả ngoại hình mà bỏ qua hoạt động, thói quen — khiến bài văn khô khan, thiếu sức sống",
+        "Tả con vật giống hệt bài mẫu, không có chi tiết riêng gắn với con vật thật của người viết",
+      ],
+    },
+  },
+  {
+    id: "VA-05",
+    group: "VA",
+    title: "Văn tả đồ vật",
+    lesson: {
+      concept:
+        "Văn tả đồ vật cần tả theo trình tự hợp lý (tổng thể → từng bộ phận theo cấu tạo), nêu công dụng và gắn với kỷ niệm hoặc tình cảm với đồ vật đó (đặc biệt nếu đó là món quà hoặc vật gắn bó lâu).",
+      steps: [
+        "Giới thiệu đồ vật (đó là gì, có từ khi nào, ai tặng/mua).",
+        "Tả bao quát (hình dáng, kích thước, màu sắc).",
+        "Tả chi tiết từng bộ phận theo cấu tạo.",
+        "Nêu công dụng, cách sử dụng.",
+        "Nêu tình cảm, kỷ niệm gắn với đồ vật.",
+      ],
+      signals: [
+        "Đề bài dạng \"tả một đồ vật em yêu thích\", \"tả chiếc cặp sách của em\"",
+      ],
+      examples: [
+        "\"Chiếc bút máy màu xanh này là món quà ông tặng em ngày vào lớp 1, mỗi lần viết em lại nhớ đến ông\" — gắn đồ vật với kỷ niệm cụ thể.",
+      ],
+      commonMistakes: [
+        "Tả chung chung, không có bộ phận cụ thể nào được miêu tả chi tiết",
+        "Quên nêu công dụng hoặc tình cảm gắn với đồ vật",
+      ],
+    },
+  },
+  {
+    id: "VA-06",
+    group: "VA",
+    title: "Kể chuyện được chứng kiến hoặc tham gia",
+    lesson: {
+      concept:
+        "Đây là kể chuyện có thật, đã xảy ra với chính người viết hoặc người viết chứng kiến — cần kể theo trình tự thời gian, có diễn biến rõ ràng (mở đầu, diễn biến, kết thúc) và nêu cảm nghĩ, bài học rút ra.",
+      steps: [
+        "Giới thiệu câu chuyện (xảy ra khi nào, ở đâu, ai liên quan).",
+        "Kể diễn biến câu chuyện theo trình tự thời gian, có chi tiết cụ thể (không kể chung chung).",
+        "Kể tình huống đáng nhớ nhất (cao trào) của câu chuyện.",
+        "Kể kết thúc câu chuyện.",
+        "Nêu cảm nghĩ, bài học rút ra.",
+      ],
+      signals: [
+        "Đề bài dạng \"kể lại một việc tốt em đã làm\", \"kể một kỷ niệm đáng nhớ với bạn bè\"",
+      ],
+      examples: [
+        "Kể chuyện giúp một cụ già qua đường: giới thiệu tình huống, kể lại hành động cụ thể, kết thúc bằng cảm xúc của cụ già và bài học về sự tốt bụng.",
+      ],
+      commonMistakes: [
+        "Kể lan man nhiều sự việc không liên quan, không có trọng tâm rõ ràng",
+        "Kể chung chung, thiếu chi tiết cụ thể (thời gian, địa điểm, lời nói, hành động) khiến câu chuyện không sinh động",
+      ],
+    },
+  },
+  {
+    id: "VA-07",
+    group: "VA",
+    title: "Kể chuyện sáng tạo: đóng vai, tưởng tượng, viết tiếp câu chuyện",
+    lesson: {
+      concept:
+        "Đây là dạng kể chuyện không có thật (đóng vai một nhân vật để kể lại câu chuyện, tưởng tượng một tình huống, hoặc viết tiếp phần sau của một câu chuyện đã cho) — vẫn cần đảm bảo logic hợp lý và phù hợp với nhân vật/bối cảnh đã cho.",
+      steps: [
+        "Xác định rõ yêu cầu của đề (đóng vai ai, tưởng tượng điều gì, viết tiếp từ đâu).",
+        "Giữ đúng đặc điểm, tính cách của nhân vật đã có (nếu đóng vai hoặc viết tiếp truyện có sẵn).",
+        "Xây dựng diễn biến hợp lý, có mở đầu – diễn biến – kết thúc.",
+        "Sáng tạo nhưng không phi lý — tưởng tượng cần có logic riêng, không tuỳ tiện.",
+      ],
+      signals: [
+        "Đề bài dạng \"đóng vai nhân vật... kể lại câu chuyện\", \"tưởng tượng em là...\", \"viết tiếp câu chuyện...\"",
+      ],
+      examples: [
+        "Đóng vai chú Dế Mèn kể lại bài học đường đời đầu tiên bằng ngôi thứ nhất (xưng \"tôi\"), giữ đúng giọng điệu hối lỗi, ăn năn của nhân vật.",
+      ],
+      commonMistakes: [
+        "Đóng vai nhân vật nhưng lại viết theo ngôi thứ ba, quên phải xưng \"tôi\"/\"em\" theo đúng yêu cầu đóng vai",
+        "Tưởng tượng phi lý, không có logic, khiến câu chuyện rời rạc, khó tin",
+      ],
+    },
+  },
+  {
+    id: "VA-08",
+    group: "VA",
+    title: "Viết thư (chia sẻ tình cảm, bày tỏ ý kiến)",
+    lesson: {
+      concept:
+        "Thư có cấu trúc riêng: phần đầu thư (địa điểm, ngày tháng, lời xưng hô), phần nội dung chính (lý do viết thư, nội dung chia sẻ/bày tỏ), phần cuối thư (lời chúc, lời chào, chữ ký).",
+      steps: [
+        "Viết địa điểm, ngày tháng ở đầu thư.",
+        "Viết lời xưng hô phù hợp với người nhận.",
+        "Nêu lý do viết thư.",
+        "Trình bày nội dung chính (chia sẻ tình cảm, kể chuyện, hoặc bày tỏ ý kiến theo đúng yêu cầu đề).",
+        "Viết lời chúc, lời chào cuối thư và ký tên.",
+      ],
+      signals: [
+        "Đề bài dạng \"viết thư cho ông bà kể về...\", \"viết thư cho bạn chia sẻ...\"",
+      ],
+      examples: [
+        "\"Hà Nội, ngày ... tháng ... năm ... . Ông bà kính mến,\" — mở đầu đúng cấu trúc thư (địa điểm, ngày tháng, lời xưng hô).",
+      ],
+      commonMistakes: [
+        "Quên phần địa điểm, ngày tháng hoặc lời xưng hô ở đầu thư",
+        "Nội dung thư lan man, không tập trung vào lý do viết thư đã nêu",
+      ],
+    },
+  },
+  {
+    id: "VA-09",
+    group: "VA",
+    title: "Trình bày ý kiến / nghị luận đơn giản",
+    lesson: {
+      concept:
+        "Dạng bài yêu cầu nêu và bảo vệ ý kiến cá nhân về một vấn đề gần gũi, cần có luận điểm rõ ràng, lý lẽ và dẫn chứng cụ thể để thuyết phục người đọc — khác với văn miêu tả/kể chuyện, đây thiên về lập luận.",
+      steps: [
+        "Nêu rõ ý kiến của bản thân về vấn đề (đồng ý/không đồng ý, nên/không nên...).",
+        "Đưa ra lý do vì sao có ý kiến đó (2–3 lý do).",
+        "Đưa dẫn chứng hoặc ví dụ cụ thể cho mỗi lý do.",
+        "Nêu kết luận, khẳng định lại ý kiến.",
+      ],
+      signals: [
+        "Đề bài dạng \"em có đồng ý với ý kiến... không? Vì sao?\", \"theo em, học sinh có nên...?\"",
+      ],
+      examples: [
+        "Đề \"Em có nghĩ học sinh nên đọc sách mỗi ngày không?\" — nêu ý kiến \"có\", lý do (mở rộng vốn từ, rèn tư duy), kèm ví dụ cụ thể minh hoạ cho từng lý do.",
+      ],
+      commonMistakes: [
+        "Chỉ kể chuyện hoặc miêu tả mà không nêu rõ ý kiến, lập luận của bản thân",
+        "Nêu ý kiến nhưng không có lý do hoặc dẫn chứng cụ thể để thuyết phục người đọc",
       ],
     },
   },
