@@ -157,11 +157,15 @@ Xem Mục 18 của URD. Tóm tắt:
       derive-không-lưu, vòng tiến độ, Thử thách tốc độ) + rà soát đầy đủ
       Mục 14 (PWA cài đặt được, bàn phím ảo không che ô nhập, offline thật
       sự hoạt động — không chỉ giả định, bộ e2e Playwright chính thức)
-- [~] Giai đoạn 9 — Mở rộng nội dung + kiểm chứng 3 lớp (**đang làm, chưa
-      xong** — xem "Tiến độ nội dung" ngay dưới đây). Đã chốt QĐ bổ sung:
-      không cần giáo viên rà soát lớp 3, tự tin xây đầy đủ theo kế hoạch;
-      bộ sách chuẩn cho nội dung tranh cãi (FR-D01) = Kết nối tri thức với
-      cuộc sống.
+- [x] Giai đoạn 9 — Mở rộng nội dung + kiểm chứng 3 lớp (xem "Tiến độ nội
+      dung" ngay dưới đây). Toàn bộ mục tiêu khối lượng Mục 5.11 đã đạt
+      đủ; quy trình kiểm chứng 3 lớp: lớp 1 (tự động) chạy 100% mỗi lần
+      test, lớp 2 (đối chiếu chéo) đã chạy cho 2 nhóm rủi ro cao nhất
+      TC/NT theo đúng URD (0 lỗi phát hiện, xem
+      `docs/content-verification-lop2.md`; các nhóm còn lại có thể lặp
+      lại quy trình sau, không bắt buộc), lớp 3 (giáo viên rà soát) đã
+      quyết định bỏ qua theo QĐ bổ sung. Bộ sách chuẩn cho nội dung tranh
+      cãi (FR-D01) = Kết nối tri thức với cuộc sống.
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
@@ -243,8 +247,20 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   NFR-07 — trước đó bị thiếu dù đã claim lớp 1 xong): mọi văn bản đọc
   hiểu có `sourceType: "original"` (tự biên soạn, Mục 10.1 hướng B) và
   `sourceNote`, test tự động canh không có `sourceType: "quoted"` và
-  không thiếu `sourceNote`. Lớp 3 (giáo viên rà soát) đã quyết định bỏ
-  qua theo QĐ bổ sung.
+  không thiếu `sourceNote`.
+- **Lớp 2 (đối chiếu chéo, Mục 18.3) đã chạy cho 2 nhóm rủi ro cao nhất
+  URD chỉ định** — TC (từ ghép/từ láy, 48 câu) và NT (từ nhiều nghĩa/
+  đồng âm, 72 câu). Quy trình: 2 agent AI độc lập, không mang lịch sử
+  soạn đề, giải lại toàn bộ câu hỏi đã ẩn đáp án bằng kiến thức ngôn ngữ
+  riêng, đối chiếu tự động với đáp án gốc (dùng lại `checkFillAnswer` cho
+  câu điền từ để so khớp đúng như app thật chấm). **Kết quả: 120/120 câu
+  khớp, 0 lỗi nội dung phát hiện** — 5 câu cả hai agent tự nêu "lăn tăn"
+  trong lý do đã được rà soát thủ công riêng, xác nhận `explanation` sẵn
+  có đã giải thích đúng điểm khó, không cần sửa. Quy trình đầy đủ + kết
+  quả chi tiết: `docs/content-verification-lop2.md`. Các nhóm còn lại
+  (CA, CD, TL, KN, DH, CT, VA) có thể lặp lại quy trình này sau, không
+  bắt buộc theo đúng phạm vi URD chỉ định.
+- Lớp 3 (giáo viên rà soát) đã quyết định bỏ qua theo QĐ bổ sung.
 
 ## Giới hạn đã biết
 

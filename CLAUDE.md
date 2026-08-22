@@ -34,11 +34,15 @@ B), đã xác minh qua trình duyệt thật. **Đề thi thử hoàn chỉnh so
 cũng đã ĐẠT ĐỦ (8/8, 2 đề/cấu hình)** — kiểu `PresetExam` mới, mỗi đề là
 kết quả đóng băng từ chính engine `generateTest` (RNG seed cố định lúc
 soạn), chọn được ở `ConfigPicker` song song với đề ngẫu nhiên có sẵn.
-Việc còn lại của Giai đoạn 9 chỉ còn: lớp 2 (đối chiếu chéo) của quy
-trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo
+**Giai đoạn 9 nay coi như hoàn thành**: toàn bộ mục tiêu khối lượng Mục
+5.11 đã đạt đủ, và quy trình kiểm chứng 3 lớp (Mục 18.3) đã xử lý xong —
+lớp 1 (tự động) được vá lỗ hổng thiếu `sourceType`/`sourceNote` trên
+`Passage` rồi chạy 100% mỗi lần test; lớp 2 (đối chiếu chéo, quy trình ở
+`docs/content-verification-lop2.md`) đã chạy cho TC+NT (2 nhóm rủi ro
+cao nhất URD chỉ định), kết quả 120/120 câu khớp, 0 lỗi; lớp 3 (giáo
+viên rà soát) bỏ qua theo QĐ bổ sung. QĐ bổ sung đã chốt: không cần giáo
 viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri thức
-với cuộc sống. Xem README mục "Tiến độ nội dung" để biết chính xác từng
-mục còn thiếu bao nhiêu.
+với cuộc sống. Xem README mục "Tiến độ nội dung" để biết chi tiết.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -116,21 +120,36 @@ mục còn thiếu bao nhiêu.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Sáu mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
-≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), ≥5 bài cảm thụ/
-chuyên đề CT (35 bài, 7/7 chuyên đề), ≥4 đề văn/chuyên đề VA (36 đề, 9/9
-chuyên đề), 25/25 văn bản đọc hiểu dài (5–7 câu hỏi/văn bản, rải đều
-DH-01→06), và 8/8 đề thi thử soạn sẵn (2 đề/cấu hình, kiểu `PresetExam`
-ở `src/content/preset-exams/index.ts`, chọn được song song với đề ngẫu
-nhiên ở `ConfigPicker`). Không còn mục tiêu số lượng nào của Mục 5.11
-chưa đạt — chỉ còn một việc thiết kế duy nhất, chưa từng làm trong dự án
-này:
+**Giai đoạn 9 nay coi như hoàn thành** — cả khối lượng nội dung (Mục
+5.11) lẫn quy trình kiểm chứng 3 lớp (Mục 18.3):
 
-1. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
-   chưa có quy trình cụ thể, cần xác định cách thực hiện (khác lớp 1 tự
-   động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ). Đây
-   là việc thiết kế quy trình, nên hỏi người dùng muốn triển khai theo
-   hướng nào trước khi bắt tay, thay vì tự chọn.
+- 56/56 chuyên đề có lesson; ≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/
+  CD (348 bài); ≥5 bài cảm thụ/chuyên đề CT (35 bài, 7/7 chuyên đề); ≥4
+  đề văn/chuyên đề VA (36 đề, 9/9 chuyên đề); 25/25 văn bản đọc hiểu dài
+  (5–7 câu hỏi/văn bản, rải đều DH-01→06); 8/8 đề thi thử soạn sẵn (2
+  đề/cấu hình, kiểu `PresetExam` ở `src/content/preset-exams/index.ts`).
+- Lớp 1 (tự động): đã vá lỗ hổng `Passage` thiếu `sourceType`/
+  `sourceNote` (FR-N01→N04, NFR-07) — trước đó bị coi là "xong" nhưng
+  thiếu đúng phần URD yêu cầu kiểm tra.
+- Lớp 2 (đối chiếu chéo): đã chạy cho TC + NT (2 nhóm URD chỉ định là
+  rủi ro cao nhất), quy trình đầy đủ + kết quả ở
+  `docs/content-verification-lop2.md` — 120/120 câu khớp đáp án gốc, 0
+  lỗi nội dung. Các nhóm còn lại (CA/CD/TL/KN/DH/CT/VA) CÓ THỂ lặp lại
+  đúng quy trình đó sau nếu muốn kiểm chứng thêm, nhưng không còn là
+  việc bắt buộc — URD chỉ chỉ định TC/NT là ưu tiên bắt buộc.
+- Lớp 3 (giáo viên rà soát): bỏ qua theo QĐ bổ sung.
+
+Không còn hạng mục nào của Giai đoạn 9 đang dang dở. Các khoảng trống
+nhỏ hơn nằm ở README mục "Giới hạn đã biết" (không thuộc Giai đoạn 9) là
+việc độc lập tiếp theo hợp lý nếu cần làm thêm.
+
+Cách chạy lại quy trình Lớp 2 cho một nhóm chuyên đề khác: xem
+`docs/content-verification-lop2.md` — trích xuất câu hỏi đã ẩn đáp án
+bằng 1 test tạm trong `tests/unit/` (xoá ngay sau khi dùng), spawn 1
+agent độc lập (`isolation: worktree`) qua tool `Agent` để giải lại bằng
+kiến thức riêng, đối chiếu bằng script tái sử dụng `checkFillAnswer`
+(`src/core/answer-checker`) cho câu điền từ, rà soát thủ công mọi điểm
+lệch, ghi kết quả vào file đó.
 
 Cách tạo `PresetExam` mới (nếu cần thêm đề soạn sẵn sau này, ví dụ đổi
 cấu hình hoặc thêm đề thứ 3/cấu hình): viết một test tạm trong
