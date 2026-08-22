@@ -26,14 +26,14 @@ cả 3 mục `[BỔ SUNG]` CA-08/CT-03/CT-04/TL-06 — đúng danh sách URD M�
 5.1–5.9). **Mục tiêu ≥12 bài tập/chuyên đề nhóm TC/TL/NT/CA/CD (Mục 5.11,
 ~350 bài) cũng đã ĐẠT ĐỦ cả 5 nhóm** (348 bài, 29 chuyên đề × 12 bài, mỗi
 chuyên đề có đủ 4 dạng câu hỏi mcq/fill/order/match). **≥5 bài cảm thụ/
-chuyên đề CT cũng đã ĐẠT ĐỦ** (7/7 chuyên đề, 35 bài). Việc còn lại của
-Giai đoạn 9: ≥4 đề văn/chuyên đề
-VA (hiện 1), văn bản đọc hiểu dài 0/25 (khác 6 chuyên đề KỸ NĂNG đọc hiểu
-DH-01→06 đã xong), đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu chéo) của
-quy trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo
-viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri thức với
-cuộc sống. Xem README mục "Tiến độ nội dung" để biết chính xác từng mục
-còn thiếu bao nhiêu.
+chuyên đề CT cũng đã ĐẠT ĐỦ** (7/7 chuyên đề, 35 bài), **và ≥4 đề văn/
+chuyên đề VA cũng đã ĐẠT ĐỦ** (9/9 chuyên đề, 36 đề). Việc còn lại của
+Giai đoạn 9 chỉ còn: văn bản đọc hiểu dài 0/25 (khác 6 chuyên đề KỸ NĂNG
+đọc hiểu DH-01→06 đã xong), đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu
+chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không
+cần giáo viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri
+thức với cuộc sống. Xem README mục "Tiến độ nội dung" để biết chính xác
+từng mục còn thiếu bao nhiêu.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -111,24 +111,22 @@ còn thiếu bao nhiêu.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Ba mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
-≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), và ≥5 bài cảm
-thụ/chuyên đề CT (35 bài, 7/7 chuyên đề). Việc còn lại:
+**Bốn mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
+≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), ≥5 bài cảm thụ/
+chuyên đề CT (35 bài, 7/7 chuyên đề), và ≥4 đề văn/chuyên đề VA (36 đề,
+9/9 chuyên đề). Việc còn lại — chỉ còn nội dung dạng "kho ngữ liệu lớn",
+không còn việc mở rộng số bài/chuyên đề nào nữa:
 
-1. **Tăng đề tập làm văn nhóm VA lên ≥4 đề/chuyên đề** (~36 đề) — hiện mỗi
-   chuyên đề VA chỉ có 1 đề mẫu (mỗi đề cần đủ outline/openingStyles/
-   rubric/sampleAnswer như mẫu đã có — khối lượng nặng hơn vì mỗi đề dài).
-   Ưu tiên VA-01→03, VA-09 trước (theo đúng thứ tự Mục 5.11).
-2. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
+1. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
    chuyên đề KỸ NĂNG đọc hiểu DH-01→06 đã có. Cần thiết kế thêm cách lưu
    một đoạn văn dài dùng chung cho nhiều câu hỏi (hiện các bài tập DH đang
    nhúng đoạn văn ngắn trực tiếp vào từng `prompt`, đủ cho việc dạy kỹ
    năng nhưng chưa phải kho văn bản dài theo đúng mục tiêu này — cân nhắc
    dùng field `passageId` đã có sẵn trong `ExerciseBase` (`src/data-access/
-   types.ts`) nhưng chưa được dùng ở đâu).
-3. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
+   types.ts`) nhưng chưa được dùng ở đâu). Đây là việc còn lại lớn nhất.
+2. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
    khi đã có đủ ngữ liệu (văn bản đọc hiểu, đề văn) để ghép thành đề.
-4. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
+3. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
    chưa có quy trình cụ thể, cần xác định cách thực hiện (khác lớp 1 tự
    động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ).
 
@@ -142,6 +140,11 @@ lượng trước khi chạy `typecheck && lint && test`, xác minh qua trình
 duyệt thật (làm hết một lượt câu hỏi của 1-2 chuyên đề đại diện, đặc biệt
 chú ý các chuyên đề có câu hỏi dạng `match` với số lượng leftItems/
 rightItems không bằng nhau — cần `j % rightCount` khi viết script test).
+Với `sampleAnswer` dài (đề văn VA): khi câu văn mẫu có lời thoại hoặc từ
+được nhấn mạnh trong dấu ngoặc kép, PHẢI escape thành `\"...\"` vì chuỗi
+bọc ngoài cũng dùng dấu `"` — quên escape sẽ vỡ cú pháp TypeScript và chỉ
+lộ ra ở bước `typecheck` (đã xảy ra ở va-04/va-07, phải sửa lại), nên luôn
+`typecheck` ngay sau khi viết mỗi vài đề, không dồn đến cuối batch.
 
 Thói quen đã áp dụng khi xây nội dung mới, giữ nguyên: mỗi chuyên đề có
 lesson (concept/signals/examples/commonMistakes, KN thêm `steps`) +

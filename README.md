@@ -181,8 +181,9 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
 - **CD — Chính tả và dấu câu: 5/5** — CD-01→05. Mọi câu `fill` trong nhóm
   CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng ký tự, kể cả
   dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
-- **VA — Tập làm văn: 9/9** — VA-01→09. Mỗi chuyên đề hiện có 1 đề văn mẫu
-  đầy đủ (dàn ý, các cách mở bài, rubric chấm điểm, bài văn mẫu).
+- **VA — Tập làm văn: 9/9** — VA-01→09. Mỗi chuyên đề hiện có đủ 4 đề văn
+  mẫu (dàn ý, các cách mở bài, rubric chấm điểm, bài văn mẫu — đúng mục
+  tiêu ≥4 đề/chuyên đề của Mục 5.11, 36 đề tổng).
 - **TL — Từ loại: 6/6** — TL-01→06 (bao gồm TL-06 hiện tượng chuyển loại
   của từ, mục `[BỔ SUNG]`).
 - **DH — Đọc hiểu: 6/6** — DH-01→06 (kỹ năng đọc hiểu: xác định chi tiết,
@@ -200,8 +201,8 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   order/match) để đa dạng hoá.
 - **≥5 bài cảm thụ có đáp án mẫu/chuyên đề CT đã ĐẠT ĐỦ** (7/7 chuyên đề,
   35 bài đúng mục tiêu Mục 5.11).
-- ≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA (~36 đề) — hiện mỗi
-  chuyên đề VA mới có 1 đề.
+- **≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA đã ĐẠT ĐỦ** (9/9
+  chuyên đề, 36 đề đúng mục tiêu Mục 5.11).
 - Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 0/25 (khác với 6 chuyên đề kỹ năng
   DH-01→06 đã xong ở trên).
 - Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình: 0/8 (hiện dùng sinh
