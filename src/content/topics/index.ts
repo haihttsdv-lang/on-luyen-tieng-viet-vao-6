@@ -488,6 +488,47 @@ export const TOPICS: Topic[] = [
     },
   },
   {
+    id: "TC-01",
+    group: "TC",
+    title: "Tiếng và cấu tạo của tiếng (âm đầu, vần, thanh)",
+    lesson: {
+      concept:
+        "Tiếng là đơn vị phát âm nhỏ nhất trong tiếng Việt, thường được viết tách rời bằng khoảng trắng. Mỗi tiếng có cấu tạo gồm 3 phần: âm đầu (phụ âm đứng đầu, có thể vắng), vần (gồm âm đệm, âm chính, âm cuối) và thanh điệu (dấu thanh).",
+      signals: [
+        "Đề bài dạng \"phân tích cấu tạo của tiếng...\", \"tiếng ... gồm âm đầu, vần và thanh nào?\"",
+        "Mỗi tiếng luôn có vần và thanh điệu, nhưng có thể không có âm đầu (VD: \"ăn\", \"ơi\")",
+      ],
+      examples: [
+        "Tiếng \"toán\" gồm: âm đầu \"t\", vần \"oán\" (âm đệm \"o\", âm chính \"a\", âm cuối \"n\"), thanh sắc.",
+        "Tiếng \"ăn\" gồm: không có âm đầu, vần \"ăn\", thanh ngang (không dấu).",
+      ],
+      commonMistakes: [
+        "Nhầm \"tiếng\" với \"từ\" — một từ có thể gồm một hoặc nhiều tiếng (xem thêm TC-02)",
+        "Bỏ sót thanh ngang (không dấu) khi phân tích, vì nghĩ tiếng không có dấu thì không có thanh điệu",
+      ],
+    },
+  },
+  {
+    id: "TC-02",
+    group: "TC",
+    title: "Từ, từ đơn và từ phức",
+    lesson: {
+      concept:
+        "Từ là đơn vị nhỏ nhất dùng để đặt câu, có nghĩa hoàn chỉnh. Từ đơn gồm 1 tiếng, từ phức gồm 2 tiếng trở lên (từ phức bao gồm cả từ ghép và từ láy — xem chi tiết cách phân biệt ở TC-03, TC-04).",
+      signals: [
+        "Đếm số tiếng tạo nên từ: 1 tiếng = từ đơn; từ 2 tiếng trở lên = từ phức",
+      ],
+      examples: [
+        "\"Nhà\", \"đi\", \"đẹp\" là từ đơn (1 tiếng).",
+        "\"Nhà cửa\", \"xinh đẹp\", \"long lanh\" là từ phức (2 tiếng trở lên).",
+      ],
+      commonMistakes: [
+        "Nhầm \"tiếng\" với \"từ\" khi đếm — không phải cứ tách được thành nhiều tiếng là nhiều từ, cần xem các tiếng đó có đi liền nhau tạo thành một đơn vị nghĩa hay không",
+        "Không xác định đúng ranh giới từ trong câu khi câu có nhiều từ phức liền nhau",
+      ],
+    },
+  },
+  {
     id: "NT-03",
     group: "NT",
     title: "Từ đồng âm",
@@ -529,6 +570,140 @@ export const TOPICS: Topic[] = [
       commonMistakes: [
         "Nhầm từ nhiều nghĩa với từ đồng âm — cần kiểm tra xem các nghĩa có liên hệ với nhau không",
         "Không xác định đúng đâu là nghĩa gốc, đâu là nghĩa chuyển trong một cặp nghĩa",
+      ],
+    },
+  },
+  {
+    id: "CT-03",
+    group: "CT",
+    title: "Biện pháp tu từ: Điệp từ, điệp ngữ",
+    lesson: {
+      concept:
+        "Điệp từ, điệp ngữ là biện pháp lặp lại có chủ ý một từ hoặc cụm từ nhiều lần trong câu/đoạn văn, thơ nhằm nhấn mạnh ý, tạo nhịp điệu và gợi cảm xúc.",
+      signals: [
+        "Một từ hoặc cụm từ xuất hiện lặp lại ít nhất 2 lần trong câu hoặc đoạn văn/thơ gần nhau",
+        "Việc lặp lại có dụng ý nhấn mạnh, không phải lỗi diễn đạt trùng lặp ngẫu nhiên",
+      ],
+      examples: [
+        "\"Tre giữ làng, giữ nước, giữ mái nhà tranh, giữ đồng lúa chín.\" — điệp từ \"giữ\" lặp lại 4 lần, nhấn mạnh vai trò bảo vệ nhiều mặt của tre.",
+        "\"Đoàn kết, đoàn kết, đại đoàn kết.\" — điệp ngữ \"đoàn kết\" nhấn mạnh sức mạnh của sự đoàn kết.",
+      ],
+      commonMistakes: [
+        "Nhầm điệp từ với việc một từ (như \"là\", \"và\", \"thì\") xuất hiện tự nhiên nhiều lần mà không có dụng ý nghệ thuật",
+        "Chỉ ra được từ lặp lại nhưng không nêu được tác dụng cụ thể, chỉ nói chung chung \"làm câu hay hơn\"",
+      ],
+    },
+  },
+  {
+    id: "CT-04",
+    group: "CT",
+    title: "Biện pháp tu từ: Đảo ngữ; từ láy gợi tả, gợi cảm",
+    lesson: {
+      concept:
+        "Đảo ngữ là thay đổi trật tự thông thường của các thành phần câu (thường đưa vị ngữ lên trước chủ ngữ) để nhấn mạnh, tạo ấn tượng mạnh; thường đi kèm từ láy gợi tả (mô phỏng hình ảnh, âm thanh) hoặc gợi cảm (mô phỏng cảm xúc) làm tăng sức biểu cảm.",
+      signals: [
+        "Trật tự câu khác với cấu trúc \"chủ ngữ đứng trước vị ngữ\" quen thuộc — vị ngữ/từ miêu tả được đưa lên đầu câu",
+        "Xuất hiện từ láy miêu tả sinh động hình ảnh, âm thanh hoặc cảm xúc (xem thêm CT-05 về cái hay của từ láy gợi tả)",
+      ],
+      examples: [
+        "\"Lom khom dưới núi, tiều vài chú.\" — đảo ngữ, đưa từ láy \"lom khom\" (dáng vẻ) lên đầu câu để nhấn mạnh hình ảnh nhỏ bé, vất vả của người tiều phu.",
+        "\"Rì rào gió thổi, xào xạc lá rơi.\" — từ láy \"rì rào\", \"xào xạc\" gợi tả âm thanh sinh động của gió và lá.",
+      ],
+      commonMistakes: [
+        "Nhầm đảo ngữ (có dụng ý nghệ thuật) với câu bị đảo trật tự do lỗi diễn đạt thông thường",
+        "Chỉ gọi tên \"từ láy\" mà không chỉ ra được từ láy đó gợi tả điều gì cụ thể (hình ảnh, âm thanh hay cảm xúc)",
+      ],
+    },
+  },
+  {
+    id: "CT-06",
+    group: "CT",
+    title: "Cảm thụ nhân vật",
+    lesson: {
+      concept:
+        "Cảm thụ nhân vật là phân tích các chi tiết về ngoại hình, hành động, lời nói, suy nghĩ của nhân vật trong tác phẩm để rút ra tính cách, phẩm chất, từ đó nêu cảm nhận, đánh giá của bản thân về nhân vật.",
+      steps: [
+        "Đọc kỹ đoạn văn có nhân vật, tìm các chi tiết về ngoại hình, hành động, lời nói, suy nghĩ của nhân vật.",
+        "Từ các chi tiết đó, suy ra tính cách hoặc phẩm chất của nhân vật (ví dụ: hành động nhường nhịn người khác → nhân vật giàu tình yêu thương).",
+        "Nêu cảm nhận, đánh giá của bản thân về nhân vật (yêu thích, khâm phục, đồng cảm...) kèm lý do cụ thể dựa trên chi tiết trong bài.",
+      ],
+      signals: [
+        "Đề bài dạng \"Em có cảm nhận gì về nhân vật...\", \"Nhân vật ... để lại ấn tượng gì cho em\"",
+      ],
+      examples: [
+        "Nhân vật cậu bé trong một câu chuyện luôn nhường phần ăn cho em nhỏ dù bản thân cũng đói — chi tiết này cho thấy cậu bé giàu tình yêu thương, biết hy sinh vì người khác.",
+      ],
+      commonMistakes: [
+        "Chỉ kể lại hành động của nhân vật mà không rút ra được tính cách, phẩm chất từ hành động đó",
+        "Nêu cảm nhận chung chung (\"em thích nhân vật này\") mà không có lý do cụ thể dựa trên chi tiết trong bài",
+      ],
+    },
+  },
+  {
+    id: "NT-02",
+    group: "NT",
+    title: "Từ trái nghĩa",
+    lesson: {
+      concept:
+        "Từ trái nghĩa là những từ có nghĩa hoàn toàn đối lập nhau trên cùng một tiêu chí, thường dùng để tạo sự đối lập, làm nổi bật đặc điểm của sự vật, sự việc.",
+      signals: [
+        "Hai từ chỉ hai mức độ/trạng thái đối lập nhau trên CÙNG một tiêu chí (VD: cao – thấp, cùng nói về chiều cao)",
+        "Một từ có thể có nhiều từ trái nghĩa khác nhau tuỳ theo nghĩa đang dùng trong câu",
+      ],
+      examples: [
+        "\"Cao\" – \"thấp\" (cùng tiêu chí chiều cao); \"chăm chỉ\" – \"lười biếng\" (cùng tiêu chí thái độ làm việc).",
+        "\"Nhạt\" trái nghĩa với \"đậm\" khi nói về màu sắc, nhưng trái nghĩa với \"mặn\" khi nói về vị giác — cùng một từ nhưng trái nghĩa khác nhau tuỳ ngữ cảnh.",
+      ],
+      commonMistakes: [
+        "Ghép hai từ không cùng tiêu chí thành cặp trái nghĩa (VD: \"cao\" và \"xanh\" không phải trái nghĩa vì không nói về cùng một đặc điểm)",
+        "Chọn sai từ trái nghĩa khi từ gốc có nhiều nghĩa mà không để ý ngữ cảnh của câu",
+      ],
+    },
+  },
+  {
+    id: "NT-05",
+    group: "NT",
+    title: "Từ Hán Việt và mở rộng vốn từ theo chủ điểm",
+    lesson: {
+      concept:
+        "Từ Hán Việt là từ mượn gốc Hán, chiếm tỷ lệ lớn trong tiếng Việt, thường mang sắc thái trang trọng, khái quát hơn so với từ thuần Việt có nghĩa tương đương. Mở rộng vốn từ theo chủ điểm là học thêm các từ ngữ (kể cả từ Hán Việt) cùng xoay quanh một chủ đề nhất định.",
+      signals: [
+        "Từ Hán Việt thường gồm 2 tiếng, mỗi tiếng nghe \"trang trọng\" hơn từ thuần Việt cùng nghĩa (VD: \"phụ mẫu\" so với \"cha mẹ\")",
+        "Đề bài dạng \"tìm từ cùng chủ điểm với...\" yêu cầu vận dụng vốn từ đã học theo chủ điểm",
+      ],
+      examples: [
+        "\"Phụ mẫu\" (Hán Việt, trang trọng) và \"cha mẹ\" (thuần Việt, thông thường) cùng chỉ một đối tượng nhưng khác sắc thái.",
+        "Chủ điểm \"Tổ quốc\": các từ như \"giang sơn\", \"đất nước\", \"quốc gia\", \"Tổ quốc\" đều liên quan đến chủ điểm này, phần lớn là từ Hán Việt.",
+      ],
+      commonMistakes: [
+        "Nghĩ mọi từ có 2 tiếng đều là từ Hán Việt — nhiều từ ghép, từ láy thuần Việt cũng có 2 tiếng",
+        "Không phân biệt được sắc thái trang trọng của từ Hán Việt so với từ thuần Việt tương ứng khi chọn từ điền vào câu",
+      ],
+    },
+  },
+  {
+    id: "NT-06",
+    group: "NT",
+    title: "Thành ngữ, tục ngữ, ca dao: thuộc, hiểu và vận dụng",
+    lesson: {
+      concept:
+        "Thành ngữ là cụm từ cố định mang nghĩa bóng, không suy ra trực tiếp từ nghĩa đen của từng từ. Tục ngữ là câu nói ngắn gọn, có vần điệu, đúc kết kinh nghiệm sống. Ca dao là những câu thơ dân gian (thường thể lục bát) thể hiện tình cảm, kinh nghiệm sống.",
+      steps: [
+        "Đọc kỹ câu thành ngữ/tục ngữ/ca dao, hiểu nghĩa đen (nghĩa của từng từ) trước.",
+        "Suy ra nghĩa bóng — bài học hoặc kinh nghiệm mà câu đó muốn truyền tải.",
+        "Liên hệ với một tình huống thực tế phù hợp để vận dụng câu đó.",
+      ],
+      signals: [
+        "Thành ngữ thường KHÔNG phải câu hoàn chỉnh — chỉ là một cụm từ, không rõ chủ ngữ – vị ngữ (VD: \"nước đổ lá khoai\")",
+        "Tục ngữ thường là câu hoàn chỉnh, ngắn gọn, có vần (VD: \"Có công mài sắt, có ngày nên kim\")",
+      ],
+      examples: [
+        "\"Nước đổ lá khoai\" (thành ngữ) — chỉ việc làm vô ích, không có kết quả, ví như đổ nước lên lá khoai trơn, nước trôi hết ngay.",
+        "\"Có công mài sắt, có ngày nên kim\" (tục ngữ) — kiên trì, chăm chỉ thì ắt sẽ thành công.",
+      ],
+      commonMistakes: [
+        "Chỉ dừng lại ở nghĩa đen mà không suy ra được nghĩa bóng, bài học của thành ngữ/tục ngữ",
+        "Nhầm lẫn giữa thành ngữ (cụm từ cố định) và tục ngữ (câu hoàn chỉnh, đúc kết kinh nghiệm)",
       ],
     },
   },

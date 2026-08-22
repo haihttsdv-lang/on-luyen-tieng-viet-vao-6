@@ -165,23 +165,23 @@ Xem Mục 18 của URD. Tóm tắt:
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
-23/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
-ví dụ, lỗi thường gặp) + bài tập:
+29/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
+ví dụ, lỗi thường gặp) + bài tập. Thêm 2 chuyên đề (CD-01, VA-03) đã có bài
+tập từ trước nhưng lesson vẫn đang biên soạn — không tính vào 29 này:
 
 - **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
 - **CA — Câu: 7/8** — CA-01→07 (đúng thứ tự ưu tiên Mục 5.11, đủ theo chỉ
   dẫn "CA-01→07" của bảng mục tiêu). Còn thiếu CA-08 (chữa lỗi câu — mục
   `[BỔ SUNG]`, không nằm trong danh sách ưu tiên gốc).
-- **CT — Cảm thụ văn học: 4/7** — CT-01, CT-02, CT-05, CT-07. Còn thiếu
-  CT-03 (điệp từ/điệp ngữ), CT-04 (đảo ngữ/từ láy), CT-06 (cảm thụ nhân vật).
-- **NT — Nghĩa của từ và vốn từ: 3/6** — NT-01 (đồng nghĩa), NT-03 (đồng
-  âm), NT-04 (nghĩa gốc/nghĩa chuyển). Còn thiếu NT-02, NT-05, NT-06.
-- **TC — Tiếng, từ và cấu tạo từ: 2/4** — TC-03 (từ ghép), TC-04 (từ láy),
-  cả hai đều có `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi
-  giữa các bộ SGK (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không
-  tranh cãi, không lấy từ tranh cãi làm đáp án đúng (FR-D04, có test guard
-  tự động). Còn thiếu TC-01, TC-02.
-- **CD, VA:** mỗi nhóm mới có 1/5, 1/9 chuyên đề (từ các giai đoạn trước).
+- **CT — Cảm thụ văn học: 7/7 (xong)** — CT-01→07.
+- **NT — Nghĩa của từ và vốn từ: 6/6 (xong)** — NT-01→06.
+- **TC — Tiếng, từ và cấu tạo từ: 4/4 (xong)** — TC-01→04. TC-03/TC-04 có
+  `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi giữa các bộ SGK
+  (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không tranh cãi, không lấy
+  từ tranh cãi làm đáp án đúng (FR-D04, có test guard tự động).
+- **CD — Chính tả và dấu câu: 0/5 có lesson** (CD-01 đã có bài tập từ giai
+  đoạn trước nhưng lesson chưa viết — ưu tiên tiếp theo).
+- **VA — Tập làm văn: 0/9 có lesson** (VA-03 tương tự CD-01).
 - **TL, DH: 0 chuyên đề.**
 
 Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
