@@ -203,16 +203,16 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   35 bài đúng mục tiêu Mục 5.11).
 - **≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA đã ĐẠT ĐỦ** (9/9
   chuyên đề, 36 đề đúng mục tiêu Mục 5.11).
-- **Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 10/25** (khác với 6 chuyên đề kỹ
+- **Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 15/25** (khác với 6 chuyên đề kỹ
   năng DH-01→06 đã xong ở trên). Hạ tầng kỹ thuật đã xong: kiểu `Passage`
   (`src/data-access/types.ts`), `contentStore.getPassage()`, văn bản lưu ở
   `src/content/passages/index.ts`, mỗi câu hỏi gắn `passageId` và bài đọc
   hiện tự động phía trên câu hỏi ở cả 3 nơi (luyện tập, quiz cuối bài, thi
-  thử) qua component dùng chung `ReadingPassage`. 10 văn bản đã có, đa dạng
-  thể loại: truyện ngắn (7 bài, mỗi bài một chủ đề khác nhau), văn bản
-  thông tin/khoa học thường thức (2 bài: quang hợp, trí nhớ loài voi).
-  Mỗi câu hỏi gắn đúng kỹ năng DH-0X đang kiểm tra, không dồn vào 1 chuyên
-  đề. Còn thiếu 15 văn bản.
+  thử) qua component dùng chung `ReadingPassage`. 15 văn bản đã có, đa
+  dạng thể loại: truyện ngắn (12 bài, mỗi bài một chủ đề khác nhau), văn
+  bản thông tin/khoa học thường thức (3 bài: quang hợp, trí nhớ loài voi,
+  giấc ngủ). Mỗi câu hỏi gắn đúng kỹ năng DH-0X đang kiểm tra, không dồn
+  vào 1 chuyên đề. Còn thiếu 10 văn bản.
 - Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình: 0/8 (hiện dùng sinh
   đề tự động từ kho bài tập nhỏ, chưa phải "đề soạn sẵn").
 - Lớp 2 (đối chiếu chéo) và lớp 3 (giáo viên rà soát — đã quyết định bỏ
