@@ -193,11 +193,11 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
 **Việc còn lại (mở rộng số lượng, không phải thiếu chuyên đề nào)** — theo
 đúng mục tiêu số lượng ở Mục 5.11:
 
-- Mục 5.11 đặt mục tiêu ≥12 bài tập/chuyên đề cho nhóm TC, TL, NT, CA, CD
-  (~350 bài). **CA (8/8, 96 bài), TC (4/4, 48 bài), NT (6/6, 72 bài), CD
-  (5/5, 60 bài) đã xong** — mỗi chuyên đề giờ có đủ 4 dạng câu hỏi (mcq/
-  fill/order/match) để đa dạng hoá. Chỉ còn thiếu **TL (6 chuyên đề)** để
-  hoàn tất mục tiêu này.
+- **Mục tiêu ≥12 bài tập/chuyên đề cho nhóm TC, TL, NT, CA, CD đã ĐẠT ĐỦ
+  cả 5 nhóm** (Mục 5.11, ~350 bài): CA (8/8, 96 bài), TC (4/4, 48 bài), NT
+  (6/6, 72 bài), CD (5/5, 60 bài), TL (6/6, 72 bài) — tổng 348 bài, đúng
+  29 chuyên đề × 12 bài. Mỗi chuyên đề có đủ 4 dạng câu hỏi (mcq/fill/
+  order/match) để đa dạng hoá.
 - ≥5 bài cảm thụ có đáp án mẫu/chuyên đề CT (~35 bài) — hiện mỗi chuyên đề
   CT mới có 3–4 bài.
 - ≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA (~36 đề) — hiện mỗi
