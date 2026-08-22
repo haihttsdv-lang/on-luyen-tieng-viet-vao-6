@@ -21,15 +21,17 @@ Bản chạy thật: https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
 (tự deploy khi push lên `master`, xem README mục Triển khai).
 
 **Trạng thái ngắn gọn:** cơ chế (Giai đoạn 0–8) đã xong và test kỹ. **Giai
-đoạn 9 (mở rộng nội dung) đang làm dở** — 43/56 chuyên đề đã có bài học đầy
-đủ. 7/9 nhóm xong hoàn toàn theo đúng danh sách URD: KN 5/5, CT 7/7, NT
-6/6, TC 4/4, CD 5/5, VA 9/9. CA 7/8 (thiếu CA-08, mục `[BỔ SUNG]`, không
-thuộc ưu tiên gốc). Chỉ còn **TL và DH chưa có chuyên đề nào** — đây là
-việc còn lại để đạt mốc 56/56 chuyên đề có lesson. QĐ bổ sung đã chốt:
+đoạn 9 (mở rộng nội dung) đã đạt mốc 56/56 chuyên đề có bài học lý thuyết
+đầy đủ** — toàn bộ 9 nhóm (KN, CA, CT, NT, TC, CD, VA, TL, DH) đều 100% về
+số CHUYÊN ĐỀ, đúng danh sách URD Mục 5.1–5.9 kể cả 3 mục `[BỔ SUNG]` (CA-08,
+CT-03/04, TL-06). Việc còn lại của Giai đoạn 9 là MỞ RỘNG SỐ LƯỢNG (không
+phải thiếu chuyên đề): mỗi chuyên đề mới có 2–5 bài tập, Mục 5.11 muốn
+≥12 bài/chuyên đề nhóm TC/TL/NT/CA/CD, ≥5 bài cảm thụ/chuyên đề CT, ≥4 đề
+văn/chuyên đề VA; văn bản đọc hiểu dài 0/25 (khác với 6 chuyên đề KỸ NĂNG
+đọc hiểu DH-01→06 đã xong); đề thi thử soạn sẵn 0/8. QĐ bổ sung đã chốt:
 không cần giáo viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết
 nối tri thức với cuộc sống. Xem README mục "Tiến độ nội dung" để biết
-chính xác còn thiếu gì (kể cả phần mở rộng số lượng bài tập/đề văn sau
-khi 56/56 đã có lesson).
+chính xác từng mục còn thiếu bao nhiêu.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -107,21 +109,30 @@ khi 56/56 đã có lesson).
 
 ## Việc tiếp theo hợp lý nhất
 
-Tiếp tục **Giai đoạn 9** theo đúng thứ tự ưu tiên Mục 5.11. Đã xong: KN 5/5,
-CA 7/8 (đủ CA-01→07, còn thiếu CA-08 bổ sung), CT 4/7 (CT-01/02/05/07),
-NT 3/6 (NT-01/03/04), TC 2/4 (TC-03/04, cả hai đã dùng `disputedNote`).
-Việc tiếp theo:
+**Mốc 56/56 chuyên đề có lesson đã đạt được** (tất cả 9 nhóm KN/CA/CT/NT/
+TC/CD/VA/TL/DH đều có ít nhất 1 lesson + vài bài tập). Giai đoạn 9 từ đây
+chuyển sang MỞ RỘNG SỐ LƯỢNG theo đúng mục tiêu Mục 5.11 (không còn phải
+tạo chuyên đề mới). Thứ tự hợp lý tiếp theo:
 
-1. **CT-03, CT-04, CT-06** — hoàn thiện nốt nhóm CT (điệp từ/điệp ngữ, đảo
-   ngữ, cảm thụ nhân vật).
-2. **TC-01, TC-02** (tiếng/cấu tạo tiếng, từ đơn/từ phức) và **NT-02, NT-05,
-   NT-06** — hoàn thiện nốt hai nhóm này.
-3. Sau đó: TL, DH (chưa có chuyên đề nào — DH cần cả văn bản đọc hiểu, xem
-   mục 4), rồi mở rộng số lượng bài tập/chuyên đề đã có lên ≥12 bài (hiện
-   mỗi chuyên đề mới có 3-5 bài mẫu).
-4. Văn bản đọc hiểu (0/25), đề tập làm văn, đề thi thử hoàn chỉnh theo 4
-   cấu hình — làm sau khi các nhóm chuyên đề lý thuyết/bài tập cơ bản đã
-   đủ.
+1. **Tăng số bài tập mỗi chuyên đề nhóm TC/TL/NT/CA/CD lên ≥12 bài** (Mục
+   5.11: ~350 bài tổng). Hiện mỗi chuyên đề trong 5 nhóm này mới có 2–5
+   bài — đây là khối lượng lớn nhất còn lại, nên làm theo từng nhóm một,
+   mỗi batch thêm ~8 bài/chuyên đề cho một nhóm, xác minh qua
+   `content-schema.test.ts` + trình duyệt thật rồi mới sang nhóm tiếp theo.
+2. **Tăng bài cảm thụ nhóm CT lên ≥5 bài/chuyên đề** (~35 bài) — hiện mỗi
+   chuyên đề CT có 3–4 bài.
+3. **Tăng đề tập làm văn nhóm VA lên ≥4 đề/chuyên đề** (~36 đề) — hiện mỗi
+   chuyên đề VA chỉ có 1 đề mẫu. Ưu tiên VA-01→03, VA-09 trước (theo đúng
+   thứ tự Mục 5.11).
+4. **Văn bản đọc hiểu dài (0/25, mỗi văn bản 5–7 câu hỏi)** — khác với 6
+   chuyên đề KỸ NĂNG đọc hiểu DH-01→06 đã có. Cần thiết kế thêm cách lưu
+   một đoạn văn dài dùng chung cho nhiều câu hỏi (hiện các bài tập DH đang
+   nhúng đoạn văn ngắn trực tiếp vào từng `prompt`, đủ cho việc dạy kỹ
+   năng nhưng chưa phải kho văn bản dài theo đúng mục tiêu này — cân nhắc
+   dùng field `passageId` đã có sẵn trong `ExerciseBase` (`src/data-access/
+   types.ts`) nhưng chưa được dùng ở đâu).
+5. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
+   khi đã có đủ ngữ liệu (văn bản đọc hiểu, đề văn) để ghép thành đề.
 
 Thói quen đã áp dụng khi xây nội dung mới, giữ nguyên: mỗi chuyên đề có
 lesson (concept/signals/examples/commonMistakes, KN thêm `steps`) +

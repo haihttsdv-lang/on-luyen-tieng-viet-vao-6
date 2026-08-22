@@ -1047,5 +1047,303 @@ export const TOPICS: Topic[] = [
       ],
     },
   },
+  {
+    id: "TL-01",
+    group: "TL",
+    title: "Danh từ và các loại danh từ",
+    lesson: {
+      concept:
+        "Danh từ là từ chỉ người, sự vật, hiện tượng, khái niệm. Có danh từ chung (chỉ loại sự vật nói chung) và danh từ riêng (tên riêng, viết hoa); ngoài ra còn có danh từ chỉ khái niệm, hiện tượng (trừu tượng, không sờ thấy được).",
+      signals: [
+        "Danh từ thường đứng sau các từ chỉ số lượng (một, những, các) hoặc có thể làm chủ ngữ trong câu",
+      ],
+      examples: [
+        "\"Học sinh\", \"bàn ghế\" là danh từ chung; \"Hà Nội\", \"Nam\" là danh từ riêng (viết hoa).",
+        "\"Niềm vui\", \"tình yêu\" là danh từ chỉ khái niệm, trừu tượng — không sờ thấy được nhưng vẫn là danh từ.",
+      ],
+      commonMistakes: [
+        "Nhầm danh từ chỉ khái niệm với động từ/tính từ cùng gốc (VD \"yêu\" là động từ nhưng \"tình yêu\" là danh từ)",
+        "Quên viết hoa danh từ riêng",
+      ],
+    },
+  },
+  {
+    id: "TL-02",
+    group: "TL",
+    title: "Động từ và các loại động từ",
+    lesson: {
+      concept:
+        "Động từ là từ chỉ hoạt động, trạng thái của sự vật. Có động từ chỉ hoạt động (chạy, nhảy, học) và động từ chỉ trạng thái (yêu, ghét, biết, tồn tại).",
+      signals: [
+        "Động từ thường đứng sau chủ ngữ, có thể kết hợp với các từ \"đã\", \"đang\", \"sẽ\" đứng trước",
+      ],
+      examples: [
+        "\"Em đang học bài.\" — \"học\" là động từ chỉ hoạt động.",
+        "\"Em rất yêu mẹ.\" — \"yêu\" là động từ chỉ trạng thái (tình cảm).",
+      ],
+      commonMistakes: [
+        "Nhầm động từ chỉ trạng thái với tính từ cùng nghĩa liên quan (VD \"yêu\" là động từ, \"đáng yêu\" là tính từ)",
+        "Nhầm động từ với danh từ khi cùng một từ có thể là cả hai loại tuỳ ngữ cảnh (VD \"thi\" trong \"em thi đỗ\" là động từ, nhưng \"cuộc thi\" là danh từ — xem thêm TL-06)",
+      ],
+    },
+  },
+  {
+    id: "TL-03",
+    group: "TL",
+    title: "Tính từ và các loại tính từ",
+    lesson: {
+      concept:
+        "Tính từ là từ chỉ đặc điểm, tính chất của sự vật, hoạt động, trạng thái (hình dáng, màu sắc, mùi vị, tính cách, mức độ...).",
+      signals: [
+        "Tính từ thường bổ sung ý nghĩa cho danh từ hoặc động từ, có thể kết hợp với các từ chỉ mức độ (rất, hơi, quá, lắm)",
+      ],
+      examples: [
+        "\"Bông hoa đỏ rực.\" — \"đỏ rực\" là tính từ chỉ màu sắc, mức độ.",
+        "\"Bạn ấy rất chăm chỉ.\" — \"chăm chỉ\" là tính từ chỉ tính cách.",
+      ],
+      commonMistakes: [
+        "Nhầm tính từ chỉ trạng thái tâm lý với động từ chỉ trạng thái khi ranh giới không rõ ràng",
+        "Không nhận ra tính từ khi nó đứng ở vị trí vị ngữ mà không có từ \"là\" đứng trước",
+      ],
+    },
+  },
+  {
+    id: "TL-04",
+    group: "TL",
+    title: "Đại từ (nhân xưng, đại từ thay thế)",
+    lesson: {
+      concept:
+        "Đại từ là từ dùng để xưng hô (đại từ nhân xưng: tôi, tao, tớ, anh, chị, họ...) hoặc dùng để thay thế cho danh từ, động từ, tính từ, cụm từ đã nói trước đó (đại từ thay thế: đây, đó, ấy, vậy, thế...) nhằm tránh lặp từ.",
+      signals: [
+        "Đại từ nhân xưng dùng để xưng hô giữa người nói và người nghe (tôi, bạn, chúng ta...)",
+        "Đại từ thay thế thường đứng sau một danh từ/cụm từ đã nhắc tới, thay cho từ đó",
+      ],
+      examples: [
+        "\"Tôi và bạn cùng đi học.\" — \"tôi\", \"bạn\" là đại từ nhân xưng.",
+        "\"Lan rất chăm học. Điều đó khiến cô giáo rất vui.\" — \"đó\" thay thế cho ý \"Lan rất chăm học\" ở câu trước.",
+      ],
+      commonMistakes: [
+        "Nhầm đại từ nhân xưng với danh từ chỉ người (VD \"bạn Lan\" là cụm danh từ, không phải đại từ)",
+        "Không xác định được đại từ thay thế đang thay cho từ hoặc ý nào ở câu trước",
+      ],
+    },
+  },
+  {
+    id: "TL-05",
+    group: "TL",
+    title: "Quan hệ từ và cặp quan hệ từ",
+    lesson: {
+      concept:
+        "Quan hệ từ là từ dùng để nối các từ ngữ hoặc các vế câu, thể hiện quan hệ giữa chúng (nguyên nhân – kết quả, tương phản, điều kiện – kết quả...). Cặp quan hệ từ là hai quan hệ từ đi cùng nhau trong câu ghép (vì...nên, nếu...thì, tuy...nhưng).",
+      signals: [
+        "Đề bài dạng \"điền quan hệ từ thích hợp\", \"xác định cặp quan hệ từ trong câu và nêu quan hệ ý nghĩa\"",
+      ],
+      examples: [
+        "\"Vì trời mưa nên em đi học muộn.\" — cặp \"vì...nên\" thể hiện quan hệ nguyên nhân – kết quả.",
+        "\"Tuy nhà nghèo nhưng bạn ấy học rất giỏi.\" — cặp \"tuy...nhưng\" thể hiện quan hệ tương phản.",
+      ],
+      commonMistakes: [
+        "Chọn cặp quan hệ từ không phù hợp với quan hệ ý nghĩa giữa hai vế câu (VD dùng \"vì...nên\" cho quan hệ tương phản)",
+        "Thiếu một vế của cặp quan hệ từ khi viết câu ghép",
+      ],
+    },
+  },
+  {
+    id: "TL-06",
+    group: "TL",
+    title: "Xác định từ loại trong ngữ cảnh; hiện tượng chuyển loại của từ",
+    lesson: {
+      concept:
+        "Một từ có thể thuộc nhiều từ loại khác nhau tuỳ vào vị trí và chức năng của nó trong câu — đây gọi là hiện tượng chuyển loại của từ. Cần xác định từ loại dựa vào NGỮ CẢNH cụ thể, không dựa vào từ đó một cách cô lập.",
+      steps: [
+        "Xác định vị trí của từ trong câu (đứng ở đâu, làm thành phần gì).",
+        "Xem từ đó đang biểu thị sự vật (danh từ), hoạt động/trạng thái (động từ) hay đặc điểm (tính từ).",
+        "Kết luận từ loại dựa trên chức năng thực tế trong câu đó, không dựa vào nghĩa quen thuộc nhất của từ.",
+      ],
+      signals: [
+        "Cùng một từ nhưng xuất hiện với từ loại khác nhau trong hai câu khác nhau",
+      ],
+      examples: [
+        "\"Em thi đỗ.\" (\"thi\" — động từ) khác với \"Cuộc thi rất hấp dẫn.\" (\"thi\" — danh từ, trong cụm \"cuộc thi\").",
+        "\"Cái cuốc này rất sắc.\" (\"cuốc\" — danh từ) khác với \"Bác nông dân đang cuốc đất.\" (\"cuốc\" — động từ).",
+      ],
+      commonMistakes: [
+        "Luôn gán một từ loại cố định cho một từ mà không xem xét ngữ cảnh cụ thể của câu",
+        "Nhầm lẫn khi một từ chuyển loại nhưng hình thức viết hoàn toàn giống nhau",
+      ],
+    },
+  },
+  {
+    id: "DH-01",
+    group: "DH",
+    title: "Xác định chi tiết, sự việc trong văn bản",
+    lesson: {
+      concept:
+        "Đọc hiểu ở mức cơ bản nhất là tìm được chính xác chi tiết, sự việc được nói TRỰC TIẾP trong văn bản (ai, làm gì, ở đâu, khi nào) — câu trả lời thường nằm nguyên trong bài, không cần suy luận.",
+      steps: [
+        "Đọc kỹ câu hỏi trước, xác định từ khoá cần tìm (tên nhân vật, thời gian, địa điểm, hành động).",
+        "Quét lại văn bản để tìm đoạn có chứa từ khoá đó.",
+        "Đọc kỹ câu/đoạn chứa từ khoá để xác định chính xác chi tiết được hỏi.",
+        "Trả lời đúng như thông tin có trong bài, không thêm hoặc suy diễn.",
+      ],
+      signals: [
+        "Câu hỏi thường bắt đầu bằng \"Ai...\", \"Ở đâu...\", \"Khi nào...\", \"Con gì/Cái gì...\"",
+      ],
+      examples: [
+        "Với đoạn văn có câu \"Sáng chủ nhật, Lan cùng mẹ ra vườn hái rau.\", câu hỏi \"Lan ra vườn làm gì?\" có câu trả lời trực tiếp trong bài: \"hái rau\".",
+      ],
+      commonMistakes: [
+        "Trả lời dựa vào suy đoán, kinh nghiệm cá nhân thay vì thông tin có trong bài",
+        "Đọc lướt, trả lời sai chi tiết do nhầm giữa các nhân vật/sự việc gần giống nhau trong bài",
+      ],
+    },
+  },
+  {
+    id: "DH-02",
+    group: "DH",
+    title: "Cốt truyện và trình tự sự việc",
+    lesson: {
+      concept:
+        "Cốt truyện là chuỗi các sự việc chính diễn ra trong văn bản theo một trình tự nhất định (thường là trình tự thời gian). Nắm được cốt truyện giúp trả lời các câu hỏi về trình tự \"việc gì xảy ra trước/sau\".",
+      steps: [
+        "Đọc toàn bộ văn bản một lượt để nắm được diễn biến chung.",
+        "Xác định các mốc sự việc chính (mở đầu, diễn biến, kết thúc).",
+        "Chú ý các từ ngữ chỉ thời gian, trình tự (đầu tiên, sau đó, cuối cùng...) để xác định đúng thứ tự.",
+      ],
+      signals: [
+        "Câu hỏi dạng \"sự việc nào xảy ra trước/sau...\", \"sắp xếp lại các sự việc theo đúng trình tự\"",
+      ],
+      examples: [
+        "\"Sáng sớm, Nam ra vườn tưới cây. Sau đó, em cho gà ăn. Cuối cùng em mới ăn sáng và đến trường.\" — trình tự đúng: tưới cây → cho gà ăn → ăn sáng → đến trường.",
+      ],
+      commonMistakes: [
+        "Sắp xếp theo thứ tự sự việc được nhắc đến trong câu hỏi thay vì thứ tự thực tế trong bài",
+        "Bỏ sót các từ ngữ chỉ trình tự thời gian (rồi, sau đó, cuối cùng) khiến xác định sai thứ tự",
+      ],
+    },
+  },
+  {
+    id: "DH-03",
+    group: "DH",
+    title: "Nhân vật: hành động, đặc điểm, tính cách",
+    lesson: {
+      concept:
+        "Nhận diện đặc điểm, hành động, tính cách nhân vật qua thông tin TRỰC TIẾP (được nêu thẳng) hoặc GIÁN TIẾP (qua hành động, lời nói) trong văn bản — là nền tảng để trả lời câu hỏi đọc hiểu về nhân vật (khác với CT-06 thiên về viết đoạn cảm nhận văn học).",
+      steps: [
+        "Tìm các câu miêu tả trực tiếp về nhân vật (ngoại hình, tính cách được nêu thẳng).",
+        "Tìm các hành động, lời nói của nhân vật để suy ra đặc điểm không được nêu trực tiếp.",
+        "Tổng hợp lại thành nhận xét đầy đủ về nhân vật.",
+      ],
+      signals: [
+        "Câu hỏi dạng \"nhân vật... có đặc điểm/tính cách gì?\", \"chi tiết nào cho thấy nhân vật...\"",
+      ],
+      examples: [
+        "\"Tuy trời rất lạnh, Hùng vẫn nhường chiếc áo ấm duy nhất cho em gái.\" — hành động này cho thấy Hùng là người biết yêu thương, nhường nhịn, dù văn bản không nói thẳng điều đó.",
+      ],
+      commonMistakes: [
+        "Chỉ dựa vào một chi tiết nhỏ để kết luận về cả tính cách nhân vật mà không xem xét tổng thể văn bản",
+        "Nhầm lẫn giữa đặc điểm được nêu trực tiếp và đặc điểm cần suy luận từ hành động",
+      ],
+    },
+  },
+  {
+    id: "DH-04",
+    group: "DH",
+    title: "Ý chính, chủ đề, thông điệp của tác phẩm",
+    lesson: {
+      concept:
+        "Ý chính là nội dung quan trọng nhất của một đoạn văn; chủ đề là vấn đề bao trùm toàn bộ văn bản; thông điệp là bài học, điều tác giả muốn gửi gắm. Cần đọc toàn bộ văn bản (không chỉ một câu) để xác định đúng.",
+      steps: [
+        "Đọc toàn bộ văn bản, tóm tắt ngắn gọn nội dung mỗi đoạn.",
+        "Tìm điểm chung xuyên suốt các đoạn — đó chính là chủ đề.",
+        "Từ chủ đề và diễn biến, suy ra thông điệp/bài học tác giả muốn gửi gắm.",
+      ],
+      signals: [
+        "Câu hỏi dạng \"văn bản trên nói về điều gì?\", \"qua văn bản, tác giả muốn nhắn nhủ điều gì?\"",
+      ],
+      examples: [
+        "Một câu chuyện kể việc chú kiến nhỏ chăm chỉ tha thức ăn về tổ trước mùa đông — chủ đề: sự chăm chỉ, chuẩn bị trước; thông điệp: cần biết lo xa, chăm chỉ chuẩn bị cho tương lai.",
+      ],
+      commonMistakes: [
+        "Nhầm ý chính của MỘT đoạn với chủ đề của CẢ văn bản",
+        "Đưa ra thông điệp không liên quan đến nội dung văn bản (suy diễn quá xa so với bài đọc)",
+      ],
+    },
+  },
+  {
+    id: "DH-05",
+    group: "DH",
+    title: "Hàm ý, ẩn ý; suy luận từ văn bản",
+    lesson: {
+      concept:
+        "Có những thông tin không được nói trực tiếp mà cần suy luận dựa trên các chi tiết đã cho (hàm ý, ẩn ý) — khác với DH-01 (chi tiết có sẵn), đây đòi hỏi kết nối nhiều chi tiết để rút ra điều tác giả ngụ ý.",
+      steps: [
+        "Đọc kỹ các chi tiết liên quan đến câu hỏi.",
+        "Tự hỏi: \"vì sao tác giả lại viết như vậy?\", \"chi tiết này cho thấy điều gì?\"",
+        "Kết nối các chi tiết để rút ra kết luận hợp lý, dựa trên thông tin có trong bài — không suy diễn tuỳ tiện.",
+      ],
+      signals: [
+        "Câu hỏi dạng \"vì sao...\", \"điều này cho thấy...\", \"qua chi tiết..., em hiểu gì về...\"",
+      ],
+      examples: [
+        "\"Cậu bé cúi đầu, hai tay siết chặt vạt áo, không dám nhìn mẹ.\" — dù văn bản không nói thẳng, người đọc có thể suy luận cậu bé đang cảm thấy có lỗi, xấu hổ.",
+      ],
+      commonMistakes: [
+        "Suy luận dựa trên tưởng tượng cá nhân, không có căn cứ từ chi tiết trong bài",
+        "Nhầm lẫn giữa suy luận hợp lý (có căn cứ) với việc đoán mò không có cơ sở",
+      ],
+    },
+  },
+  {
+    id: "DH-06",
+    group: "DH",
+    title: "Giải nghĩa từ theo ngữ cảnh",
+    lesson: {
+      concept:
+        "Khi gặp từ khó hoặc từ có nhiều nghĩa trong văn bản, cần dựa vào NGỮ CẢNH xung quanh (câu trước, câu sau) để xác định đúng nghĩa của từ trong bài đó, thay vì chỉ dựa vào nghĩa quen thuộc nhất (liên hệ TL-06, NT-04).",
+      steps: [
+        "Đọc câu chứa từ cần giải nghĩa và cả câu trước/sau.",
+        "Thử thay từ đó bằng một từ đồng nghĩa hoặc cách diễn đạt khác, xem có phù hợp với ngữ cảnh không.",
+        "Xác định nghĩa phù hợp nhất với nội dung đang được nói tới trong bài.",
+      ],
+      signals: [
+        "Câu hỏi dạng \"từ ... trong đoạn văn có nghĩa là gì?\", \"từ ... có thể thay thế bằng từ nào mà không đổi nghĩa?\"",
+      ],
+      examples: [
+        "Từ \"chạy\" trong câu \"Cỗ máy chạy suốt đêm không nghỉ.\" không mang nghĩa \"di chuyển bằng chân\" mà mang nghĩa \"hoạt động, vận hành\" — phải dựa vào ngữ cảnh (chủ ngữ là \"cỗ máy\") để xác định đúng.",
+      ],
+      commonMistakes: [
+        "Luôn hiểu từ theo nghĩa quen thuộc nhất mà không xem xét ngữ cảnh cụ thể của bài",
+        "Giải nghĩa từ đúng về mặt từ điển nhưng không phù hợp với văn cảnh của bài đọc",
+      ],
+    },
+  },
+  {
+    id: "CA-08",
+    group: "CA",
+    title: "Chữa lỗi câu: thiếu thành phần, sai quan hệ từ, lặp từ, diễn đạt lủng củng",
+    lesson: {
+      concept:
+        "Một câu đúng ngữ pháp cần đủ chủ ngữ và vị ngữ, dùng đúng quan hệ từ, không lặp từ không cần thiết và diễn đạt rõ ràng, mạch lạc. Chữa lỗi câu là phát hiện và sửa các câu vi phạm những yêu cầu này.",
+      steps: [
+        "Đọc câu và tự hỏi: câu đã có đủ chủ ngữ, vị ngữ chưa?",
+        "Kiểm tra quan hệ từ (nếu có) đã dùng đúng và đủ cặp chưa (xem thêm TL-05).",
+        "Kiểm tra xem có từ nào bị lặp lại không cần thiết, làm câu rườm rà không.",
+        "Đọc lại toàn câu xem diễn đạt đã rõ ràng, mạch lạc chưa; nếu chưa, viết lại cho gọn và rõ nghĩa hơn.",
+      ],
+      signals: [
+        "Câu thiếu chủ ngữ thường bắt đầu bằng trạng ngữ mà không có chủ ngữ theo sau (VD: \"Qua bài văn cho thấy...\" — thiếu chủ ngữ)",
+        "Đề bài dạng \"câu sau mắc lỗi gì, hãy sửa lại cho đúng\"",
+      ],
+      examples: [
+        "Câu sai: \"Qua bài văn cho thấy bạn Nam là người chăm chỉ.\" (thiếu chủ ngữ vì \"qua bài văn\" chỉ là trạng ngữ). Sửa: \"Qua bài văn, em thấy bạn Nam là người chăm chỉ.\"",
+        "Câu sai: \"Vì bạn ấy chăm chỉ nên bạn ấy chăm chỉ nên đạt điểm cao.\" (lặp từ \"chăm chỉ\", \"nên\" không cần thiết). Sửa: \"Vì bạn ấy chăm chỉ nên đạt điểm cao.\"",
+      ],
+      commonMistakes: [
+        "Nhầm trạng ngữ với chủ ngữ, dẫn đến không phát hiện được câu thiếu chủ ngữ",
+        "Chỉ sửa lỗi lặp từ mà không kiểm tra thêm các lỗi khác (thiếu thành phần, sai quan hệ từ) trong cùng một câu",
+      ],
+    },
+  },
 ];
 

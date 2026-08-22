@@ -165,36 +165,47 @@ Xem Mục 18 của URD. Tóm tắt:
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
-43/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
-ví dụ, lỗi thường gặp) + bài tập. **7/9 nhóm đã hoàn thành 100%**, chỉ còn
-TL và DH:
+**56/56 chuyên đề đã có bài học lý thuyết đầy đủ** (concept, dấu hiệu nhận
+biết, ví dụ, lỗi thường gặp) + ít nhất vài bài tập mỗi chuyên đề — đúng
+100% danh sách chuyên đề URD Mục 5.1–5.9 (kể cả 3 mục `[BỔ SUNG]`: CA-08,
+CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
 
-- **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
-- **CA — Câu: 7/8** — CA-01→07 (đúng thứ tự ưu tiên Mục 5.11, đủ theo chỉ
-  dẫn "CA-01→07" của bảng mục tiêu). Còn thiếu CA-08 (chữa lỗi câu — mục
-  `[BỔ SUNG]`, không nằm trong danh sách ưu tiên gốc).
-- **CT — Cảm thụ văn học: 7/7 (xong)** — CT-01→07.
-- **NT — Nghĩa của từ và vốn từ: 6/6 (xong)** — NT-01→06.
-- **TC — Tiếng, từ và cấu tạo từ: 4/4 (xong)** — TC-01→04. TC-03/TC-04 có
+- **KN — Kỹ năng làm bài: 5/5** — KN-01→05.
+- **CA — Câu: 8/8** — CA-01→08 (bao gồm CA-08 chữa lỗi câu, mục `[BỔ SUNG]`).
+- **CT — Cảm thụ văn học: 7/7** — CT-01→07.
+- **NT — Nghĩa của từ và vốn từ: 6/6** — NT-01→06.
+- **TC — Tiếng, từ và cấu tạo từ: 4/4** — TC-01→04. TC-03/TC-04 có
   `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi giữa các bộ SGK
   (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không tranh cãi, không lấy
   từ tranh cãi làm đáp án đúng (FR-D04, có test guard tự động).
-- **CD — Chính tả và dấu câu: 5/5 (xong)** — CD-01→05. Mọi câu `fill` trong
-  nhóm CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng ký tự,
-  kể cả dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
-- **VA — Tập làm văn: 9/9 (xong)** — VA-01→09. Mỗi chuyên đề hiện có 1 đề
-  văn mẫu đầy đủ (dàn ý, các cách mở bài, rubric chấm điểm, bài văn mẫu).
-  Mục 5.11 đặt mục tiêu ≥4 đề/chuyên đề (~36 đề) — hiện mới có 1 đề/chuyên
-  đề (9 đề), tăng số lượng đề mỗi chuyên đề là việc mở rộng ở vòng sau.
-- **TL, DH: 0 chuyên đề** — 2 nhóm cuối cùng chưa có gì, là ưu tiên tiếp
-  theo để đạt mốc 56/56 chuyên đề có bài học.
+- **CD — Chính tả và dấu câu: 5/5** — CD-01→05. Mọi câu `fill` trong nhóm
+  CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng ký tự, kể cả
+  dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
+- **VA — Tập làm văn: 9/9** — VA-01→09. Mỗi chuyên đề hiện có 1 đề văn mẫu
+  đầy đủ (dàn ý, các cách mở bài, rubric chấm điểm, bài văn mẫu).
+- **TL — Từ loại: 6/6** — TL-01→06 (bao gồm TL-06 hiện tượng chuyển loại
+  của từ, mục `[BỔ SUNG]`).
+- **DH — Đọc hiểu: 6/6** — DH-01→06 (kỹ năng đọc hiểu: xác định chi tiết,
+  cốt truyện, nhân vật, ý chính/chủ đề, suy luận, giải nghĩa từ theo ngữ
+  cảnh — mỗi bài tập kèm một đoạn văn ngắn tự biên soạn làm ngữ liệu; đây
+  là kỹ năng đọc hiểu chung, KHÁC với kho 25 văn bản đọc hiểu dài ở dưới).
 
-Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
-thi thử hoàn chỉnh theo đúng 4 cấu hình (hiện dùng sinh đề tự động từ kho
-bài tập nhỏ, chưa phải "đề soạn sẵn"). Lớp 2 (đối chiếu chéo) và lớp 3
-(giáo viên rà soát — đã quyết định bỏ qua) của quy trình kiểm chứng 3 lớp
-(Mục 18.3) chưa thực hiện; mới có lớp 1 (kiểm tra cấu trúc tự động qua
-`content-schema.test.ts`).
+**Việc còn lại (mở rộng số lượng, không phải thiếu chuyên đề nào)** — theo
+đúng mục tiêu số lượng ở Mục 5.11:
+
+- Mục 5.11 đặt mục tiêu ≥12 bài tập/chuyên đề cho nhóm TC, TL, NT, CA, CD
+  (~350 bài) — hiện mỗi chuyên đề mới có 2–5 bài, cần bổ sung thêm.
+- ≥5 bài cảm thụ có đáp án mẫu/chuyên đề CT (~35 bài) — hiện mỗi chuyên đề
+  CT mới có 3–4 bài.
+- ≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA (~36 đề) — hiện mỗi
+  chuyên đề VA mới có 1 đề.
+- Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 0/25 (khác với 6 chuyên đề kỹ năng
+  DH-01→06 đã xong ở trên).
+- Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình: 0/8 (hiện dùng sinh
+  đề tự động từ kho bài tập nhỏ, chưa phải "đề soạn sẵn").
+- Lớp 2 (đối chiếu chéo) và lớp 3 (giáo viên rà soát — đã quyết định bỏ
+  qua) của quy trình kiểm chứng 3 lớp (Mục 18.3) chưa thực hiện; mới có
+  lớp 1 (kiểm tra cấu trúc tự động qua `content-schema.test.ts`).
 
 ## Giới hạn đã biết
 

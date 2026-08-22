@@ -21,6 +21,7 @@ import { CA04_EXERCISES } from "@/content/exercises/ca-04";
 import { CA05_EXERCISES } from "@/content/exercises/ca-05";
 import { CA06_EXERCISES } from "@/content/exercises/ca-06";
 import { CA07_EXERCISES } from "@/content/exercises/ca-07";
+import { CA08_EXERCISES } from "@/content/exercises/ca-08";
 import { CD01_EXERCISES } from "@/content/exercises/cd-01";
 import { CD02_EXERCISES } from "@/content/exercises/cd-02";
 import { CD03_EXERCISES } from "@/content/exercises/cd-03";
@@ -42,6 +43,18 @@ import { VA06_EXERCISES } from "@/content/exercises/va-06";
 import { VA07_EXERCISES } from "@/content/exercises/va-07";
 import { VA08_EXERCISES } from "@/content/exercises/va-08";
 import { VA09_EXERCISES } from "@/content/exercises/va-09";
+import { TL01_EXERCISES } from "@/content/exercises/tl-01";
+import { TL02_EXERCISES } from "@/content/exercises/tl-02";
+import { TL03_EXERCISES } from "@/content/exercises/tl-03";
+import { TL04_EXERCISES } from "@/content/exercises/tl-04";
+import { TL05_EXERCISES } from "@/content/exercises/tl-05";
+import { TL06_EXERCISES } from "@/content/exercises/tl-06";
+import { DH01_EXERCISES } from "@/content/exercises/dh-01";
+import { DH02_EXERCISES } from "@/content/exercises/dh-02";
+import { DH03_EXERCISES } from "@/content/exercises/dh-03";
+import { DH04_EXERCISES } from "@/content/exercises/dh-04";
+import { DH05_EXERCISES } from "@/content/exercises/dh-05";
+import { DH06_EXERCISES } from "@/content/exercises/dh-06";
 import type { Exercise, Topic } from "@/data-access/types";
 
 export const ALL_TOPICS: Topic[] = TOPICS;
@@ -69,6 +82,7 @@ export const ALL_EXERCISES: Exercise[] = [
   ...CA05_EXERCISES,
   ...CA06_EXERCISES,
   ...CA07_EXERCISES,
+  ...CA08_EXERCISES,
   ...CD01_EXERCISES,
   ...CD02_EXERCISES,
   ...CD03_EXERCISES,
@@ -90,6 +104,18 @@ export const ALL_EXERCISES: Exercise[] = [
   ...VA07_EXERCISES,
   ...VA08_EXERCISES,
   ...VA09_EXERCISES,
+  ...TL01_EXERCISES,
+  ...TL02_EXERCISES,
+  ...TL03_EXERCISES,
+  ...TL04_EXERCISES,
+  ...TL05_EXERCISES,
+  ...TL06_EXERCISES,
+  ...DH01_EXERCISES,
+  ...DH02_EXERCISES,
+  ...DH03_EXERCISES,
+  ...DH04_EXERCISES,
+  ...DH05_EXERCISES,
+  ...DH06_EXERCISES,
 ];
 
 export { DISPUTED_WORDS } from "@/content/disputed-words";
