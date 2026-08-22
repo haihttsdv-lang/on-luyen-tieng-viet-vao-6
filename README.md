@@ -83,7 +83,31 @@ chỉ ẩn/khoá phần Đồng bộ và hiện hướng dẫn thay vì lỗi (S
    }
    ```
 
-8. Chạy lại `npm run dev` — mục Đồng bộ trong trang Hồ sơ sẽ hoạt động.
+8. Chạy lại `npm run dev` — mục Đồng bộ trong trang Hồ sơ sẽ hoạt động khi
+   chạy cục bộ.
+9. **Để bật tính năng này trên bản GitHub Pages đang chạy thật** (không chỉ
+   cục bộ): 6 giá trị `VITE_FIREBASE_*` cần có mặt lúc GitHub Actions build,
+   không phải lúc chạy — thêm chúng làm **GitHub Actions secrets**: vào
+   trang repo trên GitHub → **Settings → Secrets and variables → Actions →
+   New repository secret**, tạo đúng 6 secret tên `VITE_FIREBASE_API_KEY`,
+   `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`,
+   `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`,
+   `VITE_FIREBASE_APP_ID` — giá trị lấy từ chính file `.env` vừa tạo ở bước
+   6. `.github/workflows/deploy.yml` đã cấu hình sẵn để đọc các secret này
+   khi build (`npm run build:gh-pages`); nếu thiếu secret nào, biến đó rỗng
+   và mục Đồng bộ tự ẩn/khoá theo đúng SY-14 — không lỗi, không vỡ trang.
+   Sau khi thêm đủ 6 secret, vào tab **Actions** của repo, chọn workflow
+   "Deploy to GitHub Pages" → **Run workflow** để build lại ngay (hoặc chờ
+   commit tiếp theo tự kích hoạt).
+
+   **Lưu ý về bản chất đồng bộ đa thiết bị** (đã trả lời chi tiết trong hội
+   thoại, nhắc lại ở đây để không quên): đây là đồng bộ kiểu "ghi đè toàn
+   bộ, ai đồng bộ sau thắng" (last-write-wins trên toàn bộ `ProgressStore`),
+   không gộp (merge) từng phần — nếu học trên 2 thiết bị mà không đồng bộ
+   thường xuyên, tiến trình chưa kịp đồng bộ ở thiết bị "thua" có thể mất.
+   Luồng gọi Firestore thật cũng chưa được kiểm thử end-to-end với dự án
+   Firebase thật trong quá trình phát triển (môi trường build không có
+   Firebase Emulator) — nên tự kiểm tra kỹ sau khi bật.
 
 ## Triển khai (GitHub Pages)
 
