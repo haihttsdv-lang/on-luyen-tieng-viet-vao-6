@@ -117,8 +117,8 @@ chuyên đề CT (35 bài, 7/7 chuyên đề), và ≥4 đề văn/chuyên đề
 9/9 chuyên đề). Việc còn lại — chỉ còn nội dung dạng "kho ngữ liệu lớn",
 không còn việc mở rộng số bài/chuyên đề nào nữa:
 
-1. **Văn bản đọc hiểu dài (5/25, mỗi văn bản 5–7 câu hỏi)** — hạ tầng đã
-   xong (xem "Tiến độ nội dung" ở README), chỉ còn viết thêm 20 văn bản
+1. **Văn bản đọc hiểu dài (10/25, mỗi văn bản 5–7 câu hỏi)** — hạ tầng đã
+   xong (xem "Tiến độ nội dung" ở README), chỉ còn viết thêm 15 văn bản
    theo đúng khuôn mẫu đã có: mỗi văn bản là 1 truyện ngắn tự biên soạn
    (~150–200 từ, Mục 10.1 hướng B) trong `src/content/passages/index.ts`,
    kèm file `src/content/exercises/dh-passage-XX.ts` với 5–7 câu hỏi, MỖI

@@ -1,0 +1,130 @@
+import type { Exercise } from "@/data-access/types";
+
+// DH-passage-06 — "Người bạn mới". Văn bản tự biên soạn (Mục 10.1 hướng B).
+export const DH_PASSAGE_06_EXERCISES: Exercise[] = [
+  {
+    id: "dh-passage-06-q1",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-06",
+    prompt: "Khôi chuyển đến lớp 5A từ đâu?",
+    explanation: "Văn bản nêu trực tiếp: Khôi chuyển đến từ một tỉnh miền núi xa xôi.",
+    mcq: {
+      options: ["Từ một thành phố lớn", "Từ một tỉnh miền núi xa xôi", "Từ nước ngoài", "Từ một trường gần đó"],
+      answerIndex: 1,
+      distractorNotes: [
+        "Văn bản không nói Khôi từ thành phố lớn đến.",
+        "Đúng — đây là chi tiết nêu trực tiếp ở đầu văn bản.",
+        "Văn bản không nói Khôi từ nước ngoài đến.",
+        "Văn bản nói Khôi đến từ nơi xa, không phải trường gần đó.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-06-q2",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "fill",
+    passageId: "dh-passage-06",
+    prompt: "Ai là người đầu tiên rủ Khôi ra sân chơi cùng? (trả lời bằng tên riêng có trong bài)",
+    explanation: "Văn bản nêu trực tiếp: Bình, lớp trưởng, là người tiến đến rủ Khôi ra sân chơi.",
+    fill: { acceptedAnswers: ["Bình"], strictMode: false, isSet: false },
+  },
+  {
+    id: "dh-passage-06-q3",
+    topicIds: ["DH-02"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-06",
+    prompt: "Sự việc nào xảy ra SAU CÙNG trong câu chuyện?",
+    explanation: "Theo trình tự: Khôi ngồi im lặng, Bình rủ ra chơi, các bạn chỉ cách chơi, cuối cùng Khôi trở nên hoạt bát vào cuối năm học.",
+    mcq: {
+      options: [
+        "Khôi ngồi im lặng một góc lớp",
+        "Bình rủ Khôi ra sân chơi đá cầu",
+        "Khôi trở thành một trong những thành viên hoạt bát nhất lớp",
+        "Các bạn chỉ cho Khôi cách chơi đá cầu",
+      ],
+      answerIndex: 2,
+      distractorNotes: [
+        "Đây là sự việc mở đầu câu chuyện.",
+        "Việc này xảy ra sau khi Khôi ngồi im lặng, trước khi ra sân.",
+        "Đúng — đây là kết quả cuối cùng, diễn ra vào cuối năm học.",
+        "Việc này xảy ra ngay sau khi Khôi đồng ý ra sân, trước khi trở nên hoạt bát.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-06-q4",
+    topicIds: ["DH-03"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-06",
+    prompt: "Chi tiết nào cho thấy Bình là người thân thiện, biết quan tâm bạn bè?",
+    explanation: "Chi tiết Bình chủ động đến rủ Khôi ra chơi và các bạn không chê cười khi Khôi đá trượt cầu thể hiện rõ sự thân thiện, bao dung.",
+    mcq: {
+      options: [
+        "Bình là lớp trưởng của lớp 5A",
+        "Bình chủ động đến rủ Khôi ra sân chơi, không ai chê cười khi Khôi đá trượt",
+        "Bình thích chơi đá cầu",
+        "Bình ngồi trong lớp giờ ra chơi",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây chỉ là chức vụ, chưa thể hiện tính cách.",
+        "Đúng — hành động chủ động quan tâm và bao dung này thể hiện rõ sự thân thiện.",
+        "Đây chỉ là sở thích cá nhân, không thể hiện rõ sự quan tâm đến Khôi.",
+        "Chi tiết này mô tả Khôi, không phải Bình.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-06-q5",
+    topicIds: ["DH-04"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-06",
+    prompt: "Câu chuyện trên muốn gửi đến người đọc thông điệp gì?",
+    explanation: "Câu chuyện cho thấy sự thân thiện, chào đón của bạn bè giúp một người mới dễ dàng hoà nhập với môi trường mới.",
+    mcq: {
+      options: [
+        "Không nên kết bạn với người ở xa đến",
+        "Sự thân thiện, chào đón của bạn bè giúp người mới dễ dàng hoà nhập",
+        "Chỉ nên chơi với bạn cùng quê",
+        "Chơi đá cầu là môn thể thao khó nhất",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây là ý ngược lại với thông điệp câu chuyện.",
+        "Đúng — đây là bài học chính thể hiện qua sự thay đổi của Khôi.",
+        "Văn bản không đưa ra lời khuyên này.",
+        "Văn bản không đánh giá độ khó của môn đá cầu.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-06-q6",
+    topicIds: ["DH-05"],
+    level: "M3",
+    questionType: "mcq",
+    passageId: "dh-passage-06",
+    prompt: "Vì sao Khôi ngồi im lặng, không dám bắt chuyện trong ngày đầu tiên đến lớp?",
+    explanation: "Có thể suy luận: Khôi cảm thấy lạ lẫm, chưa quen với môi trường và bạn bè mới, có thể còn tự ti về giọng nói khác biệt của mình.",
+    mcq: {
+      options: [
+        "Vì Khôi không thích học",
+        "Vì Khôi còn lạ lẫm, có thể tự ti trước môi trường và bạn bè mới",
+        "Vì Khôi bị cô giáo phạt",
+        "Vì Khôi không biết tiếng Việt",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Văn bản không cho thấy Khôi không thích học.",
+        "Đúng — đây là suy luận hợp lý dựa trên hoàn cảnh một học sinh mới chuyển trường.",
+        "Văn bản không nhắc đến việc Khôi bị phạt.",
+        "Văn bản chỉ nói giọng Khôi hơi khác, không phải không biết tiếng Việt.",
+      ],
+    },
+  },
+];
