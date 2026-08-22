@@ -224,7 +224,29 @@ export const TOPICS: Topic[] = [
       ],
     },
   },
-  { id: "CD-01", group: "CD", title: "Chính tả: phụ âm đầu dễ lẫn (l/n, ch/tr, s/x, r/d/gi)" },
+  {
+    id: "CD-01",
+    group: "CD",
+    title: "Chính tả: phụ âm đầu dễ lẫn (l/n, ch/tr, s/x, r/d/gi)",
+    // Giai đoạn 9 — bổ sung lesson còn thiếu (đã có bài tập từ trước).
+    lesson: {
+      concept:
+        "Một số phụ âm đầu dễ bị lẫn lộn khi phát âm theo phương ngữ (l/n, ch/tr, s/x, r/d/gi), khiến nhiều người viết sai dù đọc giống nhau. Cần phân biệt bằng cách nhớ mặt chữ và nghĩa của từ.",
+      signals: [
+        "Hai từ đọc gần giống nhau theo phương ngữ nhưng viết khác phụ âm đầu và mang nghĩa khác nhau",
+        "Đề bài dạng \"điền l hay n\", \"điền ch hay tr\", \"từ nào viết đúng chính tả\"",
+      ],
+      examples: [
+        "\"Long lanh\" (đúng, âm đầu l) — không viết \"nong nanh\".",
+        "\"Trèo cây\" (đúng, âm đầu tr, nghĩa là leo lên) khác với \"chèo thuyền\" (âm đầu ch, nghĩa là chèo lái) — hai nghĩa hoàn toàn khác nhau.",
+        "\"Sạch sẽ\" (đúng, âm đầu s) — không viết \"xạch xẽ\".",
+      ],
+      commonMistakes: [
+        "Viết theo cách phát âm của địa phương thay vì theo chữ viết chuẩn",
+        "Đổi nhầm phụ âm đầu khiến từ mang nghĩa khác hẳn (VD nhầm \"trèo\" thành \"chèo\")",
+      ],
+    },
+  },
   {
     id: "CT-07",
     group: "CT",
@@ -704,6 +726,92 @@ export const TOPICS: Topic[] = [
       commonMistakes: [
         "Chỉ dừng lại ở nghĩa đen mà không suy ra được nghĩa bóng, bài học của thành ngữ/tục ngữ",
         "Nhầm lẫn giữa thành ngữ (cụm từ cố định) và tục ngữ (câu hoàn chỉnh, đúc kết kinh nghiệm)",
+      ],
+    },
+  },
+  {
+    id: "CD-02",
+    group: "CD",
+    title: "Chính tả: thanh hỏi và thanh ngã",
+    lesson: {
+      concept:
+        "Thanh hỏi (dấu ?) và thanh ngã (dấu ~) dễ bị lẫn khi phát âm ở nhiều vùng miền. Cần phân biệt bằng cách nhớ mặt chữ và nghĩa của từ; với từ láy có thể tham khảo mẹo dân gian: tiếng mang thanh huyền hoặc nặng thường đi cùng tiếng mang thanh ngã, còn tiếng mang thanh ngang (không dấu) hoặc sắc thường đi cùng tiếng mang thanh hỏi.",
+      signals: [
+        "Đề bài dạng \"điền dấu hỏi hay dấu ngã\", \"từ nào viết đúng chính tả\"",
+        "Từ láy: huyền/nặng thường đi với ngã; ngang/sắc thường đi với hỏi (chỉ là mẹo tham khảo, không tuyệt đối)",
+      ],
+      examples: [
+        "\"Nghỉ ngơi\" (thanh hỏi, nghĩa là dừng làm việc để thư giãn) khác với \"suy nghĩ\" (thanh ngã, nghĩa là dùng trí óc để hiểu, đánh giá).",
+        "\"Sẵn sàng\" — \"sẵn\" mang thanh ngã, \"sàng\" mang thanh huyền, đúng theo mẹo huyền đi với ngã.",
+      ],
+      commonMistakes: [
+        "Nhầm \"nghỉ\" (nghỉ ngơi) với \"nghĩ\" (suy nghĩ) vì phát âm giống nhau ở nhiều vùng, dẫn đến sai nghĩa cả câu",
+        "Chỉ dựa vào mẹo dấu thanh của từ láy mà không kiểm tra lại bằng nghĩa của từ — mẹo chỉ đúng với phần lớn trường hợp, không phải quy tắc tuyệt đối",
+      ],
+    },
+  },
+  {
+    id: "CD-03",
+    group: "CD",
+    title: "Chính tả: âm cuối và vần dễ lẫn (n/ng, c/t, iu/ưu, ươu/iêu…)",
+    lesson: {
+      concept:
+        "Một số âm cuối (n/ng, c/t) và vần (iu/ưu, ươu/iêu...) dễ bị lẫn khi phát âm theo phương ngữ, cần phân biệt bằng mặt chữ và nghĩa của từ.",
+      signals: [
+        "Đề bài dạng \"điền n hay ng\", \"điền c hay t\", \"từ nào viết đúng vần\"",
+      ],
+      examples: [
+        "\"Con hươu\" (vần \"ươu\") — không viết \"con hiêu\".",
+        "\"Líu lo\" (vần \"iu\") — không viết \"lưu lo\".",
+        "\"Bàn học\" (âm cuối n) khác nghĩa hoàn toàn với \"cây bàng\" (âm cuối ng).",
+      ],
+      commonMistakes: [
+        "Nhầm âm cuối n/ng khi phát âm không phân biệt rõ, dẫn đến sai nghĩa từ",
+        "Nhầm vần gần giống nhau (iu/ưu, ươu/iêu) do ảnh hưởng phát âm vùng miền",
+      ],
+    },
+  },
+  {
+    id: "CD-04",
+    group: "CD",
+    title: "Quy tắc viết hoa (tên người, địa danh, cơ quan, danh hiệu)",
+    lesson: {
+      concept:
+        "Tên riêng (tên người, địa danh, cơ quan/tổ chức, danh hiệu) phải viết hoa chữ cái đầu của MỌI tiếng tạo nên tên riêng đó, không chỉ tiếng đầu tiên.",
+      steps: [
+        "Xác định đây có phải tên riêng không (chỉ một người/nơi/tổ chức cụ thể, không phải danh từ chung).",
+        "Nếu là tên riêng: viết hoa chữ cái đầu của mọi tiếng trong tên riêng đó.",
+        "Danh từ chung đi kèm tên riêng (VD \"thành phố\", \"sông\", \"trường\") chỉ viết hoa khi đứng đầu câu, không viết hoa vì đi cùng tên riêng.",
+      ],
+      signals: [
+        "Tên người: Nguyễn Văn An; Tên địa danh: Hà Nội, Sông Hồng; Tên cơ quan: Trường Tiểu học Kim Đồng; Danh hiệu: Anh hùng Lao động",
+      ],
+      examples: [
+        "\"Nguyễn Văn An\" — viết hoa cả 3 tiếng vì đều là tên riêng của một người.",
+        "\"thành phố Hồ Chí Minh\" — chỉ viết hoa \"Hồ Chí Minh\" (tên riêng), \"thành phố\" là danh từ chung, không viết hoa (trừ khi đứng đầu câu).",
+      ],
+      commonMistakes: [
+        "Chỉ viết hoa tiếng đầu tiên của tên riêng có nhiều tiếng (VD viết sai \"Nguyễn văn An\", đúng phải là \"Nguyễn Văn An\")",
+        "Viết hoa cả danh từ chung đi kèm tên riêng khi không đứng đầu câu (VD viết hoa nhầm \"Thành phố\" trong \"...đến thành phố Hà Nội\")",
+      ],
+    },
+  },
+  {
+    id: "CD-05",
+    group: "CD",
+    title: "Dấu câu: chấm, phẩy, chấm hỏi, chấm than, hai chấm, ngoặc kép, gạch ngang, chấm lửng",
+    lesson: {
+      concept:
+        "Mỗi loại dấu câu có chức năng riêng: dấu chấm kết thúc câu kể, dấu phẩy ngăn cách các bộ phận trong câu, dấu chấm hỏi kết thúc câu hỏi, dấu chấm than kết thúc câu cảm/khiến, dấu hai chấm báo hiệu lời dẫn hoặc phần liệt kê, dấu ngoặc kép đánh dấu lời dẫn trực tiếp hoặc từ ngữ đặc biệt, dấu gạch ngang đánh dấu lời thoại hoặc phần chú thích, dấu chấm lửng thể hiện ý còn tiếp hoặc sự ngập ngừng.",
+      signals: [
+        "Đề bài dạng \"điền dấu câu thích hợp vào chỗ trống\", \"câu này còn thiếu dấu gì?\"",
+      ],
+      examples: [
+        "\"Mẹ hỏi: \\\"Con đã làm bài tập chưa?\\\"\" — dấu hai chấm báo hiệu lời dẫn, dấu ngoặc kép đánh dấu lời nói trực tiếp, dấu chấm hỏi kết thúc câu hỏi bên trong.",
+      ],
+      commonMistakes: [
+        "Lạm dụng dấu chấm than cho những câu kể bình thường, không mang sắc thái cảm thán",
+        "Quên đặt dấu hai chấm trước phần lời dẫn trực tiếp hoặc phần liệt kê",
       ],
     },
   },

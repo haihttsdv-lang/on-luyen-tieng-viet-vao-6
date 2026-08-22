@@ -22,6 +22,10 @@ import { CA05_EXERCISES } from "@/content/exercises/ca-05";
 import { CA06_EXERCISES } from "@/content/exercises/ca-06";
 import { CA07_EXERCISES } from "@/content/exercises/ca-07";
 import { CD01_EXERCISES } from "@/content/exercises/cd-01";
+import { CD02_EXERCISES } from "@/content/exercises/cd-02";
+import { CD03_EXERCISES } from "@/content/exercises/cd-03";
+import { CD04_EXERCISES } from "@/content/exercises/cd-04";
+import { CD05_EXERCISES } from "@/content/exercises/cd-05";
 import { CT01_EXERCISES } from "@/content/exercises/ct-01";
 import { CT02_EXERCISES } from "@/content/exercises/ct-02";
 import { CT03_EXERCISES } from "@/content/exercises/ct-03";
@@ -58,6 +62,10 @@ export const ALL_EXERCISES: Exercise[] = [
   ...CA06_EXERCISES,
   ...CA07_EXERCISES,
   ...CD01_EXERCISES,
+  ...CD02_EXERCISES,
+  ...CD03_EXERCISES,
+  ...CD04_EXERCISES,
+  ...CD05_EXERCISES,
   ...CT01_EXERCISES,
   ...CT02_EXERCISES,
   ...CT03_EXERCISES,

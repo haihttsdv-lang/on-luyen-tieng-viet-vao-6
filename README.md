@@ -165,9 +165,8 @@ Xem Mục 18 của URD. Tóm tắt:
 
 ### Tiến độ nội dung (Giai đoạn 9)
 
-29/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
-ví dụ, lỗi thường gặp) + bài tập. Thêm 2 chuyên đề (CD-01, VA-03) đã có bài
-tập từ trước nhưng lesson vẫn đang biên soạn — không tính vào 29 này:
+34/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
+ví dụ, lỗi thường gặp) + bài tập:
 
 - **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
 - **CA — Câu: 7/8** — CA-01→07 (đúng thứ tự ưu tiên Mục 5.11, đủ theo chỉ
@@ -179,9 +178,12 @@ tập từ trước nhưng lesson vẫn đang biên soạn — không tính vào
   `disputedNote` (FR-D02) vì đây đúng là nội dung tranh cãi giữa các bộ SGK
   (Mục 10.6) — bài học và câu hỏi chỉ dùng ví dụ không tranh cãi, không lấy
   từ tranh cãi làm đáp án đúng (FR-D04, có test guard tự động).
-- **CD — Chính tả và dấu câu: 0/5 có lesson** (CD-01 đã có bài tập từ giai
-  đoạn trước nhưng lesson chưa viết — ưu tiên tiếp theo).
-- **VA — Tập làm văn: 0/9 có lesson** (VA-03 tương tự CD-01).
+- **CD — Chính tả và dấu câu: 5/5 (xong)** — CD-01→05. Nhân dịp này cũng bổ
+  sung lesson còn thiếu cho CD-01 (trước đây chỉ có bài tập). Mọi câu `fill`
+  trong nhóm CD dùng `strictMode: true` (FR-M05 — so khớp chính xác từng
+  ký tự, kể cả dấu và hoa/thường, vì đó chính là nội dung đang kiểm tra).
+- **VA — Tập làm văn: 1/9 có lesson** (VA-03, kế thừa từ giai đoạn trước —
+  lesson cho VA-03 và 8 chuyên đề còn lại là ưu tiên tiếp theo).
 - **TL, DH: 0 chuyên đề.**
 
 Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
