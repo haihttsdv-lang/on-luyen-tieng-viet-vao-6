@@ -27,13 +27,15 @@ cả 3 mục `[BỔ SUNG]` CA-08/CT-03/CT-04/TL-06 — đúng danh sách URD M�
 ~350 bài) cũng đã ĐẠT ĐỦ cả 5 nhóm** (348 bài, 29 chuyên đề × 12 bài, mỗi
 chuyên đề có đủ 4 dạng câu hỏi mcq/fill/order/match). **≥5 bài cảm thụ/
 chuyên đề CT cũng đã ĐẠT ĐỦ** (7/7 chuyên đề, 35 bài), **và ≥4 đề văn/
-chuyên đề VA cũng đã ĐẠT ĐỦ** (9/9 chuyên đề, 36 đề). Việc còn lại của
-Giai đoạn 9 chỉ còn: văn bản đọc hiểu dài 0/25 (khác 6 chuyên đề KỸ NĂNG
-đọc hiểu DH-01→06 đã xong), đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu
-chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không
-cần giáo viên rà soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri
-thức với cuộc sống. Xem README mục "Tiến độ nội dung" để biết chính xác
-từng mục còn thiếu bao nhiêu.
+chuyên đề VA cũng đã ĐẠT ĐỦ** (9/9 chuyên đề, 36 đề). **Văn bản đọc hiểu
+dài cũng đã ĐẠT ĐỦ (25/25, mỗi văn bản 5–7 câu hỏi)** — 19 truyện ngắn +
+6 văn bản thông tin/khoa học thường thức, tự biên soạn (Mục 10.1 hướng
+B), đã xác minh qua trình duyệt thật. Việc còn lại của Giai đoạn 9 chỉ
+còn: đề thi thử soạn sẵn 0/8, và lớp 2 (đối chiếu chéo) của quy trình
+kiểm chứng 3 lớp (Mục 18.3). QĐ bổ sung đã chốt: không cần giáo viên rà
+soát, bộ sách chuẩn cho nội dung tranh cãi = Kết nối tri thức với cuộc
+sống. Xem README mục "Tiến độ nội dung" để biết chính xác từng mục còn
+thiếu bao nhiêu.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -111,27 +113,28 @@ từng mục còn thiếu bao nhiêu.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Bốn mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
+**Năm mốc lớn của Giai đoạn 9 đã đạt được:** 56/56 chuyên đề có lesson,
 ≥12 bài/chuyên đề cho cả 5 nhóm TC/TL/NT/CA/CD (348 bài), ≥5 bài cảm thụ/
-chuyên đề CT (35 bài, 7/7 chuyên đề), và ≥4 đề văn/chuyên đề VA (36 đề,
-9/9 chuyên đề). Việc còn lại — chỉ còn nội dung dạng "kho ngữ liệu lớn",
-không còn việc mở rộng số bài/chuyên đề nào nữa:
+chuyên đề CT (35 bài, 7/7 chuyên đề), ≥4 đề văn/chuyên đề VA (36 đề, 9/9
+chuyên đề), và 25/25 văn bản đọc hiểu dài (5–7 câu hỏi/văn bản, rải đều
+DH-01→06). Không còn việc mở rộng số bài/chuyên đề/văn bản nào theo Mục
+5.11 nữa — chỉ còn hai việc thiết kế mới, chưa từng làm trong dự án này:
 
-1. **Văn bản đọc hiểu dài (15/25, mỗi văn bản 5–7 câu hỏi)** — hạ tầng đã
-   xong (xem "Tiến độ nội dung" ở README), chỉ còn viết thêm 10 văn bản
-   theo đúng khuôn mẫu đã có: mỗi văn bản là 1 truyện ngắn tự biên soạn
-   (~150–200 từ, Mục 10.1 hướng B) trong `src/content/passages/index.ts`,
-   kèm file `src/content/exercises/dh-passage-XX.ts` với 5–7 câu hỏi, MỖI
-   câu gắn `passageId` đúng và `topicIds` đúng kỹ năng DH-0X đang kiểm tra
-   (không dồn hết vào 1 topicId — nên rải đều qua các kỹ năng DH-01→06 để
-   một văn bản kiểm tra được nhiều kỹ năng khác nhau, như dh-passage-01 đã
-   làm). Đăng ký cả hai vào `src/content/index.ts`. Test schema tự động
-   xác nhận: `passageId` hợp lệ, mỗi văn bản có đúng 5–7 câu dùng nó. Đây là việc còn lại lớn nhất.
-2. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — làm sau cùng,
-   khi đã có đủ ngữ liệu (văn bản đọc hiểu, đề văn) để ghép thành đề.
-3. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
+1. **Đề thi thử hoàn chỉnh soạn sẵn theo 4 cấu hình** (0/8) — hiện ứng
+   dụng chỉ sinh đề tự động từ kho bài tập (xem `core/test-generator`),
+   chưa có "đề cố định" nào được soạn sẵn và lưu làm dữ liệu tĩnh. Cần xác
+   định trước: đề soạn sẵn nghĩa là gì trong kiến trúc này (một danh sách
+   `exerciseId` cố định ứng với 1 `testConfig`? hay một cấu trúc dữ liệu
+   mới trong `src/content/`?) — tra URD Mục 5.11/22 về 4 cấu hình cụ thể
+   trước khi bắt tay viết, vì đây là quyết định kiến trúc, không phải chỉ
+   thêm nội dung.
+2. Lớp 2 (đối chiếu chéo) của quy trình kiểm chứng 3 lớp (Mục 18.3) —
    chưa có quy trình cụ thể, cần xác định cách thực hiện (khác lớp 1 tự
    động qua test, và lớp 3 giáo viên rà soát đã được bỏ qua theo QĐ).
+
+Vì cả hai đều là việc thiết kế (chọn kiến trúc/quy trình) chứ không phải
+"viết thêm theo khuôn mẫu có sẵn" như các mốc trước, nên hỏi người dùng
+muốn ưu tiên việc nào trước, thay vì tự chọn.
 
 Thói quen mỗi batch khi mở rộng số lượng bài tập: đọc file exercise hiện
 có để không lặp nội dung/tránh mâu thuẫn văn phong, viết thêm trực tiếp
@@ -160,3 +163,11 @@ xác minh nhanh qua trình duyệt thật (topic list hiện đúng, 1 lesson m�
 Ngoài Giai đoạn 9, các khoảng trống nhỏ hơn liệt kê ở README mục "Giới hạn
 đã biết" đều là các tác vụ độc lập, có thể làm bất kỳ lúc nào không cần chờ
 Giai đoạn 9.
+
+Lưu ý khi viết script Playwright chạy trên `npm run preview` (build mặc
+định, mode "production"): app dùng `BrowserRouter` với `base: "/"` ở chế
+độ này (chỉ `singlefile`/`gh-pages` mới dùng `HashRouter` + base tương
+đối — xem `src/app/App.tsx`), nên điều hướng trực tiếp bằng path thường
+(`http://localhost:4173/luyen-tap/lam-bai?topics=...`), KHÔNG dùng
+`#/...` — dùng nhầm hash route sẽ khiến `page.goto` luôn rơi vào trang
+chủ mà không báo lỗi rõ ràng, dễ nhầm tưởng là bug ứng dụng.

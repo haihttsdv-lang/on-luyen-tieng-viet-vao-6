@@ -70,6 +70,16 @@ import { DH_PASSAGE_12_EXERCISES } from "@/content/exercises/dh-passage-12";
 import { DH_PASSAGE_13_EXERCISES } from "@/content/exercises/dh-passage-13";
 import { DH_PASSAGE_14_EXERCISES } from "@/content/exercises/dh-passage-14";
 import { DH_PASSAGE_15_EXERCISES } from "@/content/exercises/dh-passage-15";
+import { DH_PASSAGE_16_EXERCISES } from "@/content/exercises/dh-passage-16";
+import { DH_PASSAGE_17_EXERCISES } from "@/content/exercises/dh-passage-17";
+import { DH_PASSAGE_18_EXERCISES } from "@/content/exercises/dh-passage-18";
+import { DH_PASSAGE_19_EXERCISES } from "@/content/exercises/dh-passage-19";
+import { DH_PASSAGE_20_EXERCISES } from "@/content/exercises/dh-passage-20";
+import { DH_PASSAGE_21_EXERCISES } from "@/content/exercises/dh-passage-21";
+import { DH_PASSAGE_22_EXERCISES } from "@/content/exercises/dh-passage-22";
+import { DH_PASSAGE_23_EXERCISES } from "@/content/exercises/dh-passage-23";
+import { DH_PASSAGE_24_EXERCISES } from "@/content/exercises/dh-passage-24";
+import { DH_PASSAGE_25_EXERCISES } from "@/content/exercises/dh-passage-25";
 import type { Exercise, Topic } from "@/data-access/types";
 
 export const ALL_TOPICS: Topic[] = TOPICS;
@@ -147,6 +157,16 @@ export const ALL_EXERCISES: Exercise[] = [
   ...DH_PASSAGE_13_EXERCISES,
   ...DH_PASSAGE_14_EXERCISES,
   ...DH_PASSAGE_15_EXERCISES,
+  ...DH_PASSAGE_16_EXERCISES,
+  ...DH_PASSAGE_17_EXERCISES,
+  ...DH_PASSAGE_18_EXERCISES,
+  ...DH_PASSAGE_19_EXERCISES,
+  ...DH_PASSAGE_20_EXERCISES,
+  ...DH_PASSAGE_21_EXERCISES,
+  ...DH_PASSAGE_22_EXERCISES,
+  ...DH_PASSAGE_23_EXERCISES,
+  ...DH_PASSAGE_24_EXERCISES,
+  ...DH_PASSAGE_25_EXERCISES,
 ];
 
 export { DISPUTED_WORDS } from "@/content/disputed-words";

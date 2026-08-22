@@ -1,0 +1,151 @@
+import type { Exercise } from "@/data-access/types";
+
+// DH-passage-21 — "Loài ong và công việc thụ phấn" (văn bản thông tin,
+// khoa học tự nhiên). Tự biên soạn (Mục 10.1 hướng B). Không có cốt
+// truyện/nhân vật nên không gắn câu hỏi DH-02/DH-03 ở đây.
+export const DH_PASSAGE_21_EXERCISES: Exercise[] = [
+  {
+    id: "dh-passage-21-q1",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: "Phấn hoa dính vào bộ phận nào của ong khi ong bay từ hoa này sang hoa khác?",
+    explanation: "Văn bản nêu trực tiếp: phấn hoa nhỏ li ti dính vào lông trên cơ thể ong.",
+    mcq: {
+      options: ["Lông trên cơ thể ong", "Đôi cánh của ong", "Chân của ong", "Vòi hút mật của ong"],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là chi tiết được nêu trực tiếp trong bài.",
+        "Văn bản không nói phấn hoa dính vào cánh.",
+        "Văn bản không nói phấn hoa dính vào chân.",
+        "Văn bản không nói phấn hoa dính vào vòi hút mật.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-21-q2",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "fill",
+    passageId: "dh-passage-21",
+    prompt: "Phấn hoa được chuyển từ nhị hoa đến bộ phận nào của một bông hoa khác? (trả lời bằng từ có trong bài)",
+    explanation: "Văn bản nêu trực tiếp: phấn hoa được chuyển đến nhuỵ hoa (bộ phận sinh sản cái).",
+    fill: { acceptedAnswers: ["nhuỵ hoa", "nhụy hoa"], strictMode: false, isSet: false },
+  },
+  {
+    id: "dh-passage-21-q3",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: "Theo văn bản, những nguyên nhân nào khiến số lượng ong suy giảm?",
+    explanation: "Văn bản nêu trực tiếp: sử dụng thuốc trừ sâu quá mức, mất môi trường sống tự nhiên và biến đổi khí hậu.",
+    mcq: {
+      options: [
+        "Sử dụng thuốc trừ sâu quá mức, mất môi trường sống và biến đổi khí hậu",
+        "Ong bị các loài chim săn bắt quá nhiều",
+        "Con người nuôi quá nhiều ong khiến chúng cạnh tranh nhau",
+        "Hoa nở ít hơn vào mùa đông",
+      ],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là ba nguyên nhân được nêu trực tiếp trong bài.",
+        "Văn bản không nhắc đến việc chim săn bắt ong.",
+        "Văn bản không nói đến việc nuôi ong quá nhiều.",
+        "Văn bản không nói nguyên nhân này.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-21-q4",
+    topicIds: ["DH-04"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: "Nội dung chính của văn bản trên là gì?",
+    explanation: "Toàn bộ văn bản giải thích vai trò thụ phấn quan trọng của ong và cảnh báo về việc bảo vệ loài ong.",
+    mcq: {
+      options: [
+        "Cách nuôi ong lấy mật hiệu quả",
+        "Vai trò thụ phấn quan trọng của ong và sự cần thiết phải bảo vệ loài ong",
+        "So sánh mật ong với các loại thực phẩm khác",
+        "Hướng dẫn cách phân biệt các loài ong",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Văn bản không hướng dẫn cách nuôi ong.",
+        "Đúng — đây là nội dung chính xuyên suốt văn bản.",
+        "Văn bản không so sánh mật ong với thực phẩm khác.",
+        "Văn bản không hướng dẫn phân biệt các loài ong.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-21-q5",
+    topicIds: ["DH-05"],
+    level: "M3",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: "Dựa vào văn bản, vì sao việc bảo vệ loài ong lại quan trọng đối với con người?",
+    explanation: "Suy luận từ văn bản: hơn một phần ba lượng thực phẩm con người tiêu thụ phụ thuộc vào thụ phấn của ong, nên nếu ong biến mất, nông nghiệp và hệ sinh thái sẽ bị ảnh hưởng nặng nề.",
+    mcq: {
+      options: [
+        "Vì ong là loài vật đẹp cần được bảo tồn",
+        "Vì phần lớn thực phẩm con người ăn hằng ngày phụ thuộc một phần vào việc ong thụ phấn cho cây trồng",
+        "Vì mật ong là nguồn thu nhập chính của nông dân",
+        "Vì ong giúp con người tránh được các loài côn trùng có hại khác",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây không phải lý do chính được văn bản nhấn mạnh.",
+        "Đúng — đây là suy luận hợp lý dựa trên thông tin về vai trò thụ phấn của ong đối với thực phẩm.",
+        "Văn bản không nói về thu nhập của nông dân.",
+        "Văn bản không đề cập đến việc này.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-21-q6",
+    topicIds: ["DH-06"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: 'Trong văn bản, từ "thụ phấn" có nghĩa gần nhất với điều gì?',
+    explanation: "Dựa vào ngữ cảnh, \"thụ phấn\" là quá trình chuyển phấn hoa từ nhị đến nhuỵ để cây kết trái, tạo hạt giống.",
+    mcq: {
+      options: [
+        "Quá trình chuyển phấn hoa từ nhị đến nhuỵ để cây kết trái, tạo hạt giống",
+        "Quá trình cây hút nước từ đất",
+        "Quá trình lá cây quang hợp dưới ánh nắng",
+        "Quá trình hoa rụng cánh sau khi nở",
+      ],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là nghĩa của \"thụ phấn\" dựa trên ngữ cảnh đoạn 2 của bài.",
+        "Văn bản không nói về việc hút nước.",
+        "Văn bản không nói về quang hợp ở đoạn này.",
+        "Đây không phải nghĩa của từ \"thụ phấn\".",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-21-q7",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-21",
+    prompt: "Ngoài mật ngọt, ong còn đóng vai trò gì trong tự nhiên theo văn bản?",
+    explanation: "Văn bản nêu ngay câu đầu: ong đóng vai trò cực kỳ quan trọng trong tự nhiên với công việc thụ phấn cho hoa.",
+    mcq: {
+      options: ["Thụ phấn cho hoa", "Làm sạch không khí", "Bảo vệ cây khỏi sâu bệnh", "Giúp đất tơi xốp hơn"],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là vai trò được nêu ngay câu mở đầu văn bản.",
+        "Văn bản không nhắc đến việc làm sạch không khí.",
+        "Văn bản không nhắc đến việc bảo vệ cây khỏi sâu bệnh.",
+        "Văn bản không nhắc đến việc làm đất tơi xốp.",
+      ],
+    },
+  },
+];

@@ -203,16 +203,21 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   35 bài đúng mục tiêu Mục 5.11).
 - **≥4 đề tập làm văn có dàn ý + bài mẫu/chuyên đề VA đã ĐẠT ĐỦ** (9/9
   chuyên đề, 36 đề đúng mục tiêu Mục 5.11).
-- **Văn bản đọc hiểu dài kèm 5–7 câu hỏi: 15/25** (khác với 6 chuyên đề kỹ
-  năng DH-01→06 đã xong ở trên). Hạ tầng kỹ thuật đã xong: kiểu `Passage`
-  (`src/data-access/types.ts`), `contentStore.getPassage()`, văn bản lưu ở
-  `src/content/passages/index.ts`, mỗi câu hỏi gắn `passageId` và bài đọc
-  hiện tự động phía trên câu hỏi ở cả 3 nơi (luyện tập, quiz cuối bài, thi
-  thử) qua component dùng chung `ReadingPassage`. 15 văn bản đã có, đa
-  dạng thể loại: truyện ngắn (12 bài, mỗi bài một chủ đề khác nhau), văn
-  bản thông tin/khoa học thường thức (3 bài: quang hợp, trí nhớ loài voi,
-  giấc ngủ). Mỗi câu hỏi gắn đúng kỹ năng DH-0X đang kiểm tra, không dồn
-  vào 1 chuyên đề. Còn thiếu 10 văn bản.
+- **Văn bản đọc hiểu dài kèm 5–7 câu hỏi/văn bản đã ĐẠT ĐỦ (25/25, đúng
+  mục tiêu Mục 5.11)** (khác với 6 chuyên đề kỹ năng DH-01→06 đã xong ở
+  trên). Hạ tầng kỹ thuật: kiểu `Passage` (`src/data-access/types.ts`),
+  `contentStore.getPassage()`, văn bản lưu ở `src/content/passages/
+  index.ts`, mỗi câu hỏi gắn `passageId` và bài đọc hiện tự động phía trên
+  câu hỏi ở cả 3 nơi (luyện tập, quiz cuối bài, thi thử) qua component
+  dùng chung `ReadingPassage`. 25 văn bản tự biên soạn (Mục 10.1 hướng B),
+  đa dạng thể loại: truyện ngắn (19 bài, mỗi bài một chủ đề/bài học khác
+  nhau) và văn bản thông tin/khoa học thường thức (6 bài: quang hợp, trí
+  nhớ loài voi, giấc ngủ, uống đủ nước, loài ong thụ phấn, sấm sét). Mỗi
+  câu hỏi gắn đúng kỹ năng DH-0X đang kiểm tra, rải đều qua DH-01→06 thay
+  vì dồn vào 1 chuyên đề (văn bản thông tin không có cốt truyện/nhân vật
+  nên bỏ qua DH-02/DH-03). Đã xác minh qua trình duyệt thật: hộp "Bài
+  đọc" hiển thị đúng tiêu đề, nội dung cho từng văn bản trong luồng luyện
+  tập.
 - Đề thi thử hoàn chỉnh soạn sẵn theo đúng 4 cấu hình: 0/8 (hiện dùng sinh
   đề tự động từ kho bài tập nhỏ, chưa phải "đề soạn sẵn").
 - Lớp 2 (đối chiếu chéo) và lớp 3 (giáo viên rà soát — đã quyết định bỏ
