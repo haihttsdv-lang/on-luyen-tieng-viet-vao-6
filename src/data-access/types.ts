@@ -34,10 +34,18 @@ export interface Topic {
 // FR-DH01→DH25 (Mục 5.11): a shared reading passage — multiple exercises
 // reference it by id via ExerciseBase.passageId instead of repeating the
 // text in every prompt.
+// FR-N01→N04/NFR-07: sourceType + sourceNote are bắt buộc trên mọi Passage
+// để test tự động canh vi phạm bản quyền ngữ liệu (Mục 10.1, rủi ro "rất
+// cao" — Mục 21). Toàn bộ passage trong dự án này đi theo hướng B (tự biên
+// soạn) nên sourceType luôn là "original".
+export type PassageSourceType = "public-domain" | "original" | "quoted";
+
 export interface Passage {
   id: string;
   title: string;
   text: string;
+  sourceType: PassageSourceType;
+  sourceNote: string;
 }
 
 // FR-P04: every mcq answer explains why each option is right/wrong.

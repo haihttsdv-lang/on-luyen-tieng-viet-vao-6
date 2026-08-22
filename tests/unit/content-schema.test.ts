@@ -128,6 +128,20 @@ describe("content schema", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
+  it("every passage has a valid sourceType and non-empty sourceNote (FR-N01→N04, NFR-07)", () => {
+    const validSourceTypes = new Set(["public-domain", "original", "quoted"]);
+    for (const passage of ALL_PASSAGES) {
+      expect(validSourceTypes.has(passage.sourceType), `${passage.id} has invalid sourceType`).toBe(true);
+      expect(passage.sourceNote.trim().length, `${passage.id} has no sourceNote`).toBeGreaterThan(0);
+    }
+  });
+
+  it("no passage uses sourceType 'quoted' (QĐ-2 chưa chọn hướng C — FR-N02)", () => {
+    for (const passage of ALL_PASSAGES) {
+      expect(passage.sourceType, `${passage.id} must not be 'quoted'`).not.toBe("quoted");
+    }
+  });
+
   it("preset exams: ≥ 2 đề/cấu hình, đúng 8 đề tổng (Mục 5.11)", () => {
     expect(ALL_PRESET_EXAMS.length).toBeGreaterThanOrEqual(8);
     const configIds = new Set(TEST_CONFIGS.map((c) => c.id));

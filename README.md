@@ -238,9 +238,13 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
   văn. Test guardrail mới trong `content-schema.test.ts`: mỗi cấu hình có
   ≥ 2 đề, `exerciseIds`/`essayExerciseId` hợp lệ, không trùng câu, số câu
   khớp `totalQuestions`, có/không bài viết khớp `includeEssay`.
-- Lớp 2 (đối chiếu chéo) và lớp 3 (giáo viên rà soát — đã quyết định bỏ
-  qua) của quy trình kiểm chứng 3 lớp (Mục 18.3) chưa thực hiện; mới có
-  lớp 1 (kiểm tra cấu trúc tự động qua `content-schema.test.ts`).
+- **Lớp 1 (kiểm tra tự động, Mục 18.3) nay đã đủ đúng phạm vi URD** —
+  bổ sung `sourceType`/`sourceNote` bắt buộc trên `Passage` (FR-N01→N04,
+  NFR-07 — trước đó bị thiếu dù đã claim lớp 1 xong): mọi văn bản đọc
+  hiểu có `sourceType: "original"` (tự biên soạn, Mục 10.1 hướng B) và
+  `sourceNote`, test tự động canh không có `sourceType: "quoted"` và
+  không thiếu `sourceNote`. Lớp 3 (giáo viên rà soát) đã quyết định bỏ
+  qua theo QĐ bổ sung.
 
 ## Giới hạn đã biết
 
