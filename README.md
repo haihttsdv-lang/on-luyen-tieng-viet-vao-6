@@ -105,9 +105,15 @@ chỉ ẩn/khoá phần Đồng bộ và hiện hướng dẫn thay vì lỗi (S
    bộ, ai đồng bộ sau thắng" (last-write-wins trên toàn bộ `ProgressStore`),
    không gộp (merge) từng phần — nếu học trên 2 thiết bị mà không đồng bộ
    thường xuyên, tiến trình chưa kịp đồng bộ ở thiết bị "thua" có thể mất.
-   Luồng gọi Firestore thật cũng chưa được kiểm thử end-to-end với dự án
-   Firebase thật trong quá trình phát triển (môi trường build không có
-   Firebase Emulator) — nên tự kiểm tra kỹ sau khi bật.
+
+   **Đã kiểm chứng thật (2026-08-22):** sau khi người dùng tự tạo dự án
+   Firebase và thêm đủ 6 GitHub Actions secret, đã xác minh trực tiếp trên
+   bản GitHub Pages live — bấm "Tạo mã đồng bộ mới" thành công, đăng nhập
+   ẩn danh (Anonymous Auth) và ghi tài liệu lên Firestore thật đều hoạt
+   động đúng, trạng thái chuyển "Đã đồng bộ" không lỗi. Luồng Firestore
+   thật trước đó chưa từng được kiểm thử end-to-end trong môi trường phát
+   triển (không có Firebase Emulator) — nay đã xác nhận hoạt động đúng với
+   một dự án Firebase thật.
 
 ## Triển khai (GitHub Pages)
 
@@ -289,11 +295,12 @@ CT-03, CT-04, TL-06). Tất cả 9 nhóm đều đã có nội dung:
 ## Giới hạn đã biết
 
 - **Đồng bộ Firebase**: logic quyết định xung đột (`core/sync-decision`) đã
-  unit test đầy đủ, và luồng "chưa cấu hình Firebase" (SY-14) đã kiểm chứng
-  qua trình duyệt thật. Nhưng luồng đồng bộ THẬT với Firestore chưa được
-  kiểm thử end-to-end với dự án Firebase thật (môi trường này không có
-  Java/Firebase Emulator Suite) — cần người dùng tự kiểm tra sau khi làm
-  theo hướng dẫn ở trên.
+  unit test đầy đủ; luồng "chưa cấu hình Firebase" (SY-14) và luồng đồng bộ
+  THẬT với Firestore (đăng nhập ẩn danh + ghi tài liệu) đều đã kiểm chứng
+  qua trình duyệt thật trên bản GitHub Pages live, với một dự án Firebase
+  thật do người dùng tự tạo — xem mục "Đồng bộ đa thiết bị" ở trên. Bản
+  chất "ghi đè toàn bộ, không gộp" (last-write-wins) vẫn là giới hạn thiết
+  kế cần lưu ý, không phải lỗi.
 - **FR-A22** (kiểm thử thủ công trên thiết bị Android thật): chưa làm được —
   chỉ có thể mô phỏng qua Playwright (FR-A20/A21), không thay thế được việc
   thử trên máy thật, đặc biệt với bộ gõ tiếng Việt.
