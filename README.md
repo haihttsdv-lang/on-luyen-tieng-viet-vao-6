@@ -157,7 +157,32 @@ Xem Mục 18 của URD. Tóm tắt:
       derive-không-lưu, vòng tiến độ, Thử thách tốc độ) + rà soát đầy đủ
       Mục 14 (PWA cài đặt được, bàn phím ảo không che ô nhập, offline thật
       sự hoạt động — không chỉ giả định, bộ e2e Playwright chính thức)
-- [ ] Giai đoạn 9 — Mở rộng nội dung + kiểm chứng 3 lớp
+- [~] Giai đoạn 9 — Mở rộng nội dung + kiểm chứng 3 lớp (**đang làm, chưa
+      xong** — xem "Tiến độ nội dung" ngay dưới đây). Đã chốt QĐ bổ sung:
+      không cần giáo viên rà soát lớp 3, tự tin xây đầy đủ theo kế hoạch;
+      bộ sách chuẩn cho nội dung tranh cãi (FR-D01) = Kết nối tri thức với
+      cuộc sống.
+
+### Tiến độ nội dung (Giai đoạn 9)
+
+19/56 chuyên đề đã có bài học lý thuyết đầy đủ (concept, dấu hiệu nhận biết,
+ví dụ, lỗi thường gặp) + bài tập:
+
+- **KN — Kỹ năng làm bài: 5/5 (xong)** — KN-01→05.
+- **CA — Câu: 7/7 (xong)** — CA-01→07, đúng thứ tự ưu tiên Mục 5.11.
+- **CT — Cảm thụ văn học: 4/7** — CT-01, CT-02, CT-05, CT-07. Còn thiếu
+  CT-03 (điệp từ/điệp ngữ), CT-04 (đảo ngữ/từ láy), CT-06 (cảm thụ nhân vật).
+- **NT, CD, VA:** mỗi nhóm mới có 1/6, 1/5, 1/9 chuyên đề (từ các giai đoạn
+  trước).
+- **TC, TL, DH: 0 chuyên đề.** TC là ưu tiên tiếp theo cho bài tập chấm tự
+  động (Mục 5.11: "CA-01→07, TC-03/04, NT-03/04").
+
+Còn thiếu hoàn toàn so với mục tiêu Mục 5.11: văn bản đọc hiểu (0/25), đề
+thi thử hoàn chỉnh theo đúng 4 cấu hình (hiện dùng sinh đề tự động từ kho
+bài tập nhỏ, chưa phải "đề soạn sẵn"). Lớp 2 (đối chiếu chéo) và lớp 3
+(giáo viên rà soát — đã quyết định bỏ qua) của quy trình kiểm chứng 3 lớp
+(Mục 18.3) chưa thực hiện; mới có lớp 1 (kiểm tra cấu trúc tự động qua
+`content-schema.test.ts`).
 
 ## Giới hạn đã biết
 

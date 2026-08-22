@@ -20,10 +20,12 @@ toàn phía client (không backend riêng), PWA cài được lên Android.
 Bản chạy thật: https://haihttsdv-lang.github.io/on-luyen-tieng-viet-vao-6/
 (tự deploy khi push lên `master`, xem README mục Triển khai).
 
-**Trạng thái ngắn gọn:** cơ chế (Giai đoạn 0–8) đã xong và test kỹ. Nội dung
-thật mới có mẫu 6/56 chuyên đề. Việc còn lại chủ yếu là **Giai đoạn 9 — mở
-rộng nội dung + kiểm chứng 3 lớp** (URD Mục 18.2/18.3). Xem README để biết
-chi tiết và các giới hạn đã biết khác.
+**Trạng thái ngắn gọn:** cơ chế (Giai đoạn 0–8) đã xong và test kỹ. **Giai
+đoạn 9 (mở rộng nội dung) đang làm dở** — 19/56 chuyên đề đã có bài học đầy
+đủ (KN 5/5, CA 7/7, CT 4/7; NT/CD/VA còn 1 mỗi nhóm; TC/TL/DH chưa có gì).
+QĐ bổ sung đã chốt: không cần giáo viên rà soát, bộ sách chuẩn cho nội dung
+tranh cãi = Kết nối tri thức với cuộc sống. Xem README mục "Tiến độ nội
+dung" để biết chính xác còn thiếu gì.
 
 ## Năm quy tắc không được vi phạm (URD Mục 2)
 
@@ -101,11 +103,27 @@ chi tiết và các giới hạn đã biết khác.
 
 ## Việc tiếp theo hợp lý nhất
 
-**Giai đoạn 9** (URD Mục 18.2/18.3) — mở rộng nội dung theo thứ tự ưu tiên ở
-Mục 5.11 (nhóm KN trước vì ít tài liệu sẵn có nhất, giá trị cao nhất; rồi CT,
-rồi CA), và thiết lập quy trình kiểm chứng 3 lớp — lớp 3 (giáo viên rà soát)
-cần người dùng xác nhận có giáo viên Tiếng Việt tiểu học hỗ trợ không (Mục
-22, thông số #7) trước khi làm nội dung quy mô lớn.
+Tiếp tục **Giai đoạn 9** theo đúng thứ tự ưu tiên Mục 5.11. Đã xong: KN
+5/5, CA 7/7, CT 4/7 (CT-01/02/05/07). Việc tiếp theo:
+
+1. **TC-03, TC-04** (từ ghép/từ láy) — ưu tiên kế tiếp cho bài tập chấm tự
+   động (Mục 5.11: "CA-01→07, TC-03/04, NT-03/04"). Nhóm này có tranh cãi
+   giữa các bộ sách (Mục 10.6) — dùng bộ **Kết nối tri thức với cuộc sống**
+   làm chuẩn (đã chốt), nhớ cập nhật `src/content/disputed-words.ts` (FR-D04)
+   với các từ tranh cãi đã dùng.
+2. **NT-03, NT-04** (từ đồng âm, từ nhiều nghĩa) — cùng đợt ưu tiên với TC.
+3. **CT-03, CT-04, CT-06** — hoàn thiện nốt nhóm CT.
+4. Sau đó: TL, DH (chưa có chuyên đề nào), rồi mở rộng số lượng bài tập/chuyên
+   đề đã có lên ≥12 bài (hiện mỗi chuyên đề mới có 3-5 bài mẫu), rồi văn bản
+   đọc hiểu, đề tập làm văn, đề thi thử hoàn chỉnh.
+
+Thói quen đã áp dụng khi xây nội dung mới, giữ nguyên: mỗi chuyên đề có
+lesson (concept/signals/examples/commonMistakes, KN thêm `steps`) +
+exercises (mcq/fill là chính, thêm order/match cho đa dạng) trong
+`src/content/exercises/<id>.ts`, đăng ký vào `src/content/index.ts` và
+`src/content/topics/index.ts`, rồi chạy `typecheck && lint && test` +
+xác minh nhanh qua trình duyệt thật (topic list hiện đúng, 1 lesson mới mở
+được, 1 quiz mới làm được) trước khi coi là xong.
 
 Ngoài Giai đoạn 9, các khoảng trống nhỏ hơn liệt kê ở README mục "Giới hạn
 đã biết" đều là các tác vụ độc lập, có thể làm bất kỳ lúc nào không cần chờ
