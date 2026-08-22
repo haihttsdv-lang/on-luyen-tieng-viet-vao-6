@@ -1,0 +1,160 @@
+import type { Exercise } from "@/data-access/types";
+
+// DH-passage-02 — "Chiếc diều đứt dây". Văn bản tự biên soạn (Mục 10.1
+// hướng B).
+export const DH_PASSAGE_02_EXERCISES: Exercise[] = [
+  {
+    id: "dh-passage-02-q1",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: "Chiếc diều hình con bướm của Nam có ý nghĩa gì đặc biệt?",
+    explanation: "Văn bản nêu trực tiếp: đó là món quà bố tặng Nam trước khi đi làm xa.",
+    mcq: {
+      options: [
+        "Là món quà bố tặng trước khi đi làm xa",
+        "Là diều Nam tự làm",
+        "Là diều đắt tiền nhất trong đám bạn",
+        "Là diều duy nhất bay được cao",
+      ],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là chi tiết được nêu trực tiếp trong đoạn đầu.",
+        "Văn bản không nói Nam tự làm diều.",
+        "Văn bản không so sánh giá trị diều với diều của các bạn khác.",
+        "Văn bản không nói đây là diều duy nhất bay cao.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-02-q2",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "fill",
+    passageId: "dh-passage-02",
+    prompt: "Ai đã nhường diều của mình cho Nam chơi chung sau khi diều của Nam bị mất? (trả lời bằng tên riêng có trong bài)",
+    explanation: "Văn bản nêu trực tiếp: bé Hoa nhường chiếc diều hình con cá của mình cho Nam.",
+    fill: { acceptedAnswers: ["Hoa", "bé Hoa"], strictMode: false, isSet: false },
+  },
+  {
+    id: "dh-passage-02-q3",
+    topicIds: ["DH-02"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: "Sự việc nào xảy ra SAU CÙNG trong câu chuyện?",
+    explanation: "Theo trình tự văn bản: diều đứt dây trước, các bạn an ủi, rồi tối đến mẹ nói chuyện với Nam và cậu cảm thấy nhẹ nhõm — đây là sự việc cuối cùng.",
+    mcq: {
+      options: [
+        "Sợi dây diều bị đứt",
+        "Bé Hoa nhường diều cho Nam",
+        "Nam nghe lời mẹ nói và cảm thấy nhẹ nhõm hơn",
+        "Nam chạy theo diều một đoạn",
+      ],
+      answerIndex: 2,
+      distractorNotes: [
+        "Đây là sự việc mở đầu câu chuyện.",
+        "Việc này xảy ra ở bãi cỏ, trước khi về nhà.",
+        "Đúng — đây là sự việc diễn ra cuối truyện, vào buổi tối.",
+        "Việc này xảy ra ngay sau khi diều đứt dây, trước khi bé Hoa nhường diều.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-02-q4",
+    topicIds: ["DH-03"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: "Chi tiết nào cho thấy bé Hoa là người biết quan tâm, chia sẻ với bạn bè?",
+    explanation: "Chi tiết bé Hoa nhường ngay chiếc diều hình con cá của mình cho Nam chơi chung thể hiện rõ điều này.",
+    mcq: {
+      options: [
+        "Bé Hoa đứng xem Nam thả diều",
+        "Bé Hoa nhường ngay chiếc diều hình con cá của mình cho Nam chơi chung",
+        "Bé Hoa cũng có một chiếc diều đẹp",
+        "Bé Hoa chạy về nhà trước",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây chỉ là hành động thông thường, chưa thể hiện sự quan tâm đặc biệt.",
+        "Đúng — hành động nhường diều thể hiện rõ sự quan tâm, chia sẻ với bạn.",
+        "Chi tiết này không liên quan đến việc quan tâm bạn bè.",
+        "Văn bản không nhắc đến việc này.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-02-q5",
+    topicIds: ["DH-04"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: "Câu chuyện trên muốn gửi đến người đọc thông điệp gì?",
+    explanation: "Lời mẹ nói ở cuối bài nêu rõ: dù mất đi vật quý, những kỷ niệm gắn với nó vẫn còn mãi trong lòng.",
+    mcq: {
+      options: [
+        "Không nên thả diều khi trời có gió to",
+        "Dù mất đi vật quý giá, kỷ niệm gắn với nó vẫn còn mãi trong lòng ta",
+        "Nên mua nhiều diều để dự phòng",
+        "Trẻ em không nên chơi một mình",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây chỉ là chi tiết bề mặt, không phải bài học chính.",
+        "Đúng — đây là thông điệp được mẹ nói rõ và Nam đã thấm thía.",
+        "Văn bản không đưa ra lời khuyên này.",
+        "Văn bản không đề cập đến việc chơi một mình.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-02-q6",
+    topicIds: ["DH-05"],
+    level: "M3",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: "Vì sao Nam cảm thấy lòng nhẹ nhõm hơn sau khi nghe lời mẹ nói?",
+    explanation: "Có thể suy luận: nhờ lời mẹ, Nam hiểu ra rằng kỷ niệm và tình cảm mới là điều quý giá nhất, không phải bản thân chiếc diều.",
+    mcq: {
+      options: [
+        "Vì mẹ hứa mua cho Nam chiếc diều mới",
+        "Vì Nam hiểu ra kỷ niệm với bố quan trọng hơn bản thân chiếc diều",
+        "Vì trời đã hết mưa",
+        "Vì các bạn đã tìm lại được chiếc diều",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Văn bản không nhắc đến việc mẹ hứa mua diều mới.",
+        "Đúng — đây là suy luận hợp lý dựa trên lời mẹ nói và phản ứng của Nam.",
+        "Văn bản không liên quan đến thời tiết ở đoạn này.",
+        "Văn bản không nói diều được tìm lại.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-02-q7",
+    topicIds: ["DH-06"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-02",
+    prompt: 'Trong câu "Nam đứng chết lặng giữa bãi cỏ", cụm từ "chết lặng" gợi tả điều gì?',
+    explanation: "\"Chết lặng\" gợi tả trạng thái bàng hoàng, sững sờ, không nói được gì vì quá bất ngờ hoặc đau buồn.",
+    mcq: {
+      options: [
+        "Trạng thái vui mừng khôn xiết",
+        "Trạng thái bàng hoàng, sững sờ không nói nên lời",
+        "Hành động nằm xuống nghỉ ngơi",
+        "Cảm giác buồn ngủ",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Ngữ cảnh (diều vừa đứt dây, bay mất) không phù hợp với sự vui mừng.",
+        "Đúng — \"chết lặng\" gợi tả sự bàng hoàng, sững sờ trước cú sốc bất ngờ.",
+        "\"Chết lặng\" không liên quan đến việc nằm nghỉ.",
+        "\"Chết lặng\" ở đây không liên quan đến cơn buồn ngủ.",
+      ],
+    },
+  },
+];

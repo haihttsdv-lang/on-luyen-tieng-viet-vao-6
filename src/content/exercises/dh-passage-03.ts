@@ -1,0 +1,160 @@
+import type { Exercise } from "@/data-access/types";
+
+// DH-passage-03 — "Chú chim sẻ non". Văn bản tự biên soạn (Mục 10.1
+// hướng B).
+export const DH_PASSAGE_03_EXERCISES: Exercise[] = [
+  {
+    id: "dh-passage-03-q1",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: "Lan phát hiện chú chim sẻ non trong hoàn cảnh nào?",
+    explanation: "Văn bản nêu trực tiếp: Lan phát hiện chim non khi đang quét sân, chim nằm dưới gốc cây bàng, có lẽ rơi khỏi tổ trong trận gió đêm qua.",
+    mcq: {
+      options: [
+        "Khi đang quét sân, thấy chim non nằm dưới gốc cây bàng",
+        "Khi đang đi học về",
+        "Khi đang chơi trong vườn với Tuấn",
+        "Khi đang tưới cây",
+      ],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — đây là chi tiết được nêu trực tiếp ở đầu văn bản.",
+        "Văn bản không nói Lan đang đi học về.",
+        "Văn bản không nói Lan đang chơi cùng Tuấn lúc phát hiện chim.",
+        "Văn bản không nhắc đến việc tưới cây.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-03-q2",
+    topicIds: ["DH-01"],
+    level: "M1",
+    questionType: "fill",
+    prompt: "Lan và Tuấn đặt chú chim non vào đâu trước khi treo lên cành cây? (trả lời bằng từ có trong bài)",
+    passageId: "dh-passage-03",
+    explanation: "Văn bản nêu trực tiếp: Lan đặt chú chim vào một chiếc hộp có lót lá khô.",
+    fill: { acceptedAnswers: ["hộp", "chiếc hộp"], strictMode: false, isSet: false },
+  },
+  {
+    id: "dh-passage-03-q3",
+    topicIds: ["DH-02"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: "Sự việc nào xảy ra SAU CÙNG trong câu chuyện?",
+    explanation: "Theo trình tự: phát hiện chim non, bàn cách giúp, đặt chim vào hộp treo lên cây, cuối cùng chim mẹ bay đến cho ăn.",
+    mcq: {
+      options: [
+        "Lan phát hiện chú chim sẻ non",
+        "Hai chị em bàn cách giúp chim",
+        "Chim mẹ bay đến cho chim non ăn",
+        "Tuấn đề nghị mang chim vào nhà nuôi",
+      ],
+      answerIndex: 2,
+      distractorNotes: [
+        "Đây là sự việc mở đầu câu chuyện.",
+        "Việc này xảy ra sau khi phát hiện chim, trước khi hành động.",
+        "Đúng — đây là sự việc diễn ra cuối truyện, vào buổi trưa.",
+        "Đây là ý kiến ban đầu của Tuấn, xảy ra trước khi đặt chim vào hộp.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-03-q4",
+    topicIds: ["DH-03"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: "Chi tiết nào cho thấy Lan là người suy nghĩ cẩn thận trước khi hành động?",
+    explanation: "Việc Lan cân nhắc và giải thích lý do không nên mang chim vào nhà nuôi mà nên đưa chim lại gần tổ cho thấy sự cẩn thận, hiểu biết của Lan.",
+    mcq: {
+      options: [
+        "Lan gọi Tuấn ra xem chim non",
+        "Lan giải thích lý do không nên mang chim vào nhà nuôi mà nên đưa chim lại gần tổ",
+        "Lan quét sân vào buổi sáng",
+        "Lan ngóng ra gốc bàng cả buổi sáng",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Đây chỉ là hành động thông báo, chưa thể hiện sự suy nghĩ cẩn thận.",
+        "Đúng — Lan đã cân nhắc và đưa ra lý do hợp lý cho quyết định của mình.",
+        "Đây chỉ là công việc thường ngày, không thể hiện tính cách đặc biệt.",
+        "Đây là cảm xúc chờ đợi, không thể hiện sự suy nghĩ cẩn thận.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-03-q5",
+    topicIds: ["DH-04"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: "Câu chuyện trên muốn gửi đến người đọc thông điệp gì?",
+    explanation: "Câu chuyện ca ngợi tình yêu thương loài vật và cách giúp đỡ đúng cách, khôn ngoan.",
+    mcq: {
+      options: [
+        "Nên nuôi thật nhiều chim trong nhà",
+        "Cần biết yêu thương, giúp đỡ loài vật đúng cách để mang lại điều tốt đẹp",
+        "Không nên ra ngoài khi trời có gió",
+        "Chim sẻ là loài chim nguy hiểm",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Văn bản không khuyến khích nuôi nhốt chim.",
+        "Đúng — đây là bài học về tình yêu thương và cách giúp đỡ động vật khôn ngoan.",
+        "Văn bản không đưa ra lời khuyên này.",
+        "Văn bản không nói chim sẻ nguy hiểm.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-03-q6",
+    topicIds: ["DH-05"],
+    level: "M3",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: "Vì sao Lan không đồng ý với đề nghị mang chim vào nhà nuôi của Tuấn?",
+    explanation: "Suy luận từ lời giải thích của Lan: cô lo rằng nếu xa mẹ lâu, chim non có thể không sống được, nên ưu tiên đưa chim trở lại gần môi trường tự nhiên của nó.",
+    mcq: {
+      options: [
+        "Vì Lan không thích chim",
+        "Vì Lan lo chim non sẽ khó sống nếu xa mẹ quá lâu",
+        "Vì bố mẹ không cho phép nuôi động vật",
+        "Vì nhà Lan không có chỗ nuôi chim",
+      ],
+      answerIndex: 1,
+      distractorNotes: [
+        "Ngược lại, hành động của Lan cho thấy cô rất yêu quý chim.",
+        "Đúng — đây là lý do được suy luận từ lời nói của Lan trong bài.",
+        "Văn bản không nhắc đến việc bố mẹ cấm đoán.",
+        "Văn bản không đề cập đến vấn đề chỗ ở.",
+      ],
+    },
+  },
+  {
+    id: "dh-passage-03-q7",
+    topicIds: ["DH-06"],
+    level: "M2",
+    questionType: "mcq",
+    passageId: "dh-passage-03",
+    prompt: 'Trong câu "cả buổi sáng, hai chị em cứ thấp thỏm ngóng ra gốc bàng", từ "thấp thỏm" gợi tả điều gì?',
+    explanation: "\"Thấp thỏm\" là từ láy gợi tả trạng thái lo lắng, không yên tâm, mong ngóng kết quả.",
+    mcq: {
+      options: [
+        "Trạng thái lo lắng, mong ngóng không yên",
+        "Trạng thái vui đùa thoải mái",
+        "Hành động đi lại nhanh nhẹn",
+        "Cảm giác buồn ngủ, mệt mỏi",
+      ],
+      answerIndex: 0,
+      distractorNotes: [
+        "Đúng — \"thấp thỏm\" gợi tả sự lo lắng, mong ngóng không yên tâm.",
+        "Ngữ cảnh (lo cho chim non) không phù hợp với sự vui đùa thoải mái.",
+        "\"Thấp thỏm\" không liên quan đến việc di chuyển.",
+        "\"Thấp thỏm\" không liên quan đến cơn buồn ngủ.",
+      ],
+    },
+  },
+];
